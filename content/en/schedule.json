@@ -2,53 +2,87 @@
   "id": "schedule",
   "slug": "schedule",
   "title": "Timetable | Yoga Momente Coburg",
-  "description": "Current timetable of Yoga Momente in Coburg: hormone yoga, yoga at Tanztraum, early morning yoga and personal yoga with Susanne Müller.",
+  "description": "Timetable of Yoga Momente in Coburg: yoga at Tanztraum on Wednesdays (in person and online) and Early Morning Yoga online on Fridays. Drop-in.",
   "sections": [
     {
       "type": "hero",
       "title": "Timetable",
-      "lead": "The current timetable of Yoga Momente in Coburg."
+      "lead": "Your weekly yoga timetable in Coburg and online."
     },
     {
-      "type": "grid",
+      "type": "week",
       "id": "plan",
-      "variant": "cards",
-      "cols": 2,
-      "items": [
+      "title": "Your weekly timetable.",
+      "lead": "Both classes are drop-in: you decide from week to week whether you join.",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "short": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "slots": [
         {
-          "n": "Tuesday",
-          "title": "Hormone Yoga",
-          "text": "17:00–18:30\n\nTakes place from 2–3 participants. Currently as an online class.",
-          "href": "page:contact",
-          "cta": "Book now"
-        },
-        {
-          "n": "Thursday",
+          "day": 2,
+          "time": "17:30–18:30",
           "title": "Yoga.momente at Tanztraum",
-          "text": "17:30–18:30\n\nIn person & online class\nTanztraum, Dieselstraße 14, D-96450 Coburg",
+          "tags": [
+            {
+              "label": "In person",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "place": "Tanztraum, Dieselstraße 14, D-96450 Coburg",
+          "text": "Drop-in",
           "href": "page:contact",
-          "cta": "Book now"
+          "cta": "Join in"
         },
         {
-          "n": "Friday",
+          "day": 4,
+          "time": "06:30–07:30",
           "title": "Early Morning Yoga",
-          "text": "06:30–07:30\n\nOnline class",
+          "tags": [
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "text": "Drop-in",
           "href": "page:contact",
-          "cta": "Book now"
-        },
-        {
-          "n": "Friday",
-          "title": "Personal Yoga",
-          "text": "14:00–15:00\n\nIndividual class with Susanne",
-          "href": "page:contact",
-          "cta": "Book now"
+          "cta": "Join in"
         }
+      ],
+      "note": "**By arrangement:** Hormone Yoga (as its own course or a single class) and Personal Yoga (one-to-one class). Write to us and we will find a time."
+    },
+    {
+      "type": "text",
+      "id": "ablauf",
+      "eyebrow": "How the classes work",
+      "title": "Varied and for everyone.",
+      "paragraphs": [
+        "The classes are based on the needs of the participants and alternate between flowing vinyasa sessions, deep stretch, yin and fascia yoga.",
+        "They suit beginners and advanced practitioners alike. Props such as bolsters, blocks and straps are used in every class."
       ]
     },
     {
       "type": "cta",
       "title": "Time for your class?",
-      "text": "On Monday, Wednesday, Saturday and Sunday there are still slots available for personal yoga and hormone yoga. Just write to us.",
+      "text": "Would you like to try a class or arrange a single session? Just write to us.",
       "buttons": [
         {
           "label": "Request a class",

@@ -957,10 +957,36 @@ def r_notfound(ctx, sec):
     return wrap(sec, f'<div class="notfound" data-reveal><p class="num num--big">404</p>{head(sec)}{buttons(ctx, sec.get("buttons"), "btn-row btn-row--center")}</div>')
 
 
+def r_week(ctx, sec):
+    """Wochenplan: 7 Spalten (Mo–So); mobil untereinander. Slots: {day: 0=Mo..6=So, time, title, tags[], place, text, href, cta}."""
+    days, short = sec["days"], sec.get("short", sec["days"])
+    cols = ""
+    for d in range(7):
+        slots = ""
+        for k, sl in enumerate([x for x in sec["slots"] if x["day"] == d]):
+            tags = "".join(f'<li class="wk-tag wk-tag--{esc(tg.get("kind", "x"))}">{T(tg["label"])}</li>' for tg in sl.get("tags", []))
+            place = f'<p class="wk-place">{icon("pin", "i")}{T(sl["place"])}</p>' if sl.get("place") else ""
+            text = f'<p class="wk-text">{T(sl["text"])}</p>' if sl.get("text") else ""
+            cta = ""
+            if sl.get("href"):
+                cta = f'<a class="wk-cta" {ctx.link_attrs(sl["href"])}>{T(sl.get("cta", ctx.t["ui"]["more"]))}{icon("chev", "i i-chev")}</a>'
+            slots += (f'<article class="wk-slot"><p class="wk-time">{T(sl["time"])}</p><h3 class="wk-title">{T(sl["title"])}</h3>'
+                      f'<ul class="wk-tags">{tags}</ul>{place}{text}{cta}</article>')
+        empty = "" if slots else f'<p class="wk-empty" aria-label="{esc(sec.get("emptyLabel", ""))}">–</p>'
+        busy = " wk-day--busy" if slots else ""
+        cols += (f'<li class="wk-day{busy}" data-d="{d}" data-reveal style="--i:{d}"><p class="wk-head"><abbr title="{esc(days[d])}" class="wk-short">{T(short[d])}</abbr>'
+                 f'<span class="wk-full">{T(days[d])}</span></p><div class="wk-body">{slots}{empty}</div></li>')
+    note = f'<div class="wk-note" data-reveal>{paragraphs(sec["note"])}</div>' if sec.get("note") else ""
+    btn = buttons(ctx, sec.get("buttons"), "btn-row") if sec.get("buttons") else ""
+    inner = head(sec) + f'<ol class="wk" data-week>{cols}</ol>' + note + btn
+    return wrap(sec, inner)
+
+
 RENDERERS = {
     "hero": r_hero,
     "rings": r_rings,
     "grid": r_grid,
+    "week": r_week,
     "logos": r_logos,
     "about": r_about,
     "text": r_text,

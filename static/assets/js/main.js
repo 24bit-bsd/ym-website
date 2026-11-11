@@ -215,6 +215,14 @@
     setRing('0');
   }
 
+  /* Wochenplan: heutigen Tag hervorheben ------------------------------------------ */
+  var wk = d.querySelector('[data-week]');
+  if (wk) {
+    var today = (new Date().getDay() + 6) % 7;
+    var tcol = wk.querySelector('.wk-day[data-d="' + today + '"]');
+    if (tcol) tcol.classList.add('is-today');
+  }
+
   /* Einblend-Animationen --------------------------------------------------- */
   var items = [].slice.call(d.querySelectorAll('[data-reveal]'));
   if ('IntersectionObserver' in window && !reduce) {
