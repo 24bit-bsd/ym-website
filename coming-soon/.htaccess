@@ -1,0 +1,32 @@
+# Wartungsseite: alle Adressen liefern Status 503 (Suchmaschinen behalten den Index) mit dieser Seite.
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 503 /index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^momente\.yoga$ [NC]
+RewriteRule ^ https://www.momente.yoga%{REQUEST_URI} [L,R=301,NE]
+# Alles außer der Seite selbst und ihren Dateien -> 503
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/(favicon\.svg|robots\.txt)$
+RewriteRule ^ - [R=503,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set Retry-After "86400" "expr=%{REQUEST_STATUS} == 503"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Strict-Transport-Security "max-age=31536000"
+Header always set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'none'; object-src 'none'"
+</IfModule>
+
+<FilesMatch "^\.">
+Require all denied
+</FilesMatch>

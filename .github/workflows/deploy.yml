@@ -20,6 +20,10 @@ on:
         type: choice
         options: [staging, production]
         default: staging
+      coming_soon:
+        description: "Nur die Wartungsseite aus coming-soon/ ausliefern (statt der Website)"
+        type: boolean
+        default: false
 
 # Es läuft immer nur ein Deploy gleichzeitig
 concurrency:
@@ -45,6 +49,7 @@ jobs:
       DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
       # Zielordner und Protokoll sind keine Geheimnisse: als Environment-Variablen, damit sie im Log sichtbar und prüfbar sind.
       # Achtung: Manche Hoster (z. B. IONOS) zeigen dem FTP-Benutzer einen Unterordner bereits als Wurzel (/). Pfad dann ab dieser Wurzel angeben.
+      COMING_SOON: ${{ (github.event_name == 'workflow_dispatch' && inputs.coming_soon && 'true') || 'false' }}
       DEPLOY_REMOTE_DIR: ${{ vars.DEPLOY_REMOTE_DIR }}
       DEPLOY_PROTOCOL: ${{ vars.DEPLOY_PROTOCOL }}
     steps:
@@ -55,9 +60,17 @@ jobs:
           python-version: "3.12"
 
       - name: Inhalte prüfen (Glossar, Sprachen-Struktur, Links)
+        if: ${{ env.COMING_SOON != 'true' }}
         run: python3 check.py
 
+      - name: Wartungsseite bereitstellen
+        if: ${{ env.COMING_SOON == 'true' }}
+        run: |
+          rm -rf dist && cp -R coming-soon dist
+          test -f dist/index.html && test -f dist/.htaccess
+
       - name: Bauen (${{ env.TARGET }})
+        if: ${{ env.COMING_SOON != 'true' }}
         run: |
           if [ "$TARGET" = "production" ]; then python3 build.py; else python3 build.py --noindex; fi
           test -f dist/index.html
@@ -107,9 +120,11 @@ jobs:
             URL=$(python3 -c "import json;print(json.load(open('content/config.json'))['staging_url'])")
           fi
           V=$(grep -o 'style.css?v=[0-9a-f]*' dist/index.html | head -1)
+          # Wartungsseite liefert Status 503 mit der Seite im Body: curl ohne --fail, Inhalt prüfen
+          FAILFLAG="--fail"; if [ "$COMING_SOON" = "true" ]; then FAILFLAG=""; fi
           echo "Erwartete Version im ausgelieferten HTML: $V  (Adresse: $URL)"
           for i in 1 2 3 4 5 6; do
-            if curl --fail --silent --show-error --max-time 20 "$URL/?check=$i" | grep -q "$V"; then
+            if curl $FAILFLAG --silent --show-error --max-time 20 "$URL/?check=$i" | grep -q "$V"; then
               echo "OK: $TARGET liefert den neuen Stand aus."; exit 0
             fi
             echo "Noch nicht ausgeliefert (Versuch $i) ..."; sleep 8

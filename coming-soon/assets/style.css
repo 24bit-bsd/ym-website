@@ -1,0 +1,22 @@
+@font-face{font-family:"Playfair Display";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/playfair-display-700-latin.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/playfair-display-500i-latin.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:400 600;font-display:swap;src:url(fonts/montserrat-latin.woff2) format("woff2")}
+:root{--petrol-dk:#26505e;--petrol:#3c6a79;--cream:#f7f0e2;--gold:#d4af37;--gold-soft:#e8c75a;--display:"Playfair Display",Georgia,serif;--body:"Montserrat",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{background:var(--petrol-dk)}
+body{margin:0;min-height:100vh;font:400 17px/1.65 var(--body);color:var(--cream);background:var(--petrol-dk)}
+.cs{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:32px;text-align:center;padding:40px max(20px,env(safe-area-inset-right)) 28px max(20px,env(safe-area-inset-left));background:linear-gradient(rgba(22,52,62,.62),rgba(22,52,62,.88)),url(img/hero-yogaraum.jpg) center/cover no-repeat}
+.cs-logo{width:min(300px,70vw);height:auto}
+.cs-body{max-width:36rem}
+.cs-kicker{font:italic 500 1.35rem/1.2 var(--display);color:var(--gold-soft);margin:0 0 12px}
+h1{font:700 clamp(2rem,6vw,3.2rem)/1.15 var(--display);margin:0 0 20px;text-wrap:balance}
+.cs-lead{margin:0 0 14px;color:#eef0ea}
+.cs-en{font-size:.9rem;color:#c9d6d9}
+.cs-contact{margin-top:32px;padding-top:28px;border-top:1px solid rgba(247,240,226,.25);display:grid;gap:14px;justify-items:center}
+.cs-contact p{margin:0}
+.cs-btn{display:inline-block;padding:15px 32px;border-radius:999px;background:linear-gradient(135deg,var(--gold-soft),var(--gold));color:var(--petrol-dk);font-weight:600;font-size:1rem;letter-spacing:.04em;text-decoration:none;overflow-wrap:anywhere}
+.cs-btn:hover{filter:brightness(1.06)}
+.cs-btn:focus-visible,.cs-phone a:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.cs-phone{font-size:.95rem}
+.cs-phone a{color:var(--cream);text-underline-offset:3px}
+.cs-foot{font-size:.8rem;letter-spacing:.06em;color:#b8c8cc}
