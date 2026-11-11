@@ -12,7 +12,7 @@ RewriteCond %{HTTP_HOST} ^momente\.yoga$ [NC]
 RewriteRule ^ https://www.momente.yoga%{REQUEST_URI} [L,R=301,NE]
 # Alles außer der Seite selbst und ihren Dateien -> 503
 RewriteCond %{REQUEST_URI} !^/$
-RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteCond %{REQUEST_URI} !^/(index|impressum)\.html$
 RewriteCond %{REQUEST_URI} !^/assets/
 RewriteCond %{REQUEST_URI} !^/(favicon\.svg|robots\.txt)$
 RewriteRule ^ - [R=503,L]

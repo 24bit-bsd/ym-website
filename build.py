@@ -896,7 +896,7 @@ def r_contact(ctx, sec):
     m = cfg["mail"]
     tiles = tile(f["mail"], esc(m["user"]) + "[at]" + esc(m["domain"]), "#", f' data-mu="{esc(m["user"])}" data-md="{esc(m["domain"])}"')
     tiles += tile(f["phone"], esc(cfg["phone"]), f"tel:{tel}")
-    tiles += tile(f["location"], f'{esc(cfg["street"])},<br>{esc(cfg["zip"])} {esc(cfg["city"])}', cfg.get("map_url") or None, ext=True)
+    tiles += tile(f["location"], f'{esc(cfg["street"])},<br>D-{esc(cfg["zip"])} {esc(cfg["city"])}', cfg.get("map_url") or None, ext=True)
     if cfg.get("booking_url"):
         tiles += tile(f["booking"], esc(f["bookingLink"]), cfg["booking_url"], ext=True)
     mp = ""
@@ -1180,7 +1180,7 @@ def footer(ctx):
     <div class="sf-cols">
       <nav class="sf-col" aria-label="{esc(ft['areasTitle'])}"><h2 class="sf-h">{esc(ft['areasTitle'])}</h2><ul>{areas}</ul></nav>
       <div class="sf-col"><h2 class="sf-h">{T(ft['contactTitle'])}</h2>
-        <address class="sf-addr">{esc(cfg["street"])}<br>{esc(cfg["zip"])} {esc(cfg["city"])}<br><a href="tel:{tel}">{esc(cfg["phone"])}</a><br>{mailto}</address></div>
+        <address class="sf-addr">{esc(cfg["street"])}<br>D-{esc(cfg["zip"])} {esc(cfg["city"])}<br><a href="tel:{tel}">{esc(cfg["phone"])}</a><br>{mailto}</address></div>
       <div class="sf-col"><h2 class="sf-h">{T(ft.get('socialTitle', ''))}</h2><ul>{legal}</ul></div>
     </div>
     <div class="sf-bottom"><p>{copyright_}</p>{lang_switch(ctx, "lang lang--foot")}</div>
@@ -1449,7 +1449,7 @@ def llms_txt(site):
         for p in posts:
             out.append(f"- [{plain(article_of(p).get('title', p['title']))}]({site.abs_url(lang, p['id'])}): {p.get('description', '')}")
         out.append("")
-    facts = [f"- Firma / company: {cfg.get('company', '')}, {cfg.get('street', '')}, {cfg.get('zip', '')} {cfg.get('city', '')}"]
+    facts = [f"- Firma / company: {cfg.get('company', '')}, {cfg.get('street', '')}, D-{cfg.get('zip', '')} {cfg.get('city', '')}"]
     if cfg.get("phone"):
         facts.append(f"- Telefon / phone: {cfg['phone']}")
     facts.append(f"- Kontakt / contact: {site.abs_url(site.default, 'contact')}")
