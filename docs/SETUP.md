@@ -2,7 +2,7 @@
 
 Checkliste für dieses Kundenprojekt. Claude liest sie zu Beginn jeder Sitzung und hakt ab (Skill `kundenwebsite-mit-claude-code`). Passwörter und Schlüssel gehören **nie** in diese Datei.
 
-**Kunde:** Yoga Momente (Susanne Müller) / Momente Macher GbR  **Domain:** www.momente.yoga  **Staging:** website.momente.yoga  **Hoster:** IONOS  **Verantwortlich für Live-Gänge:** …
+**Kunde:** Yoga Momente (Susanne Müller)  **Domain:** www.momente.yoga  **Staging:** website.momente.yoga  **Hoster:** IONOS  **Verantwortlich für Live-Gänge:** …
 
 ## 0. Weiche
 - [x] Nachbau einer bestehenden Seite (`docs/NACHBAU.md`)
