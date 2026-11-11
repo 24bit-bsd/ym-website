@@ -14,7 +14,7 @@ RewriteRule ^ https://www.momente.yoga%{REQUEST_URI} [L,R=301,NE]
 RewriteCond %{REQUEST_URI} !^/$
 RewriteCond %{REQUEST_URI} !^/(index|impressum)\.html$
 RewriteCond %{REQUEST_URI} !^/assets/
-RewriteCond %{REQUEST_URI} !^/(favicon\.svg|robots\.txt)$
+RewriteCond %{REQUEST_URI} !^/(favicon\.svg|favicon\.ico|robots\.txt)$
 RewriteRule ^ - [R=503,L]
 </IfModule>
 
