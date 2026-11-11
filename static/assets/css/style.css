@@ -1160,8 +1160,29 @@ body.no-scroll { overflow: hidden; }
   .wk-slot { text-align: left; padding: 14px 12px 12px; }
   .wk-empty { text-align: center; padding-top: 24px; }
   .wk-day:not(.wk-day--busy) { background: transparent; border-style: dashed; }
+  .wk-day { grid-template-rows: auto 1fr; align-content: start; }
+  .wk-body { display: block; }
+  .wk-body .wk-slot { margin-top: var(--off, 0); }
+  .wk-body .wk-slot + .wk-slot { margin-top: var(--off, 12px); }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .wk-day--busy .wk-slot { opacity: 1; transform: none; }
   .wk-day.is-today .wk-head::after { animation: none; }
 }
+
+#plan .sec-head .lead { max-width: none; }
+#plan .sec-head { max-width: none; }
+
+/* --- Über mich: Personenbild groß, Rolle zeilenweise, Signatur --------------------- */
+@font-face{font-family:"Mrs Saint Delafield";font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/mrs-saint-delafield-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122}
+.sig { display: block; font-family: "Mrs Saint Delafield", "Brush Script MT", cursive; font-weight: 400; font-size: clamp(3.8rem, 9vw, 5.6rem); line-height: .9; color: var(--petrol); margin-top: 4px; transform: rotate(-3deg); transform-origin: left center; }
+.section--about .team-tile { padding: 0; background: transparent; box-shadow: none; gap: 0; border-radius: 0; }
+.section--about .team-photo { aspect-ratio: 4 / 5; border-radius: 999px 999px 18px 18px; margin: 0 0 18px; box-shadow: 0 22px 44px -24px rgba(38, 80, 94, .55); }
+.section--about .team-photo img { object-position: 50% 30%; }
+.section--about .team-name { font-size: 1.5rem; color: var(--petrol); text-align: center; }
+.section--about .team-role { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--petrol-cd); text-align: center; line-height: 1.7; margin-top: 4px; }
+@media (min-width: 861px) { .section--about .about-panel { grid-template-columns: minmax(0, 1fr) 460px; } }
+.section--about .team { grid-template-columns: minmax(0, 1fr); }
+.section--about .team li { max-width: 440px; margin-inline: auto; width: 100%; }
+@media (min-width: 861px) { .section--about .about-panel { grid-template-columns: minmax(0, 1fr) 440px; } }
+@media (max-width: 860px) { .section--about .team li { max-width: 340px; } }

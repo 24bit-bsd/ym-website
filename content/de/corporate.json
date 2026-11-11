@@ -69,18 +69,15 @@
       "items": [
         {
           "title": "Anfrage",
-          "text": "Sie rufen an oder schreiben mir eine E-Mail.",
-          "meta": "1"
+          "text": "Sie rufen an oder schreiben mir eine E-Mail."
         },
         {
           "title": "Gemeinsame Planung",
-          "text": "Wir klären, ob live oder online, wie lange und mit welchem Schwerpunkt.",
-          "meta": "2"
+          "text": "Wir klären, ob live oder online, wie lange und mit welchem Schwerpunkt."
         },
         {
           "title": "Ihr Angebot",
-          "text": "Sie erhalten ein Angebot für die passende Einheit.",
-          "meta": "3"
+          "text": "Sie erhalten ein Angebot für die passende Einheit."
         }
       ]
     },

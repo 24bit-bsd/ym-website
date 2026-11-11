@@ -69,18 +69,15 @@
       "items": [
         {
           "title": "Inquiry",
-          "text": "You call or write me an email.",
-          "meta": "1"
+          "text": "You call or write me an email."
         },
         {
           "title": "Planning together",
-          "text": "We clarify whether live or online, how long and with what focus.",
-          "meta": "2"
+          "text": "We clarify whether live or online, how long and with what focus."
         },
         {
           "title": "Your offer",
-          "text": "You receive an offer for the right session.",
-          "meta": "3"
+          "text": "You receive an offer for the right session."
         }
       ]
     },

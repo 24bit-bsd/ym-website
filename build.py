@@ -98,6 +98,7 @@ def rich(s):
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s, flags=re.S)
     s = re.sub(r"\[\[(.+?)\]\]", r'<span class="hl">\1<i class="hl-box" aria-hidden="true"></i></span>', s, flags=re.S)
     s = re.sub(r"\{\{(.+?)\}\}", r'<span class="grad-text">\1</span>', s, flags=re.S)
+    s = re.sub(r"~~(.+?)~~", r'<span class="sig">\1</span>', s, flags=re.S)
     s = s.replace("{year}", f'<span data-year>{datetime.date.today().year}</span>')
     return mark(s.replace("\n", "<br>"), orig)
 
@@ -522,7 +523,7 @@ def r_about(ctx, sec):
     for i, p in enumerate(sec.get("team", [])):
         inner = (
             f'<span class="team-photo">{team_photo(ctx, p)}</span>'
-            f'<span class="team-name">{T(p["name"])}</span><span class="team-role">{T(p["role"])}</span>'
+            f'<span class="team-name">{T(p["name"])}</span><span class="team-role">{rich(p["role"])}</span>'
         )
         if use_modal and p.get("profile"):
             tiles += (
@@ -541,7 +542,8 @@ def r_about(ctx, sec):
     head_html = (
         '<header class="sec-head sec-head--center" data-reveal>'
         f'<h2 class="h2">{rich(sec.get("eyebrow", ""))}</h2>'
-        f'<p class="lead">{rich(sec["title"])}</p></header>'
+        + (f'<p class="lead">{rich(sec["title"])}</p>' if sec.get("title") else "")
+        + "</header>"
     )
     panel = f'<div class="about-panel"><div class="about-text" data-reveal>{lead}{bullets}</div>{team}</div>'
     return wrap(sec, head_html + panel + f'<div class="bar-links" data-reveal>{ctas}</div>' + dialogs, "section--about")
@@ -960,17 +962,29 @@ def r_notfound(ctx, sec):
 def r_week(ctx, sec):
     """Wochenplan: 7 Spalten (Mo–So); mobil untereinander. Slots: {day: 0=Mo..6=So, time, title, tags[], place, text, href, cta}."""
     days, short = sec["days"], sec.get("short", sec["days"])
+    def hrs(t):
+        m = re.findall(r"(\d{1,2}):(\d{2})", str(t))
+        return [int(h) + int(mi) / 60 for h, mi in m]
+
+    t0 = min((hrs(x["time"])[0] for x in sec["slots"] if hrs(x["time"])), default=0)
+    PX = sec.get("pxPerHour", 20)  # Desktop: Einträge stehen ungefähr in der Höhe ihrer Tageszeit
     cols = ""
     for d in range(7):
         slots = ""
-        for k, sl in enumerate([x for x in sec["slots"] if x["day"] == d]):
+        prev_end = None
+        for k, sl in enumerate(sorted([x for x in sec["slots"] if x["day"] == d], key=lambda x: (hrs(x["time"]) or [0])[0])):
+            hh = hrs(sl["time"])
+            off = 0
+            if hh:
+                off = round(((hh[0] - t0) if prev_end is None else max(0.3, hh[0] - prev_end)) * PX)
+                prev_end = hh[1] if len(hh) > 1 else hh[0] + 1
             tags = "".join(f'<li class="wk-tag wk-tag--{esc(tg.get("kind", "x"))}">{T(tg["label"])}</li>' for tg in sl.get("tags", []))
             place = f'<p class="wk-place">{icon("pin", "i")}{T(sl["place"])}</p>' if sl.get("place") else ""
             text = f'<p class="wk-text">{T(sl["text"])}</p>' if sl.get("text") else ""
             cta = ""
             if sl.get("href"):
                 cta = f'<a class="wk-cta" {ctx.link_attrs(sl["href"])}>{T(sl.get("cta", ctx.t["ui"]["more"]))}{icon("chev", "i i-chev")}</a>'
-            slots += (f'<article class="wk-slot"><p class="wk-time">{T(sl["time"])}</p><h3 class="wk-title">{T(sl["title"])}</h3>'
+            slots += (f'<article class="wk-slot" style="--off:{off}px"><p class="wk-time">{T(sl["time"])}</p><h3 class="wk-title">{T(sl["title"])}</h3>'
                       f'<ul class="wk-tags">{tags}</ul>{place}{text}{cta}</article>')
         empty = "" if slots else f'<p class="wk-empty" aria-label="{esc(sec.get("emptyLabel", ""))}">–</p>'
         busy = " wk-day--busy" if slots else ""

@@ -13,7 +13,7 @@
       "type": "week",
       "id": "plan",
       "title": "Your weekly timetable.",
-      "lead": "Both classes are drop-in: you decide from week to week whether you join.",
+      "lead": "Yoga in Coburg and online: pick the time that fits your week.",
       "days": [
         "Monday",
         "Tuesday",
@@ -47,7 +47,7 @@
               "kind": "online"
             }
           ],
-          "place": "Tanztraum, Dieselstraße 14, D-96450 Coburg",
+          "place": "Tanztraum, Dieselstr. 14, Coburg",
           "text": "Drop-in",
           "href": "page:contact",
           "cta": "Join in"
@@ -66,8 +66,7 @@
           "href": "page:contact",
           "cta": "Join in"
         }
-      ],
-      "note": "**By arrangement:** Hormone Yoga (as its own course or a single class) and Personal Yoga (one-to-one class). Write to us and we will find a time."
+      ]
     },
     {
       "type": "text",

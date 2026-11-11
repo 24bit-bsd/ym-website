@@ -1,61 +1,60 @@
 {
-  "id": "about",
-  "slug": "about-me",
-  "title": "About me | Susanne Müller, Yoga Momente Coburg",
-  "description": "Susanne Müller, yoga teacher in Coburg (SPANDA, 200 hours, Yoga Alliance): my path to yoga and what I offer at Yoga Momente.",
-  "sections": [
+ "id": "about",
+ "slug": "about-me",
+ "title": "About me | Susanne Müller, Yoga Momente Coburg",
+ "description": "Susanne Müller, yoga teacher in Coburg (SPANDA, 200 hours, Yoga Alliance): my path to yoga and what I offer at Yoga Momente.",
+ "sections": [
+  {
+   "type": "hero",
+   "image": "assets/img/studio.jpg",
+   "title": "My path to yoga",
+   "lead": "Ommmmm. Wonderful moments with myself, with room for strength, calm and joy in stillness and movement."
+  },
+  {
+   "type": "about",
+   "id": "susanne",
+   "eyebrow": "Susanne Müller",
+   "lead": "To me, yoga means having wonderful moments with myself, making room for strength, calm and joy in stillness and movement.",
+   "bullets": [],
+   "team": [
     {
-      "type": "hero",
-      "image": "assets/img/studio.jpg",
-      "title": "My path to yoga",
-      "lead": "Ommmmm. Wonderful moments with myself, with room for strength, calm and joy in stillness and movement."
-    },
-    {
-      "type": "about",
-      "id": "susanne",
-      "eyebrow": "Susanne Müller",
-      "title": "Yoga teacher, Yoga Momente",
-      "lead": "To me, yoga means having wonderful moments with myself, making room for strength, calm and joy in stillness and movement.",
-      "bullets": [],
-      "team": [
-        {
-          "name": "Susanne Müller",
-          "role": "Yoga teacher, Yoga Momente",
-          "image": "assets/img/susanne.jpg"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "id": "weg",
-      "paragraphs": [
-        "At first I thought yoga was only about relaxation and flexibility. As I dived deeper into the world of yoga, I realized it is so much more.\n\nAnyone who says “yoga is not for me” has probably just not found the right style yet. There are many styles of yoga, and they are very different.",
-        "For me, a yoga practice is never the same. As an athlete I was always very active and more yang-oriented. Depending on the time of day, my mood or my energy, I adapt my own practice: sometimes a sweaty workout, a relaxed stretch, or a yin yoga that calls for mental endurance and stimulates deep muscles and fascia, sometimes without breaking a sweat at all.",
-        "What I have noticed over the years: form follows function. As with all physical activity, the body adapts to what is asked of it and can be completely shaped by yoga. That is the beauty of a yoga class: I have moved my body in every direction and done it good. And not only the body! Many asanas also require mental stability, calm and focus. With your breath you bring your mind to rest, arrive at yourself, be in harmony with yourself and feel yourself."
-      ]
-    },
-    {
-      "type": "text",
-      "id": "ausbildung",
-      "title": "Training and studio",
-      "paragraphs": [
-        "After many years of my own practice I fulfilled a dream: the yoga teacher training at SPANDA – The Evolution of Being in Munich. In over 200 hours of training, led by an experienced team of experts, I experienced a broad spectrum of yoga classes, from dynamic and vinyasa-oriented to gentle and relaxation-focused, with yoga teachers from around the world. My teaching style is shaped by these varied impressions. The training carries the internationally recognized seal of the Yoga Alliance.",
-        "Over the years I have learned to find my own path to yoga and to love it. You have to discover for yourself which form is right and what does you good. I am happy to help you find what suits you.",
-        "In autumn 2019 I opened my own yoga studio in Coburg, where I now practice yoga every day with joy, for my participants and for myself.",
-        "Enjoy this exciting journey of discovery to yourself with your yoga moments.\n\nNamaste, Susanne Müller"
-      ]
-    },
-    {
-      "type": "cta",
-      "title": "Discover yoga",
-      "text": "Find your inner calm today. Start with a trial class.",
-      "buttons": [
-        {
-          "label": "Request a trial class",
-          "href": "page:contact",
-          "style": "primary"
-        }
-      ]
+     "name": "Susanne Müller",
+     "role": "Yoga teacher\nYoga Momente",
+     "image": "assets/img/susanne.jpg"
     }
-  ]
+   ]
+  },
+  {
+   "type": "text",
+   "id": "weg",
+   "paragraphs": [
+    "At first I thought yoga was only about relaxation and flexibility. As I dived deeper into the world of yoga, I realized it is so much more.\n\nAnyone who says “yoga is not for me” has probably just not found the right style yet. There are many styles of yoga, and they are very different.",
+    "For me, a yoga practice is never the same. As an athlete I was always very active and more yang-oriented. Depending on the time of day, my mood or my energy, I adapt my own practice: sometimes a sweaty workout, a relaxed stretch, or a yin yoga that calls for mental endurance and stimulates deep muscles and fascia, sometimes without breaking a sweat at all.",
+    "What I have noticed over the years: form follows function. As with all physical activity, the body adapts to what is asked of it and can be completely shaped by yoga. That is the beauty of a yoga class: I have moved my body in every direction and done it good. And not only the body! Many asanas also require mental stability, calm and focus. With your breath you bring your mind to rest, arrive at yourself, be in harmony with yourself and feel yourself."
+   ]
+  },
+  {
+   "type": "text",
+   "id": "ausbildung",
+   "title": "Training and studio",
+   "paragraphs": [
+    "After many years of my own practice I fulfilled a dream: the yoga teacher training at SPANDA – The Evolution of Being in Munich. In over 200 hours of training, led by an experienced team of experts, I experienced a broad spectrum of yoga classes, from dynamic and vinyasa-oriented to gentle and relaxation-focused, with yoga teachers from around the world. My teaching style is shaped by these varied impressions. The training carries the internationally recognized seal of the Yoga Alliance.",
+    "Over the years I have learned to find my own path to yoga and to love it. You have to discover for yourself which form is right and what does you good. I am happy to help you find what suits you.",
+    "In autumn 2019 I opened my own yoga studio in Coburg, where I now practice yoga every day with joy, for my participants and for myself.",
+    "Enjoy this exciting journey of discovery to yourself with your yoga moments.\n\nNamaste,\n~~Susanne~~"
+   ]
+  },
+  {
+   "type": "cta",
+   "title": "Discover yoga",
+   "text": "Find your inner calm today. Start with a trial class.",
+   "buttons": [
+    {
+     "label": "Request a trial class",
+     "href": "page:contact",
+     "style": "primary"
+    }
+   ]
+  }
+ ]
 }

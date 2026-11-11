@@ -13,7 +13,7 @@
       "type": "week",
       "id": "plan",
       "title": "Dein Wochenplan.",
-      "lead": "Beide Stunden sind Drop-in: Du entscheidest von Woche zu Woche, ob du dabei bist.",
+      "lead": "Yoga in Coburg und online: Such dir den Termin, der in deine Woche passt.",
       "days": [
         "Montag",
         "Dienstag",
@@ -47,7 +47,7 @@
               "kind": "online"
             }
           ],
-          "place": "Tanztraum, Dieselstraße 14, D-96450 Coburg",
+          "place": "Tanztraum, Dieselstr. 14, Coburg",
           "text": "Drop-in",
           "href": "page:contact",
           "cta": "Dabei sein"
@@ -66,8 +66,7 @@
           "href": "page:contact",
           "cta": "Dabei sein"
         }
-      ],
-      "note": "**Nach Vereinbarung:** Hormon Yoga (als eigener Kurs oder Einzelstunde) und Personal Yoga (Einzelstunde). Schreib uns, wir finden einen Termin."
+      ]
     },
     {
       "type": "text",
