@@ -1,0 +1,73 @@
+{
+  "id": "hatha-yoga",
+  "slug": "yoga-kurse-coburg/hatha-yoga",
+  "title": "Hatha Yoga in Coburg | Yoga Momente",
+  "description": "Hatha Yoga in Coburg: abwechslungsreiche Stunden mit allen grundlegenden Asanas für Beweglichkeit, Kraft und Ausdauer, mit Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hatha Yoga",
+      "lead": "Abwechslungsreich üben und Beweglichkeit, Kraft und Ausdauer aufbauen.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "Worum es geht",
+      "title": "Hatha Yoga: was dich erwartet.",
+      "paragraphs": [
+        "Abwechslungsreiche Stunden mit allen grundlegenden Asanas des Hatha Yoga, orientiert an den Bedürfnissen der Teilnehmenden. Du steigerst deine Beweglichkeit und Dehnbarkeit, auch Kraft und Ausdauer nehmen zu."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Auf einen Blick.",
+      "items": [
+        {
+          "title": "Umfang",
+          "text": "10 Stunden à 60 oder 90 Minuten."
+        },
+        {
+          "title": "Wann und wo",
+          "text": "Aktuelle Termine findest du im Stundenplan. Alle Stunden sind auch online buchbar."
+        },
+        {
+          "title": "Preis",
+          "text": "Ab 135 € pro Person (10 × 60 Min., ab 5 Teilnehmenden). Bei 3–4 Teilnehmenden 150 €. 10 × 90 Min.: 225 € bzw. 200 € ab 5 Teilnehmenden."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Preise und YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

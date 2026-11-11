@@ -1,0 +1,169 @@
+{
+  "id": "retreat-rottal",
+  "slug": "events/yoga-retreat-rottal",
+  "title": "Yoga-Retreat im Rottal, 13.–15. November 2026 | Yoga Momente",
+  "description": "Yoga-Retreat im Neue Welt Haus im Rottal vom 13. bis 15. November 2026: Yoga, Meditation und Achtsamkeit mit Susanne Müller, max. 10 Teilnehmende.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/rottal-haus.jpg",
+      "title": "Yoga-Retreat im Rottal",
+      "lead": "13.–15. November 2026 im Neue Welt Haus. Eine Auszeit nur für dich, in einer Gruppe von maximal 10 Teilnehmenden.",
+      "buttons": [
+        {
+          "label": "Zur Anmeldung",
+          "href": "https://pci.jotform.com/form/253464945152057",
+          "style": "primary",
+          "embed": true,
+          "embedTitle": "Anmeldung Yoga-Retreat im Rottal"
+        },
+        {
+          "label": "Alle Infos",
+          "href": "#infos",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "retreat",
+      "eyebrow": "Yoga & Achtsamkeit",
+      "title": "Genießen, dich spüren, Glücksmomente erleben.",
+      "paragraphs": [
+        "Gönn dir eine Auszeit, Zeit nur für dich selbst. In diesem Jahr entführe ich dich für mein Yoga-Retreat in ein besonderes Haus: Wir sind im Rottal im Neue Welt Haus ganz unter uns, mit maximal 10 Teilnehmenden. Hier tankst du an diesem Wochenende Energie und verbindest dich mit Gleichgesinnten, die sich ein Wochenende nur für sich gönnen wollen.",
+        "Beginne deinen Tag mit einer Morgenroutine aus Meditation, Yoga und Atmung. Du genießt abwechslungsreiche Yogaeinheiten und Erlebnisse für alle Sinne, verbunden mit Achtsamkeit und dem Wohlfühlambiente des Hauses. Neben den Yogaeinheiten und dem Austausch werden wir von Rainer und Adrian mit ihrer besonderen Küche verwöhnt. Wir haben Zeit, die Umgebung zu erkunden und Zeit für uns selbst, Dinge, die im Alltag oft zu kurz kommen."
+      ]
+    },
+    {
+      "type": "grid",
+      "variant": "cards",
+      "cols": 3,
+      "id": "infos",
+      "title": "Das erwartet dich.",
+      "items": [
+        {
+          "title": "3 Tage Yoga, Meditation und Atemübungen",
+          "text": "Morgenroutine, abwechslungsreiche Yogaeinheiten für Anfänger:innen und Fortgeschrittene."
+        },
+        {
+          "title": "Kleine Gruppe",
+          "text": "Für 6 bis 10 Teilnehmende, mit viel Raum für Austausch und Me-Time."
+        },
+        {
+          "title": "2 Übernachtungen mit Vollpension",
+          "text": "Achtsame, gesunde Ernährung, auch vegetarisch und vegan. Vor Ort zu bezahlen, nicht im Kursbeitrag enthalten."
+        },
+        {
+          "title": "Ätherische Öle",
+          "text": "Ölberatung und Ölmassage. Symphony of the Cells oder Aromatouch sind zusätzlich buchbar."
+        },
+        {
+          "title": "Balance",
+          "text": "Zwischen Entspannung und Aktivität, in einem familiengeführten Seminarhaus mit Tradition, Regionalität und Natur."
+        },
+        {
+          "title": "Yoga für alle",
+          "text": "Klassisches Hatha Yoga, Yin & Yang sowie eine reine Yin-Klasse."
+        }
+      ]
+    },
+    {
+      "type": "pricing",
+      "id": "platz",
+      "title": "Dein Platz im Rottal",
+      "items": [
+        {
+          "name": "Yoga-Retreat im Rottal",
+          "subtitle": "13.–15. November 2026",
+          "price": "295 €",
+          "period": "pro Person",
+          "featured": true,
+          "badge": "Max. 10 Plätze",
+          "features": [
+            "Anreise ab 17:00 Uhr, Abreise ca. 13:30 Uhr",
+            "Neue Welt Haus im Rottal",
+            "Maximal 10 Teilnehmende",
+            "Übernachtung und Verpflegung vor Ort zu zahlen"
+          ],
+          "cta": {
+            "label": "Jetzt anmelden",
+            "href": "https://pci.jotform.com/form/253464945152057",
+            "style": "primary",
+            "embed": true,
+            "embedTitle": "Anmeldung Yoga-Retreat im Rottal"
+          }
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "id": "trainerin",
+      "eyebrow": "Deine Trainerin",
+      "title": "Ich freue mich, dich kennenzulernen!",
+      "lead": "Die Liebe zum Yoga begleitet mich seit vielen Jahren. Ich liebe es, die unendliche Vielfalt zu entdecken. Jeder lebt Yoga auf seine eigene Art und doch steht es immer für eine Verbindung zu sich selbst und zum eigenen Herzen.",
+      "bullets": [
+        "Ein ganzheitlicher Ansatz: Eine Stunde soll Körper, Geist und Seele in gleichem Maße berühren.",
+        "Yoga spielerisch verbunden mit moderner Spiritualität.",
+        "Wechselspiel aus dynamisch fließenden und achtsam ruhigen Momenten.",
+        "Für Yoga-Neulinge und Fortgeschrittene."
+      ],
+      "team": [
+        {
+          "name": "Susanne Müller",
+          "role": "Yogalehrerin, Yoga Momente",
+          "image": "assets/img/susanne.jpg"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "unterkunft",
+      "title": "Die Unterkunft: Zeit für Ruhe, Bewegung und neue Energie",
+      "paragraphs": [
+        "Eingebettet in die sanfte Hügellandschaft des Rottals liegt das Seminarhaus Neue Welt Haus, ein Ort der Stille, Achtsamkeit und Inspiration. Hier entsteht der Rahmen für ein Yoga-Retreat, das Körper, Geist und Seele in Einklang bringt. Umgeben von Natur und fernab vom Alltagsstress lädt das Haus dazu ein, tief durchzuatmen und ganz bei dir anzukommen.",
+        "Helle Seminarräume, eine ruhige Atmosphäre und die Nähe zur Natur schaffen ideale Bedingungen für Yoga, Meditation und Entspannung."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": "Wichtige Infos",
+      "items": [
+        {
+          "q": "Wie viele Plätze gibt es, und gibt es eine Warteliste?",
+          "a": "Da wir individuell auf die Teilnehmenden eingehen, ist die Platzzahl auf 10 Personen beschränkt. Ist das Yoga-Wochenende ausgebucht, setzen wir dich gern auf eine Warteliste. Sobald ein Platz frei wird, melden wir uns bei dir."
+        },
+        {
+          "q": "Was ist im Preis enthalten, was zahle ich vor Ort?",
+          "a": "Der Kurspreis beträgt 295 € pro Person. Essen, Getränke und Kurtaxe sind direkt vor Ort zu bezahlen. Die Anreise und Hotelkosten sind nicht im Preis enthalten."
+        },
+        {
+          "q": "Wie komme ich hin?",
+          "a": "Die Anreise erfolgt individuell. Mit dem eigenen PKW sind es von München bis ins Rottal etwa 160 km."
+        },
+        {
+          "q": "Was soll ich mitbringen?",
+          "a": "Yogamatte, Decke, Gurt, Tennisball, Schreibunterlagen, Schere und wetterfeste Kleidung, dazu alles, was du für dein Wohlbefinden und deine persönlichen Bedürfnisse brauchst. Die finale Agenda erhältst du mit deiner Anmeldung."
+        },
+        {
+          "q": "Welche Stornobedingungen gelten?",
+          "a": "Die Anmeldung ist verbindlich. Da die Teilnehmerzahl begrenzt ist, ist dein Platz erst nach Zahlungseingang gesichert. Bereits gezahlte Kursbeiträge können bei Nichterscheinen nicht erstattet werden.\n\nEine Stornierung muss bis 30.09.2026 vor Reiseantritt schriftlich erfolgen, dann wird der Kursbeitrag abzüglich einer Bearbeitungsgebühr von 10 % erstattet. Ein:e Ersatzteilnehmer:in kann benannt werden. Bei späteren Stornierungen ist die komplette Teilnahmegebühr zuzüglich Übernachtung zu zahlen. Auch bei Krankheit oder vorzeitigem Abbruch werden keine Kursbeiträge erstattet."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Sei dabei und gönn dir eine Auszeit!",
+      "text": "Fragen? Ruf an unter 0175 5643744 oder schreib an flow@momente.yoga.",
+      "buttons": [
+        {
+          "label": "Zur Anmeldung",
+          "href": "https://pci.jotform.com/form/253464945152057",
+          "style": "primary",
+          "embed": true,
+          "embedTitle": "Anmeldung Yoga-Retreat im Rottal"
+        }
+      ]
+    }
+  ]
+}

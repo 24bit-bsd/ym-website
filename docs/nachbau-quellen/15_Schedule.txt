@@ -1,0 +1,46 @@
+
+=== Sektion 1 (id 1574972696559, 1 Spalten) ===
+[title] Stundenplan
+[title] Move
+[IMG] images/2019/11/28/emma-matthews-digital-content-production-mg_ybbc0v50-unsplash.jpg
+
+=== Sektion 2 (id 1550829594229, 1 Spalten) ===
+[title] Deine Yoga Stunde bei Yoga Momente
+[text] Hier findest du den aktuellen Stundenplan von Yoga Momente in Coburg. 
+Du möchtest auch eine Yogastunde bei Susanne Müller buchen? Dann schreibe uns einfach eine E-Mail.
+[title] Move
+[title] Zeit für deine Stunde!
+[content] Es sind noch Zeiten verfügbar.
+Schreibt mir einfach!
+mit Susanne
+[button_text] Jetzt buchen
+[content] Findet ab 2-3 Teilnehmerinnen statt! 
+Aktuell als Online-Kurs.
+
+
+Eure Susanne
+[title] Hormon Yoga
+[content] Es sind noch Zeiten verfügbar.
+Schreibt mir einfach!
+
+mit Susanne
+[button_text] Plätze frei
+[title] Yoga.momente im Tanztraum
+[content] Location: 
+Tanztraum, Dieselstraße 14, 96450 Coburg
+
+Präsenz & Online-Kurs
+mit Susanne
+[title] Early Morning Yoga
+[content] Online Kurs
+
+mit Susanne
+[title] Personal Yoga
+[content] mit Susanne
+[title] Zeit für Deine Stunde!
+[content] Es sind noch Zeiten verfügbar.
+Schreibt mir einfach!
+
+Eure Susanne
+
+=== Sektion 3 (id 1574972696574, 1 Spalten) ===

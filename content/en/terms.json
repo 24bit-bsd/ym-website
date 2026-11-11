@@ -1,0 +1,89 @@
+{
+  "id": "terms",
+  "slug": "terms-and-conditions",
+  "title": "Terms and Conditions | Yoga Momente",
+  "description": "General terms and conditions of Yoga Momente: registration, participation fees, cancellation, liability and changes for classes and events.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "General terms and conditions",
+      "lead": "The most important rules for classes and events."
+    },
+    {
+      "type": "legal",
+      "blocks": [
+        {
+          "h": "1. Contracting parties",
+          "level": 3,
+          "p": [
+            "The contracting parties are Susanne Müller and the customer."
+          ]
+        },
+        {
+          "h": "2. Subject of the contract",
+          "level": 3,
+          "p": [
+            "The subject of the contract results from these General Terms and Conditions and from the provisions set out in the service descriptions and price lists."
+          ]
+        },
+        {
+          "h": "3. Registration / participation fees",
+          "level": 3,
+          "p": [
+            "Registrations must be made by email and become legally binding once payment has been received in the stated account. Registration is binding subject to the provision of § 8. At yoga momente, participation in a class during pregnancy is possible from the 15th week of pregnancy. The class leader must be informed of any existing pregnancy and existing illnesses before the class starts."
+          ]
+        },
+        {
+          "h": "4. Obligations of the customer",
+          "level": 3,
+          "p": [
+            "The customer must ensure prompt payment. If payment has not been received in the stated account within 14 days of booking, yoga momente reserves the right to invoice the costs incurred."
+          ]
+        },
+        {
+          "h": "5. Registration confirmation / invoice",
+          "level": 3,
+          "p": [
+            "After receipt of the registration, a registration confirmation is sent by email (flow@momente.yoga). Please check your spam folder."
+          ]
+        },
+        {
+          "h": "6. Cancellation",
+          "level": 3,
+          "p": [
+            "The participant can withdraw from the contract at any time. The declaration must be made in writing by post or email. The following cancellation fees apply (the receipt of the declaration by the organizer is decisive): up to 30 days before the start of the event 25% of the event price, up to 7 days before the start 50% of the event price, up to 1 day before the start 80% of the event price.",
+            "Cancellation is no longer possible on the day of the event. These provisions apply regardless of the reason for cancellation."
+          ]
+        },
+        {
+          "h": "7. Liability",
+          "level": 3,
+          "p": [
+            "The organizer's liability for property damage and financial loss, in particular for items brought by the participant such as clothing, valuables and money, is excluded in cases of slight negligence."
+          ]
+        },
+        {
+          "h": "8. Changes",
+          "level": 3,
+          "p": [
+            "Changes to the advertised dates, the program and schedule and the teachers remain reserved for good cause, in particular repair and maintenance work, illness, etc., insofar as this is reasonable for the participant taking the interests of the organizer into account. With fewer than 3 participants, the organizer reserves the right to cancel events without replacement. Participants will be informed in good time of any cancellations."
+          ]
+        },
+        {
+          "h": "9. Copyright",
+          "level": 3,
+          "p": [
+            "Participants are advised that the copyright of all publications lies with yoga momente and that any further use of any kind, in particular reproduction or passing on to third parties, requires the written permission of yoga momente. Any infringement will be penalized in each individual case with a contractual penalty of €4,000. Further claims for damages remain unaffected."
+          ]
+        },
+        {
+          "h": "10. Severability clause",
+          "level": 3,
+          "p": [
+            "If individual parts of the terms and conditions are invalid, the validity of the remaining parts is not affected. In this case, the parties recognize the valid provision that comes closest in substance to the intention of the invalid part."
+          ]
+        }
+      ]
+    }
+  ]
+}

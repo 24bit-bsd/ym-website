@@ -1,0 +1,61 @@
+{
+  "id": "schedule",
+  "slug": "schedule",
+  "title": "Timetable | Yoga Momente Coburg",
+  "description": "Current timetable of Yoga Momente in Coburg: hormone yoga, yoga at Tanztraum, early morning yoga and personal yoga with Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Timetable",
+      "lead": "The current timetable of Yoga Momente in Coburg."
+    },
+    {
+      "type": "grid",
+      "id": "plan",
+      "variant": "cards",
+      "cols": 2,
+      "items": [
+        {
+          "n": "Tuesday",
+          "title": "Hormone Yoga",
+          "text": "17:00–18:30\n\nTakes place from 2–3 participants. Currently as an online class.",
+          "href": "page:contact",
+          "cta": "Book now"
+        },
+        {
+          "n": "Thursday",
+          "title": "Yoga.momente at Tanztraum",
+          "text": "17:30–18:30\n\nIn person & online class\nTanztraum, Dieselstraße 14, 96450 Coburg",
+          "href": "page:contact",
+          "cta": "Book now"
+        },
+        {
+          "n": "Friday",
+          "title": "Early Morning Yoga",
+          "text": "06:30–07:30\n\nOnline class",
+          "href": "page:contact",
+          "cta": "Book now"
+        },
+        {
+          "n": "Friday",
+          "title": "Personal Yoga",
+          "text": "14:00–15:00\n\nIndividual class with Susanne",
+          "href": "page:contact",
+          "cta": "Book now"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Time for your class?",
+      "text": "On Monday, Wednesday, Saturday and Sunday there are still slots available for personal yoga and hormone yoga. Just write to us.",
+      "buttons": [
+        {
+          "label": "Request a class",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

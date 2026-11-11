@@ -1,0 +1,243 @@
+{
+  "locale": "de_DE",
+  "tagline": "Yoga für Körper, Atem und Herz.",
+  "nav": [
+    {
+      "label": "Yoga",
+      "href": "page:courses",
+      "mega": {
+        "label": "Untermenü öffnen",
+        "cols": [
+          {
+            "title": "Kurse",
+            "links": [
+              {
+                "label": "Alle Yoga-Kurse in Coburg",
+                "href": "page:courses",
+                "lead": true,
+                "sepAfter": true
+              },
+              {
+                "label": "Yin Yoga",
+                "href": "page:yin-yoga"
+              },
+              {
+                "label": "Hatha Yoga",
+                "href": "page:hatha-yoga"
+              },
+              {
+                "label": "Early Morning Yoga",
+                "href": "page:early-morning"
+              },
+              {
+                "label": "Hormon Yoga",
+                "href": "page:hormon-yoga"
+              },
+              {
+                "label": "Personal Yoga",
+                "href": "page:personal-yoga",
+                "sepAfter": true
+              },
+              {
+                "label": "Online-Yoga",
+                "href": "page:online",
+                "lead": true
+              }
+            ]
+          },
+          {
+            "title": "Loslegen",
+            "links": [
+              {
+                "label": "Probestunde",
+                "href": "page:prices#schnupperstunde"
+              },
+              {
+                "label": "Stundenplan",
+                "href": "page:schedule"
+              },
+              {
+                "label": "Preise und YogaCard",
+                "href": "page:prices"
+              }
+            ]
+          },
+          {
+            "title": "Wissen",
+            "links": [
+              {
+                "label": "Asanas",
+                "href": "page:poses"
+              }
+            ]
+          }
+        ],
+        "cta": {
+          "text": "Neu im Yoga? Starte mit einer Schnupperstunde.",
+          "label": "Probestunde anfragen",
+          "href": "page:contact"
+        }
+      }
+    },
+    {
+      "label": "Events",
+      "href": "page:events"
+    },
+    {
+      "label": "Für Firmen",
+      "href": "page:corporate"
+    },
+    {
+      "label": "Ölgeflüster",
+      "href": "page:oils"
+    },
+    {
+      "label": "Über mich",
+      "href": "page:about"
+    }
+  ],
+  "cta": {
+    "label": "Kontakt",
+    "href": "page:contact"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "menu": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "navLabel": "Hauptnavigation",
+    "langLabel": "Sprache",
+    "homeLabel": "Yoga Momente – zur Startseite",
+    "more": "Mehr erfahren",
+    "tools": "Tools",
+    "mock": {
+      "done": "Erledigt",
+      "active": "In Arbeit",
+      "todo": "Geplant"
+    },
+    "benefit": "Ihr Nutzen",
+    "toTop": "Nach oben",
+    "recommended": "Empfohlen",
+    "readMore": "Beitrag lesen",
+    "noPosts": "Noch keine Beiträge.",
+    "months": [
+      "Januar",
+      "Februar",
+      "März",
+      "April",
+      "Mai",
+      "Juni",
+      "Juli",
+      "August",
+      "September",
+      "Oktober",
+      "November",
+      "Dezember"
+    ],
+    "dateFormat": "{D}. {M} {Y}",
+    "slider": {
+      "label": "Referenz-Cases",
+      "prev": "Vorheriger Case",
+      "next": "Nächster Case"
+    },
+    "embed": {
+      "close": "Schließen",
+      "openNew": "Formular in neuem Tab öffnen"
+    }
+  },
+  "footer": {
+    "areasTitle": "Yoga Momente",
+    "contactTitle": "Kontakt",
+    "areas": [
+      {
+        "label": "Kurse",
+        "href": "page:courses"
+      },
+      {
+        "label": "Online-Yoga",
+        "href": "page:online"
+      },
+      {
+        "label": "Stundenplan",
+        "href": "page:schedule"
+      },
+      {
+        "label": "Preise",
+        "href": "page:prices"
+      },
+      {
+        "label": "Events",
+        "href": "page:events"
+      },
+      {
+        "label": "Für Firmen",
+        "href": "page:corporate"
+      },
+      {
+        "label": "Ölgeflüster",
+        "href": "page:oils"
+      },
+      {
+        "label": "Über mich",
+        "href": "page:about"
+      }
+    ],
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© {year} Yoga Momente (Momente Macher GbR). Alle Rechte vorbehalten.",
+    "socialTitle": "Rechtliches",
+    "terms": "AGB",
+    "ctaLabel": "Probestunde anfragen"
+  },
+  "form": {
+    "mail": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "country": "Deutschland",
+    "booking": "Erstgespräch",
+    "bookingLink": "Termin buchen",
+    "name": "Name",
+    "email": "E-Mail",
+    "company": "Kurs (optional)",
+    "phoneField": "Telefon",
+    "topic": "Worum geht es?",
+    "topics": [
+      {
+        "value": "probestunde",
+        "label": "Probestunde"
+      },
+      {
+        "value": "kurse",
+        "label": "Kurse und Stundenplan"
+      },
+      {
+        "value": "retreat",
+        "label": "Retreat im Rottal"
+      },
+      {
+        "value": "online",
+        "label": "Online-Yoga"
+      },
+      {
+        "value": "oele",
+        "label": "Ölgeflüster"
+      },
+      {
+        "value": "sonstiges",
+        "label": "Sonstiges"
+      }
+    ],
+    "message": "Deine Nachricht",
+    "consent": "Ich habe die {privacy} gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.",
+    "privacyLink": "Datenschutzerklärung",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet …",
+    "ok": "Danke! Deine Nachricht ist angekommen, ich melde mich zeitnah.",
+    "err": "Das hat leider nicht geklappt. Bitte versuche es erneut oder schreib mir direkt per E-Mail.",
+    "invalid": "Bitte fülle die Pflichtfelder aus und stimme der Datenverarbeitung zu.",
+    "previewMsg": "Vorschau-Modus: Das Formular wird hier nicht versendet.",
+    "title": "Sag hallo.",
+    "mapLabel": "Standort in Google Maps öffnen",
+    "slow": "Bitte versuchen Sie es in einem Moment noch einmal.",
+    "back": "Zurück zur Website"
+  }
+}

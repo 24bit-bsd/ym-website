@@ -1,0 +1,74 @@
+{
+  "id": "home",
+  "slug": "",
+  "title": "Yoga Momente – Yoga in Coburg, online and in the Rottal",
+  "description": "Yoga with Susanne Müller: classes in Coburg, online yoga and the yoga retreat in the Rottal valley, 13–15 November 2026.",
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "home",
+      "image": "assets/img/hero-yogaraum.jpg",
+      "title": "Yoga for moments in which you",
+      "subtitle": "{{truly arrive.}}",
+      "tagline": "Classes, online yoga and retreats with Susanne – for body, breath and a clear mind.",
+      "buttons": [
+        {
+          "label": "To the Rottal retreat",
+          "href": "page:retreat-rottal",
+          "style": "primary"
+        },
+        {
+          "label": "View timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "bereiche",
+      "variant": "tiles",
+      "title": "Your way to us.",
+      "lead": "Weekly in class, from home or as a break in the countryside: choose the setting that suits you right now.",
+      "items": [
+        {
+          "title": "Classes",
+          "text": "Yoga in class, with timetable and prices.",
+          "image": "assets/img/hero-yogaraum.jpg",
+          "href": "page:courses"
+        },
+        {
+          "title": "Online yoga",
+          "text": "Flexible, wherever and whenever you like.",
+          "href": "page:online",
+          "image": "assets/img/studio.jpg"
+        },
+        {
+          "title": "Events & retreats",
+          "text": "Workshops and getaways, currently in the Rottal valley.",
+          "image": "assets/img/rottal-haus.jpg",
+          "href": "page:events"
+        },
+        {
+          "title": "Oil whispers",
+          "text": "Care and scents from nature.",
+          "href": "page:oils",
+          "image": "assets/img/oele-hero.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "13–15 November 2026",
+      "title": "Yoga retreat in the Rottal valley",
+      "text": "A weekend to breathe in the Neue Welt Haus: yoga, stillness and time in nature. Maximum 10 participants, €295.",
+      "buttons": [
+        {
+          "label": "To the retreat",
+          "href": "page:retreat-rottal",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

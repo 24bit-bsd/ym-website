@@ -1,0 +1,73 @@
+{
+  "id": "hormon-yoga",
+  "slug": "yoga-kurse-coburg/hormon-yoga",
+  "title": "Hormon Yoga in Coburg | Yoga Momente",
+  "description": "Hormon Yoga in Coburg nach Dinah Rodrigues: für Wechseljahre, Schilddrüse, Zyklus und Vitalität. Kurs mit Susanne Müller, aktuell online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hormon Yoga",
+      "lead": "Vitalität für Frauen und Männer: Körper und Hormonsystem ins Gleichgewicht bringen.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "Worum es geht",
+      "title": "Hormon Yoga: was dich erwartet.",
+      "paragraphs": [
+        "Nach dem bewährten System von Dinah Rodrigues werden dynamische Körperübungen mit speziellen Atemtechniken und Visualisierungen kombiniert, die das Drüsensystem regulieren. Antistress- und Entspannungsübungen harmonisieren Körper und Geist. Zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Problemen, auch für jüngere Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Auf einen Blick.",
+      "items": [
+        {
+          "title": "Umfang",
+          "text": "5 Stunden à 90 Minuten."
+        },
+        {
+          "title": "Wann und wo",
+          "text": "Dienstags 17:00–18:30 Uhr, aktuell als Online-Kurs. Findet ab 2–3 Teilnehmerinnen statt."
+        },
+        {
+          "title": "Preis",
+          "text": "3 Teilnehmende: 200 €, 4 Teilnehmende: 150 € pro Person, inklusive Hormon-Booklet."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Preise und YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

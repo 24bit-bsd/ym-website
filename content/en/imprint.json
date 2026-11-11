@@ -1,0 +1,83 @@
+{
+  "id": "imprint",
+  "slug": "imprint",
+  "title": "Imprint | Yoga Momente",
+  "description": "Imprint of Yoga Momente, Susanne Müller, Breslauer Straße 21, 96450 Coburg, Germany: provider details and legal information.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Imprint",
+      "lead": "Details about the provider."
+    },
+    {
+      "type": "legal",
+      "table": [
+        [
+          "Provider:",
+          "Susanne Müller\nYoga Momente"
+        ],
+        [
+          "URL:",
+          "www.momente.yoga"
+        ],
+        [
+          "Address:",
+          "Breslauer Straße 21\nD-96450 Coburg, Germany"
+        ],
+        [
+          "Contact:",
+          "Phone: +49 (0)9561 29831\nMobile: +49 (0)175 56 43 744\nEmail: flow[at]momente.yoga"
+        ]
+      ],
+      "blocks": [
+        {
+          "p": [
+            "Courtesy translation. The German version is authoritative."
+          ]
+        },
+        {
+          "h": "Legal information",
+          "level": 2
+        },
+        {
+          "h": "Dispute resolution",
+          "level": 3,
+          "p": [
+            "We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board."
+          ]
+        },
+        {
+          "h": "Liability for content",
+          "level": 3,
+          "p": [
+            "As a service provider, we are responsible for our own content on these pages in accordance with general law. However, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate unlawful activity. Obligations to remove or block the use of information under general law remain unaffected. Liability in this respect is only possible from the point in time at which we become aware of a specific infringement. Upon becoming aware of such infringements, we will remove the content immediately.",
+            "The information on this website is provided “as is”, without implied warranties of any kind. The information provided on this website has been carefully checked and is updated regularly. However, no guarantee can be given that all information is complete, correct and up to date at all times. All information may be supplemented, removed or changed without prior notice.",
+            "Furthermore, it is not our responsibility to take precautions against destructive programs or program parts such as viruses, worms or Trojan horses that may be located on web servers reachable via links from our website. The operator is not liable for damage arising from any of its web pages or from unforeseeable events beyond its control, in particular network failures or computer outages."
+          ]
+        },
+        {
+          "h": "Liability for links",
+          "level": 3,
+          "p": [
+            "Our website contains links to external third-party websites over whose content we have no influence. We therefore cannot accept any liability for this external content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. No unlawful content was apparent at the time of linking. However, permanent monitoring of the content of linked pages is not reasonable without concrete indications of an infringement. Upon becoming aware of infringements, we will remove such links immediately."
+          ]
+        },
+        {
+          "h": "Copyright",
+          "level": 3,
+          "p": [
+            "The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use. Insofar as content on this page was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please let us know. Upon becoming aware of infringements, we will remove such content immediately."
+          ]
+        },
+        {
+          "h": "Applicable law",
+          "level": 3,
+          "p": [
+            "Only the law of the Federal Republic of Germany applies."
+          ]
+        }
+      ]
+    }
+  ],
+  "_readme": "ENTWURF: Rechtstexte vor dem Live-Gang auf den Kunden anpassen (Firmendaten, Hoster, Formular, eingesetzte Dienste) und rechtlich prüfen lassen."
+}

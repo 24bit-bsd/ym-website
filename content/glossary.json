@@ -1,0 +1,92 @@
+{
+  "_readme": "Glossar und Schreibregeln, wird bei jedem Build von check.py geprüft. Fehler (forbidden, Struktur, Menü-Schreibweise) brechen den Build ab, Hinweise (terms) nicht. Kundenspezifische Begriffe und verbotene Schreibweisen hier ergänzen.",
+  "terms": [
+    {
+      "de": "Impressum",
+      "en": "Imprint",
+      "enPattern": "imprint",
+      "note": "EN-Seite heißt „Imprint“ (nicht „Legal Notice“)."
+    }
+  ],
+  "en": {
+    "style": "American English",
+    "menuTitleCase": true,
+    "smallWords": [
+      "a",
+      "an",
+      "and",
+      "as",
+      "at",
+      "but",
+      "by",
+      "for",
+      "in",
+      "of",
+      "on",
+      "or",
+      "the",
+      "to",
+      "vs",
+      "via",
+      "with",
+      "per"
+    ],
+    "keepCase": [
+      "iPhone",
+      "iOS"
+    ],
+    "forbidden": [
+      {
+        "pattern": "\\w+isation\\w*",
+        "use": "-ization (American English)"
+      },
+      {
+        "pattern": "\\b(organis|optimis|prioritis|utilis|recognis|customis|personalis|standardis|minimis|maximis|realis|summaris|specialis|harmonis|modernis|authoris|finalis|centralis|synchronis|monetis|emphasis|visualis|categoris|mobilis|normalis|rationalis)(e|es|ed|ing)\\b",
+        "use": "-ize (American English)"
+      },
+      {
+        "pattern": "\\banalys(e|es|ed|ing)\\b",
+        "use": "analyze"
+      },
+      {
+        "pattern": "\\b(colour|behaviour|favour|labour|neighbour|honour)\\w*",
+        "use": "-or (American English)"
+      },
+      {
+        "pattern": "\\b(centre|centres|defence|licence|programme|programmes|judgement|catalogue|catalogues|artefact\\w*|cheque|grey)\\b",
+        "use": "American spelling (center, defense, license, program, judgment, catalog, artifact, check, gray)"
+      },
+      {
+        "pattern": "\\b(whilst|amongst)\\b",
+        "use": "while / among"
+      },
+      {
+        "pattern": "\\b(fulfil|fulfilment|enquiry|enquiries|enquire|enquired)\\b",
+        "use": "fulfill / fulfillment / inquiry / inquiries"
+      },
+      {
+        "pattern": "\\b(travelling|travelled|cancelled|cancelling|labelled|labelling|modelling|modelled)\\b",
+        "use": "single l (traveling, canceled, labeled, modeling)"
+      },
+      {
+        "pattern": "legal notice",
+        "use": "Imprint (Seite/Menüpunkt)"
+      }
+    ]
+  },
+  "de": {
+    "style": "Deutsch (Sie-Ansprache; geschlechtsneutral formulieren: Kundschaft, Mitarbeitende, Besuchende, Geschäftsleitung; Sternchen nur, wenn keine neutrale Form möglich ist)",
+    "forbidden": [
+      {
+        "pattern": "\\bDigitization\\b",
+        "use": "Digitalisierung"
+      }
+    ]
+  },
+  "structureExempt": [
+    "imprint.json",
+    "privacy.json",
+    "notfound.json"
+  ],
+  "_structureExempt": "Rechtstexte und die 404-Seite werden frei und getrennt formuliert – Struktur wird dort nicht verglichen."
+}

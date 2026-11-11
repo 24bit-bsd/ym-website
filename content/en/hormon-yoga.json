@@ -1,0 +1,73 @@
+{
+  "id": "hormon-yoga",
+  "slug": "yoga-classes-coburg/hormone-yoga",
+  "title": "Hormone Yoga in Coburg | Yoga Momente",
+  "description": "Hormone yoga in Coburg after Dinah Rodrigues: for menopause, thyroid, cycle and vitality. Class with Susanne Müller, currently online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hormone Yoga",
+      "lead": "Vitality for women and men: bring body and hormonal system into balance.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "What it is about",
+      "title": "Hormone Yoga: what to expect.",
+      "paragraphs": [
+        "Based on the proven system of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "At a glance.",
+      "items": [
+        {
+          "title": "Scope",
+          "text": "5 classes of 90 minutes."
+        },
+        {
+          "title": "When and where",
+          "text": "Tuesdays 17:00–18:30, currently as an online class. Takes place from 2–3 participants."
+        },
+        {
+          "title": "Price",
+          "text": "3 participants: €200, 4 participants: €150 per person, hormone booklet included."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Prices and YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

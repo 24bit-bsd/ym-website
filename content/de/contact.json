@@ -1,0 +1,18 @@
+{
+  "id": "contact",
+  "slug": "kontakt",
+  "title": "Kontakt | Yoga Momente Coburg",
+  "description": "Kontakt zu Yoga Momente in Coburg: Schreib mir, ruf an oder vereinbare deine Probestunde bei Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "Deine Yoga-Oase",
+      "lead": "Bei Fragen oder für deine Probestunde: Schreib mir, ruf an oder komm vorbei."
+    },
+    {
+      "type": "contact",
+      "id": "kontaktformular"
+    }
+  ]
+}

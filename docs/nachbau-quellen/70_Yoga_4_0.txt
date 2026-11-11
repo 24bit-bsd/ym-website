@@ -1,0 +1,45 @@
+
+=== Sektion 1 (id 1550660396260, 1 Spalten) ===
+[title] Virtuell 
+ Yoga 4.0 
+ in Coburg
+[title] Move
+[IMG] images/2020/04/07/whatsapp-image-2020-03-19-at-20.12.16__1024x768.jpg
+
+=== Sektion 2 (id 1550660396291, 2 Spalten) ===
+[title] Holt die Yoga-Matte raus und kommt in den virtuellen 
+ Online-Kurs ganz bequem von zuhause aus.
+[title] Move
+[title] Virtuell Yoga 4.0 Kurse
+[text] Warum nicht eine Yogastunde oder Meditation in unserer wunderschönen Natur genießen, wenn es das Wetter zulässt? Die passende Kleidung und den erforderlichen Sicherheitsabstand natürlich vorausgesetzt.
+
+Ich biete weiterhin ganz individuelle Yogakurse oder auch Entspannung mit Meditation oder YogaNidra über ein virtuelles Medium aus meinem Yoga Studio in Coburg an. Wenn Du die entsprechende Technik zu Hause hast d.h. einen PC mit Kamera, ein iPad oder Handy, dann können wir uns virtuell treffen. Du erhältst einen Zugang zu einer Plattform z.B. Zoom oder freeconfernce zum Yoga Kurs. Einfach einloggen, das Video richtig positionieren und los geht's. Gerne unterstütze ich Dich bei der Einrichtung der virtuellen Yogastunde über das Telefon. 
+
+Achte auf Deine Gesundheit, nehme Waldbäder und genieße die Natur, atme die Frische des Frühlings ein und vergiss nicht - Yoga findet nicht nur auf der Matte statt! Jedem Gedanken folgt eine körperliche Reaktion! 
+
+Und ... LIEBE stärkt das Immunsystem.
+[title] — Was Du für diesen Kurs brauchst
+[text] Einen ruhigen Rückzugsort
+Eine gute Internetverbindung
+Ein Laptop / iPad oder Smartphone
+Mind. 60 Min. Handy freie Zone
+Bequemer Untergrund & deine Yoga-Matte
+Eine Flasche Wasser
+Spaß an Yoga
+
+=== Sektion 3 (id 1578331862410, 1 Spalten) ===
+[title] — Melde Dich jetzt an und sichere Dir einen Platz!
+
+=== Sektion 4 (id 1578331862783, 2 Spalten) ===
+[text] Sichere Dir deinen virtuellen Kursplatz & schreibe uns!
+[title] Move
+[url] index.php/contact-us
+[text] Je nach Kursart variiert der Yogapreis pro Stunde.
+Spreche uns an und wir beraten Dich gerne, welcher Kurs für Dich am Besten passt.
+
+=== Sektion 5 (id 1578331862434, 1 Spalten) ===
+[title] Anleitung zu deiner virtuellen Yogastunde
+[title] Move
+[IMG] images/2020/04/09/yoga-4.0__1772x1181.png
+
+=== Sektion 6 (id 1572606699384, 1 Spalten) ===

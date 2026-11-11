@@ -1,0 +1,52 @@
+{
+  "id": "online",
+  "slug": "online-yoga",
+  "title": "Online-Yoga von zu Hause | Yoga Momente Coburg",
+  "description": "Online-Yoga mit Susanne Müller: individuelle Kurse, Meditation und Yoga Nidra per Videoanruf, ganz bequem von zu Hause.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "Online-Yoga",
+      "lead": "Hol die Yoga-Matte raus und komm in den virtuellen Kurs, ganz bequem von zu Hause."
+    },
+    {
+      "type": "text",
+      "id": "ablauf",
+      "eyebrow": "Virtuell Yoga 4.0",
+      "title": "So funktioniert dein virtueller Kurs.",
+      "paragraphs": [
+        "Ich biete ganz individuelle Yoga-Kurse oder auch Entspannung mit Meditation oder Yoga Nidra über ein virtuelles Medium aus meinem Yoga-Studio in Coburg an. Wenn du die entsprechende Technik zu Hause hast, also einen PC mit Kamera, ein iPad oder ein Handy, können wir uns virtuell treffen.",
+        "Du erhältst einen Zugang zu einer Plattform, zum Beispiel Zoom, zu deinem Yoga-Kurs. Einfach einloggen, das Video richtig positionieren und los geht's. Gerne unterstütze ich dich per Telefon bei der Einrichtung deiner virtuellen Yoga-Stunde.",
+        "Alle meine Stunden sind auch virtuell buchbar.",
+        "Achte auf deine Gesundheit, nimm Waldbäder und genieße die Natur. Und vergiss nicht: Yoga findet nicht nur auf der Matte statt!"
+      ]
+    },
+    {
+      "type": "text",
+      "id": "bedarf",
+      "title": "Was du für diesen Kurs brauchst",
+      "list": [
+        "Einen ruhigen Rückzugsort",
+        "Eine gute Internetverbindung",
+        "Einen Laptop, ein iPad oder ein Smartphone",
+        "Mindestens 60 Minuten handyfreie Zone",
+        "Bequemen Untergrund und deine Yoga-Matte",
+        "Eine Flasche Wasser",
+        "Spaß an Yoga"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Melde dich jetzt an und sichere dir einen Platz!",
+      "text": "Je nach Kursart variiert der Preis pro Stunde. Sprich mich an, ich berate dich gern, welcher Kurs am besten zu dir passt.",
+      "buttons": [
+        {
+          "label": "Kursplatz anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

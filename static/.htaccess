@@ -1,0 +1,59 @@
+# Apache-Konfiguration (Shared Hosting, z. B. IONOS, DomainFactory, Strato). Teile mit Markierung werden von build.py aus content/config.json ergänzt.
+# Diese Datei liegt im Hauptverzeichnis der Website (neben index.html).
+
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+# --- HTTPS erzwingen ---------------------------------------------------------
+# (Voraussetzung: beim Hoster ist ein SSL-Zertifikat für die Domain und die Staging-Subdomain aktiv.
+#  Falls Sie zuerst ohne Zertifikat testen, diese drei Zeilen vorübergehend auskommentieren.)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Hauptdomain mit/ohne www und alte URLs (aus content/config.json: domain, redirects) – wird beim Build eingefügt.
+# {{GENERATED_REDIRECTS}}
+</IfModule>
+
+# --- Komprimierung -------------------------------------------------------------
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml application/json
+</IfModule>
+
+# --- Caching (CSS/JS tragen eine Versionsnummer im Link und dürfen lange gecacht werden) ---
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 10 minutes"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType application/xml "access plus 1 day"
+</IfModule>
+
+# --- Sicherheits-Header ----------------------------------------------------------
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+# HSTS: Browser sprechen die Seite danach ein Jahr lang nur noch per HTTPS an (HTTPS läuft dauerhaft; ohne includeSubDomains/preload)
+Header always set Strict-Transport-Security "max-age=31536000"
+# Content-Security-Policy: nur eigene Skripte, Bilder, Schriften; keine Fremdeinbindungen, keine Inline-Skripte.
+# style-src 'unsafe-inline' wird für einzelne style="…"-Attribute (Animationsverzögerungen) gebraucht.
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-src https://pci.jotform.com https://form.jotform.com https://eu.jotform.com; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+Header always set Cross-Origin-Opener-Policy "same-origin"
+</IfModule>
+
+# Versteckte Dateien und interne PHP-Helfer nie ausliefern
+<FilesMatch "^\.">
+Require all denied
+</FilesMatch>
+<Files "common.php">
+Require all denied
+</Files>

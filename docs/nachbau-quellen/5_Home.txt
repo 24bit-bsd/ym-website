@@ -1,0 +1,157 @@
+
+=== Sektion 1 (id 1549438682218, 1 Spalten) ===
+[title] Item number 1
+[title] Item number 2
+[title] Entdecke Deine Yoga Momente
+[IMG] images/2019/11/01/yoga-titel-header.png
+[IMG] images/2019/11/01/zoltan-tasi-vhnvtlk8rcc-unsplash.jpg
+
+=== Sektion 2 (id 1601805969131, 1 Spalten) ===
+[text] Yoga ist eine Chance auf ein Leben in Balance. 
+Auf der Entdeckungsreise zu Dir selbst erfährst Du was es heißt, 
+wenn Körper, Atem und Herz die Seele berühren.
+[title] Move
+
+=== Sektion 3 (id 1549521815239, 2 Spalten) ===
+[title] Move
+[text] — Über mich
+[text] Ich, Susanne Müller, bringe Dir verschiedene Yoga-Übungen näher, welche die Weisheit von Yoga und Spiritualität offenbaren. 
+
+In meinem Yoga Studio in Coburg freue ich mich, wenn ich Menschen dazu inspirieren kann, ihr volles kreatives und freudiges Potenzial zu entfalten!
+[IMG] images/2019/11/05/about-me1.png
+
+=== Sektion 4 (id 1549525331516, 2 Spalten) ===
+[title] — Was Yoga mit mir macht
+[text] Mens sana in corpore sano.
+ Ein gesunder Geist wohnt in einem gesunden Körper.
+______
+Juvenal
+
+=== Sektion 5 (id 1572610067025, 1 Spalten) ===
+[title] — Die Vielfalt der Momente
+[text] Yoga ist für jeden geeignet und tut gut. 
+Jedoch gibt es nicht das Eine Yoga.
+
+Für jeden Typ gibt es eine adäquate Richtung und Intensität. Deshalb biete ich bei Yoga Momente in Coburg unterschiedliche Schwerpunkte an.
+
+Auf jede/n Teilnehmer/in wird individuell eingegangen und die Stunden nach Erfahrung und körperlichem Bedarf der Teilnehmer/innen ausgerichtet. In meinem Yoga Studio biete ich außerdem Privatstunden auf Anfrage an.
+[button_text] Zu den Kursen
+[url] index.php/yoga/classes
+[title] Move
+[IMG] images/2019/11/01/bekir-donmez-eofm5r5f9kw-unsplash.jpg
+
+=== Sektion 6 (id 1598437704183, 1 Spalten) ===
+[title] Yoga mit Susanne Müller
+[title] Move
+
+=== Sektion 7 (id 1578241970457, 4 Spalten) ===
+[title] Introducing 
+ IMAGE LAYOUTS ADDON
+[btn_text] Learn More
+[title] Move
+[button_text] Learn More
+[IMG] images/2019/11/01/3.png
+[IMG] images/2019/11/01/4.png
+[IMG] images/2019/11/01/get-your-fresh-produce-straight-from-clearwaters-organic-farmers-join-us-every-weekend-of-june-2017-clearwater-communiy-center-6-am-to-11-am.png
+[IMG] images/2019/12/14/get-your-fresh-produce-straight-from-clearwaters-organic-farmers-join-us-every-weekend-of-june-2017-clearwater-communiy-center-6-am-to-11-am.png
+
+=== Sektion 8 (id 1575219805413, 1 Spalten) ===
+
+=== Sektion 9 (id 1549542681214, 2 Spalten) ===
+[title] — Die nächsten Yoga Momente
+[title] Move
+[IMG] images/2020/01/05/yoga-flyer-148x148.png
+
+=== Sektion 10 (id 1584620628368, 1 Spalten) ===
+
+=== Sektion 11 (id 1634065380427, 1 Spalten) ===
+
+=== Sektion 12 (id 1617311079997, 1 Spalten) ===
+
+=== Sektion 13 (id 1549604285263, 3 Spalten) ===
+[title] — Du bist ein neuer Yogi?
+[title] Tipps für Deine erste Yoga-Stunde:
+[text] Alle Anfänger, die neu im Yoga sind, sollten mit Level 1 oder Basiskursen beginnen.
+
+Bringe eine Wasserflasche und ein kleines Handtuch mit.
+
+Wenn Du eine Yogamatte hast, kannst Du sie gerne mitbringen. Wenn nicht, haben wir selbstverständlich Studiomatten, die Du benutzen kannst.
+
+Komme 5 - 15 Minuten früher zum Unterricht, damit Du Dir Zeit nehmen kannst, um anzukommen.
+
+Trage bequeme Kleidung wie Sweatshirts, Leggings, T-Shirts, Tank-Tops, damit Du dich ganz wohlfühlen und gut bewegen kannst. Es werden keine Schuhe benötigt.
+
+Bitte informiere mich vor Beginn des Unterrichts über alle eventuell vorhandenen Verletzungen, Schwangerschaften oder medizinische Probleme.
+[IMG] images/2019/12/02/1.png
+
+=== Sektion 14 (id 1575219805693, 1 Spalten) ===
+[text] Du hast Fragen rund um die Yoga Momente in Coburg?
+Schreibe mir gerne eine E-Mail: flow[at]momente.yoga
+
+=== Sektion 15 (id 1549612334359, 1 Spalten) ===
+[IMG] images/2019/10/30/jd-mason-xcpdjity5sq-unsplash.jpg
+
+=== Sektion 16 (id 1573679768987, 1 Spalten) ===
+
+=== Sektion 17 (id 1578240645694, 1 Spalten) ===
+[title] Körperlicher Ansatz
+[title] Mentaler Ansatz
+[title] Move
+
+=== Sektion 18 (id 1584620628390, 3 Spalten) ===
+[title] Yoga Retreat 2026
+[text] Ein Kraftort im Rottal
+[title] Yoga-Wochenende im Rottal
+[text] Erlebe ein 3 Tage Retreat mit Yoga, Meditation und Achtsamkeit. Im Seminarhaus "Neue Welt Haus" könnt ihr Kraft tanken und eure Sinne schärfen.
+Es freut sich auf Dich Susanne für die Yoga- und Meditations-Einheiten und Öl-Behandlungen. Sichere Dir dein Ticket jetzt!
+[text] Zur Anmeldung!
+[url] mailto:flow@momente.yoga
+
+=== Sektion 19 (id 1634065380429, 3 Spalten) ===
+[title] Noch 4 Plätze frei! 
+
+Tickets ab Jetzt!
+[text] Live-Workshop
+[title] Hormon-Yoga
+[text] Wir bieten den Hormonkurs für Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch an. Der Kurs dient zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Probleme. Sichere Dir jetzt ein Platz!
+[text] Zur Anmeldung
+[url] index.php/contact-us
+
+=== Sektion 20 (id 1617311079999, 3 Spalten) ===
+[title] Ab Jetzt!
+[text] Per zoom oder Video
+[title] Deine virtuelle Yogastunde
+[text] Ich biete neben kleinen individuellen Yogastunden auch virtuelle Stunden per zoom / Video an. Praktiziere von jedem beliebigen Ort deiner Wahl.
+
+Habe ich deine Interesse geweckt? Dann schreibe mir und du erhältst gegen eine Kursgebühr einen Zugang in die virtuelle Yogawelt.
+[text] Weitere Infos!
+[url] index.php/yoga/yoga-4-0
+
+=== Sektion 21 (id 1549612334385, 2 Spalten) ===
+[title] — ERFAHRE DEN UNTERSCHIED
+[text] Finde Deine innere Ruhe!
+[text] Plätze frei...
+[text] Schau vorbei!
+[url] index.php/yoga/yoga-4-0
+
+=== Sektion 22 (id AGnXwW4Jd22Ww_ovxSkJo, 1 Spalten) ===
+[text] Erhöhte Flexibilität
+
+Erhöhte Muskelkraft und Muskelspannung
+
+Verbesserte Atmung, Energie und Vitalität
+
+Aktivierung des Stoffwechsels
+[title] Physische Vorteile von Yoga sind:
+
+=== Sektion 23 (id lOljYckyF1b6Wt5hz5ZDH, 1 Spalten) ===
+[text] Verbesserung der Konzentration
+
+Ausgeglichenheit
+
+Ruhe in sich spüren
+
+Stress entfliehen
+
+Energie in Fluss bringen
+[title] Der mentale Ansatz von Yoga beinhaltet:

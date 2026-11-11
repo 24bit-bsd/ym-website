@@ -1,0 +1,123 @@
+name: Build & Deploy
+
+# Push auf main            -> automatisch auf STAGING (noindex, eigene Subdomain)
+# Tag "live-…" pushen      -> PRODUCTION (z. B. git tag live-2026-10-06 && git push origin live-2026-10-06)
+# Manuell (Actions > Run workflow) -> STAGING oder PRODUCTION wählen
+#
+# Einrichtung je Kunde (Settings > Environments, je Environment "staging" und "production"):
+#   Secrets:    DEPLOY_HOST, DEPLOY_USER, DEPLOY_PASSWORD, optional DEPLOY_PORT
+#   Variables:  DEPLOY_REMOTE_DIR (Zielordner auf dem Server, z. B. /website-staging bzw. /website),
+#               optional DEPLOY_PROTOCOL (sftp = Standard, ftps oder ftp)
+# Domains stehen in content/config.json (domain, staging_url).
+on:
+  push:
+    branches: [main]
+    tags: ["live-*"]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Ziel"
+        type: choice
+        options: [staging, production]
+        default: staging
+
+# Es läuft immer nur ein Deploy gleichzeitig
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    # Im Template-Repo selbst wird nicht deployt (dort gibt es keine Zugangsdaten); in Kunden-Repos läuft der Job.
+    if: ${{ !endsWith(github.repository, '/website-template') }}
+    runs-on: ubuntu-latest
+    # Environment-Secrets/-Variablen (Settings > Environments). Für "production" dort „Required reviewers“ aktivieren = Freigabe-Klick
+    # (erst im bezahlten GitHub-Plan möglich; im Free-Plan geht ein Start sofort live).
+    environment: ${{ (((github.event_name == 'workflow_dispatch' && inputs.target == 'production') || startsWith(github.ref, 'refs/tags/live-')) && 'production') || 'staging' }}
+    env:
+      TARGET: ${{ (((github.event_name == 'workflow_dispatch' && inputs.target == 'production') || startsWith(github.ref, 'refs/tags/live-')) && 'production') || 'staging' }}
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+      DEPLOY_PASSWORD: ${{ secrets.DEPLOY_PASSWORD }}
+      # Zielordner und Protokoll sind keine Geheimnisse: als Environment-Variablen, damit sie im Log sichtbar und prüfbar sind.
+      # Achtung: Manche Hoster (z. B. IONOS) zeigen dem FTP-Benutzer einen Unterordner bereits als Wurzel (/). Pfad dann ab dieser Wurzel angeben.
+      DEPLOY_REMOTE_DIR: ${{ vars.DEPLOY_REMOTE_DIR }}
+      DEPLOY_PROTOCOL: ${{ vars.DEPLOY_PROTOCOL }}
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+
+      - name: Inhalte prüfen (Glossar, Sprachen-Struktur, Links)
+        run: python3 check.py
+
+      - name: Bauen (${{ env.TARGET }})
+        run: |
+          if [ "$TARGET" = "production" ]; then python3 build.py; else python3 build.py --noindex; fi
+          test -f dist/index.html
+          if [ "$TARGET" = "production" ]; then
+            test -f dist/sitemap.xml && test -f dist/llms.txt
+            if grep -q 'noindex' dist/index.html; then echo "::error::Produktions-Build enthält noindex"; exit 1; fi
+          fi
+
+      - name: Zugangsdaten prüfen
+        run: |
+          for v in DEPLOY_HOST DEPLOY_USER DEPLOY_PASSWORD DEPLOY_REMOTE_DIR; do
+            if [ -z "${!v}" ]; then echo "::error::Secret/Variable $v fehlt im Environment '$TARGET'"; exit 1; fi
+          done
+          case "$DEPLOY_REMOTE_DIR" in ""|"/"|".") echo "::error::DEPLOY_REMOTE_DIR darf nicht leer oder / sein"; exit 1;; esac
+
+      - name: Hochladen
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          PROTO="${DEPLOY_PROTOCOL:-sftp}"
+          case "$PROTO" in
+            sftp) PORT="${DEPLOY_PORT:-22}"; EXTRA="set sftp:auto-confirm yes";;
+            ftps) PROTO="ftp"; PORT="${DEPLOY_PORT:-21}"; EXTRA="set ftp:ssl-force yes; set ftp:ssl-protect-data yes; set ssl:verify-certificate yes";;
+            ftp)  PORT="${DEPLOY_PORT:-21}"; EXTRA="set ftp:ssl-allow no";;
+            *) echo "::error::DEPLOY_PROTOCOL muss sftp, ftps oder ftp sein"; exit 1;;
+          esac
+          # --delete entfernt Dateien im Zielordner, die nicht mehr im Build sind (Zielordner muss exklusiv für diese Seite sein)
+          # cmd:fail-exit: jeder lftp-Fehler lässt den Schritt scheitern (statt still "grün" zu bleiben)
+          lftp -u "$DEPLOY_USER,$DEPLOY_PASSWORD" "$PROTO://$DEPLOY_HOST:$PORT" <<EOF
+          set cmd:fail-exit yes
+          $EXTRA
+          set net:max-retries 3
+          set net:timeout 30
+          echo "--- Ziel dieses Laufs: $DEPLOY_REMOTE_DIR"
+          echo "--- Server-Wurzel:"
+          cls -1 /
+          mirror -R --delete --parallel=4 --verbose --exclude-glob .well-known/ dist/ "$DEPLOY_REMOTE_DIR"
+          echo "--- Inhalt von $DEPLOY_REMOTE_DIR nach dem Upload:"
+          cls -1 "$DEPLOY_REMOTE_DIR"
+          bye
+          EOF
+
+      - name: Prüfen, ob der neue Stand ausgeliefert wird
+        run: |
+          if [ "$TARGET" = "production" ]; then
+            URL=$(python3 -c "import json;print(json.load(open('content/config.json'))['domain'])")
+          else
+            URL=$(python3 -c "import json;print(json.load(open('content/config.json'))['staging_url'])")
+          fi
+          V=$(grep -o 'style.css?v=[0-9a-f]*' dist/index.html | head -1)
+          echo "Erwartete Version im ausgelieferten HTML: $V  (Adresse: $URL)"
+          for i in 1 2 3 4 5 6; do
+            if curl --fail --silent --show-error --max-time 20 "$URL/?check=$i" | grep -q "$V"; then
+              echo "OK: $TARGET liefert den neuen Stand aus."; exit 0
+            fi
+            echo "Noch nicht ausgeliefert (Versuch $i) ..."; sleep 8
+          done
+          if [ "$TARGET" = "production" ]; then
+            # Erster Live-Gang: Die Hauptdomain zeigt evtl. noch auf die alte Seite. Dann nur warnen.
+            echo "::warning::$URL liefert noch nicht den neuen Stand ($V). Ist die Domain schon auf den Ordner $DEPLOY_REMOTE_DIR umgelegt? (Hochladen war erfolgreich.)"
+            exit 0
+          fi
+          echo "::error::$URL liefert nicht den neuen Stand ($V). Zeigt die Subdomain auf den Zielordner $DEPLOY_REMOTE_DIR? DNS/SSL schon aktiv?"
+          exit 1

@@ -1,0 +1,169 @@
+{
+  "id": "retreat-rottal",
+  "slug": "events/yoga-retreat-rottal",
+  "title": "Yoga Retreat in the Rottal, 13–15 November 2026 | Yoga Momente",
+  "description": "Yoga retreat at the Neue Welt Haus in the Rottal, 13–15 November 2026: yoga, meditation and mindfulness with Susanne Müller, max. 10 participants.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/rottal-haus.jpg",
+      "title": "Yoga retreat in the Rottal",
+      "lead": "13–15 November 2026 at the Neue Welt Haus. A getaway just for you, in a group of no more than 10 participants.",
+      "buttons": [
+        {
+          "label": "Register",
+          "href": "https://pci.jotform.com/form/253464945152057",
+          "style": "primary",
+          "embed": true,
+          "embedTitle": "Registration yoga retreat in the Rottal"
+        },
+        {
+          "label": "All info",
+          "href": "#infos",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "retreat",
+      "eyebrow": "Yoga & mindfulness",
+      "title": "Enjoy, feel yourself, experience moments of happiness.",
+      "paragraphs": [
+        "Treat yourself to a getaway, time just for yourself. This year I take you to a special house for my yoga retreat: we are in the Rottal at the Neue Welt Haus entirely by ourselves, with a maximum of 10 participants. Here you recharge over the weekend and connect with like-minded people who want to give themselves a weekend just for themselves.",
+        "Start your day with a morning routine of meditation, yoga and breathing. You enjoy varied yoga sessions and experiences for all the senses, combining yoga with mindfulness and the feel-good atmosphere of the house. Besides the yoga sessions and exchange, Rainer and Adrian will spoil us with their special cuisine. We have time to explore the surroundings and time for ourselves, things that often fall short in everyday life."
+      ]
+    },
+    {
+      "type": "grid",
+      "variant": "cards",
+      "cols": 3,
+      "id": "infos",
+      "title": "What to expect.",
+      "items": [
+        {
+          "title": "3 days of yoga, meditation and breathing exercises",
+          "text": "Morning routine, varied yoga sessions for beginners and advanced practitioners."
+        },
+        {
+          "title": "A small group",
+          "text": "For 6 to 10 participants, with plenty of room for exchange and me-time."
+        },
+        {
+          "title": "2 nights with full board",
+          "text": "Mindful, healthy food, also vegetarian and vegan. Paid on site, not included in the course fee."
+        },
+        {
+          "title": "Essential oils",
+          "text": "Oil consultation and oil massage. Symphony of the Cells or Aromatouch can be booked additionally."
+        },
+        {
+          "title": "Balance",
+          "text": "Between relaxation and activity, in a family-run seminar house with tradition, regional character and nature."
+        },
+        {
+          "title": "Yoga for everyone",
+          "text": "Classical hatha yoga, yin & yang and a pure yin class."
+        }
+      ]
+    },
+    {
+      "type": "pricing",
+      "id": "platz",
+      "title": "Your place in the Rottal",
+      "items": [
+        {
+          "name": "Yoga retreat in the Rottal",
+          "subtitle": "13–15 November 2026",
+          "price": "€295",
+          "period": "per person",
+          "featured": true,
+          "badge": "Max. 10 places",
+          "features": [
+            "Arrival from 5:00 pm, departure around 1:30 pm",
+            "Neue Welt Haus in the Rottal",
+            "Maximum of 10 participants",
+            "Accommodation and meals paid on site"
+          ],
+          "cta": {
+            "label": "Register now",
+            "href": "https://pci.jotform.com/form/253464945152057",
+            "style": "primary",
+            "embed": true,
+            "embedTitle": "Registration yoga retreat in the Rottal"
+          }
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "id": "trainerin",
+      "eyebrow": "Your teacher",
+      "title": "I look forward to meeting you!",
+      "lead": "My love of yoga has accompanied me for many years. I love discovering its endless variety. Everyone lives yoga in their own way, and yet it always stands for a connection to yourself and your own heart.",
+      "bullets": [
+        "A holistic approach: a class should touch body, mind and soul equally.",
+        "Yoga playfully combined with modern spirituality.",
+        "An interplay of dynamically flowing and mindfully calm moments.",
+        "For yoga newcomers and advanced practitioners."
+      ],
+      "team": [
+        {
+          "name": "Susanne Müller",
+          "role": "Yoga teacher, Yoga Momente",
+          "image": "assets/img/susanne.jpg"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "unterkunft",
+      "title": "The venue: time for rest, movement and new energy",
+      "paragraphs": [
+        "Nestled in the gentle hills of the Rottal, the Neue Welt Haus seminar house is a place of stillness, mindfulness and inspiration. It creates the setting for a yoga retreat that brings body, mind and soul into harmony. Surrounded by nature and far from everyday stress, the house invites you to breathe deeply and arrive fully within yourself.",
+        "Bright seminar rooms, a calm atmosphere and closeness to nature create ideal conditions for yoga, meditation and relaxation."
+      ]
+    },
+    {
+      "type": "faq",
+      "id": "faq",
+      "title": "Important info",
+      "items": [
+        {
+          "q": "How many places are there, and is there a waiting list?",
+          "a": "Because we respond individually to participants, places are limited to 10 people. If the weekend is fully booked, we will gladly put you on a waiting list. As soon as a place becomes free, we will get in touch."
+        },
+        {
+          "q": "What is included in the price, and what do I pay on site?",
+          "a": "The course fee is €295 per person. Food, drinks and tourist tax are paid directly on site. Travel and hotel costs are not included in the price."
+        },
+        {
+          "q": "How do I get there?",
+          "a": "Travel is individual. By car from Munich to the Rottal it is about 160 km."
+        },
+        {
+          "q": "What should I bring?",
+          "a": "Yoga mat, blanket, strap, tennis ball, writing materials, scissors and weatherproof clothing, plus everything you need for your well-being and personal needs. You receive the final agenda with your registration."
+        },
+        {
+          "q": "What are the cancellation terms?",
+          "a": "Registration is binding. Because the number of participants is limited, your place is only secured once payment has been received. Course fees already paid cannot be refunded if you do not show up.\n\nA cancellation must be made in writing before departure by 30 September 2026, in which case the course fee is refunded minus a processing fee of 10%. A replacement participant can be named. For later cancellations, the full participation fee plus accommodation must be paid. No course fees are refunded in case of illness or early departure either."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Join us and treat yourself to a getaway!",
+      "text": "Questions? Call 0175 5643744 or write to flow@momente.yoga.",
+      "buttons": [
+        {
+          "label": "Register",
+          "href": "https://pci.jotform.com/form/253464945152057",
+          "style": "primary",
+          "embed": true,
+          "embedTitle": "Registration yoga retreat in the Rottal"
+        }
+      ]
+    }
+  ]
+}

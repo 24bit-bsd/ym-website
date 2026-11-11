@@ -1,0 +1,87 @@
+{
+  "id": "poses",
+  "slug": "yoga-poses",
+  "title": "Asanas: Yoga Poses and Their Effects | Yoga Momente",
+  "description": "Nine asanas at a glance: relaxation, tree, cobra, downward-facing dog and more, with their effects and tips for your practice.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Asanas",
+      "lead": "Nine yoga poses and what they do for you."
+    },
+    {
+      "type": "grid",
+      "id": "asanas",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Relaxation",
+          "text": "In the classic yoga seat you can concentrate entirely on your breath. You arrive in the here and now and with yourself. For a few moments of calm it is the perfect pose.",
+          "image": "assets/img/poses/pose-1.png",
+          "alt": "Relaxation"
+        },
+        {
+          "title": "Tree",
+          "text": "Find your balance on the yoga mat and in everyday life. With a firm stance and focused attention you experience stability and growth. Draw strength from your center.",
+          "image": "assets/img/poses/pose-2.png",
+          "alt": "Tree"
+        },
+        {
+          "title": "Flexibility",
+          "text": "Sitting so much every day strains our backs. Strengthen your lower back muscles and move in the opposite direction. A feel-good moment for your muscles.",
+          "image": "assets/img/poses/pose-3.png",
+          "alt": "Flexibility"
+        },
+        {
+          "title": "Hip opening",
+          "text": "Loosen stiff hips, improve your range of motion and ease back pain in these hip-opening yoga poses.",
+          "image": "assets/img/poses/pose-4.png",
+          "alt": "Hip opening"
+        },
+        {
+          "title": "Chest opening",
+          "text": "Open your heart and your shoulders in chest openers such as camel pose or fish pose.",
+          "image": "assets/img/poses/pose-5.png",
+          "alt": "Chest opening"
+        },
+        {
+          "title": "Cobra",
+          "text": "The pose energizes the body, relieves stress and improves concentration. The chest opening also opens the heart, letting your energy flow more freely and lifting your mood.",
+          "image": "assets/img/poses/pose-6.png",
+          "alt": "Cobra"
+        },
+        {
+          "title": "Downward-facing dog",
+          "text": "Learn how to train stiff muscles safely, improve the mobility of your lower body and find the right alignment in forward-bend asanas.",
+          "image": "assets/img/poses/pose-7.png",
+          "alt": "Downward-facing dog"
+        },
+        {
+          "title": "Stretch",
+          "text": "The plow helps you gain and keep flexibility. Tension in the shoulders and neck can release, thyroid function is normalized and the abdominal organs receive a gentle massage.",
+          "image": "assets/img/poses/pose-8.png",
+          "alt": "Stretch"
+        },
+        {
+          "title": "Standing",
+          "text": "The dynamic posture stabilizes the whole body. It promotes inner strength, concentration, focus and balance, harmonizes, grounds and strengthens the leg muscles of the standing leg and the core.",
+          "image": "assets/img/poses/pose-9.png",
+          "alt": "Standing"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Try it out.",
+      "text": "In class I show you how to practice the asanas safely and in a way that suits your body.",
+      "buttons": [
+        {
+          "label": "To the classes",
+          "href": "page:courses",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

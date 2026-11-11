@@ -1,0 +1,87 @@
+{
+  "id": "poses",
+  "slug": "yoga-uebungen",
+  "title": "Asanas: Yoga-Übungen und ihre Wirkung | Yoga Momente",
+  "description": "Neun Asanas im Überblick: Entspannung, Baum, Kobra, Herabschauender Hund und mehr, mit Wirkung und Hinweisen für deine Praxis.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Asanas",
+      "lead": "Neun Yoga-Übungen und was sie für dich tun."
+    },
+    {
+      "type": "grid",
+      "id": "asanas",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "title": "Entspannung",
+          "text": "Im klassischen Yoga-Sitz kannst du dich ganz auf deine Atmung konzentrieren. Du kommst im Hier und Jetzt und bei dir selbst an. Für einige Momente der Ruhe ist es die perfekte Pose.",
+          "image": "assets/img/poses/pose-1.png",
+          "alt": "Entspannung"
+        },
+        {
+          "title": "Baum",
+          "text": "Finde deine Balance auf der Yoga-Matte und im Alltag. Mit festem Stand und ausgerichtetem Fokus erfährst du Stabilität und Wachstum. Schöpfe Kraft aus deiner Mitte.",
+          "image": "assets/img/poses/pose-2.png",
+          "alt": "Baum"
+        },
+        {
+          "title": "Flexibilität",
+          "text": "Das tägliche viele Sitzen belastet unseren Rücken. Stärke deine untere Rückenmuskulatur und gehe in die Gegenbewegung. Ein Wohlgefühl für die Muskeln.",
+          "image": "assets/img/poses/pose-3.png",
+          "alt": "Flexibilität"
+        },
+        {
+          "title": "Hüftöffnung",
+          "text": "Lockere steife Hüften, verbessere deinen Bewegungsumfang und lindere Rückenschmerzen in diesen hüftöffnenden Yogastellungen.",
+          "image": "assets/img/poses/pose-4.png",
+          "alt": "Hüftöffnung"
+        },
+        {
+          "title": "Brustöffnung",
+          "text": "Öffne dein Herz und deine Schultern in Brustöffnungen wie der Kamel-Pose oder der Fisch-Pose.",
+          "image": "assets/img/poses/pose-5.png",
+          "alt": "Brustöffnung"
+        },
+        {
+          "title": "Kobra",
+          "text": "Die Haltung energetisiert den Körper, baut Stress ab und erhöht die Konzentrationsfähigkeit. Durch die Brustöffnung wird auch das Herz geöffnet, was deine Energie freier fließen lässt und deine Stimmung anhebt.",
+          "image": "assets/img/poses/pose-6.png",
+          "alt": "Kobra"
+        },
+        {
+          "title": "Herabschauender Hund",
+          "text": "Lerne, wie du steife Muskeln sicher trainierst, die Beweglichkeit des Unterkörpers förderst und die richtige Ausrichtung bei Asanas in der Vorwärtsbeuge findest.",
+          "image": "assets/img/poses/pose-7.png",
+          "alt": "Herabschauender Hund"
+        },
+        {
+          "title": "Dehnung",
+          "text": "Der Pflug hilft dir, Flexibilität zu bekommen und zu halten. Verspannungen im Schulter- und Nackenbereich können sich lösen, die Schilddrüsenfunktion wird normalisiert, und die Bauchorgane bekommen eine sanfte Massage.",
+          "image": "assets/img/poses/pose-8.png",
+          "alt": "Dehnung"
+        },
+        {
+          "title": "Stand",
+          "text": "Die dynamische Haltung stabilisiert den gesamten Körper. Sie fördert innere Stärke, Konzentration, Fokus und Ausgeglichenheit, harmonisiert, erdet und stärkt die Beinmuskulatur des Standbeins und kräftigt die Rumpfmuskulatur.",
+          "image": "assets/img/poses/pose-9.png",
+          "alt": "Stand"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Probier es aus.",
+      "text": "Im Kurs zeige ich dir, wie du die Asanas sicher und passend für deinen Körper übst.",
+      "buttons": [
+        {
+          "label": "Zu den Kursen",
+          "href": "page:courses",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

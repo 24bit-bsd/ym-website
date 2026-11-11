@@ -1,0 +1,16 @@
+
+=== Sektion 1 (id 1576182339855, 4 Spalten) ===
+[title] Move
+[title] – Adresse
+[text] Breslauer Str. 21
+96450 Coburg
+Deutschland
+[title] – Kontakt
+[text] T:  +49 (0)9561 29831
+M: +49 (0)175 5643744
+flow[at]momente.yoga
+[title] – Info
+[text] AGBs
+Datenschutzerklärung
+Impressum
+[IMG] images/Yoga/yoga-logo-rund.png

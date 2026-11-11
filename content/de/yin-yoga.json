@@ -1,0 +1,73 @@
+{
+  "id": "yin-yoga",
+  "slug": "yoga-kurse-coburg/yin-yoga",
+  "title": "Yin Yoga in Coburg | Yoga Momente",
+  "description": "Yin Yoga in Coburg: tiefes, entspanntes Halten der Stellungen für Gelenke, Faszien und Ruhe. Kurse bei Susanne Müller, auch online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Yin Yoga",
+      "lead": "Tief entspannen, geschmeidig werden, zur Ruhe kommen.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "Worum es geht",
+      "title": "Yin Yoga: was dich erwartet.",
+      "paragraphs": [
+        "Hält deinen Körper zutiefst geschmeidig und lässt Lebensenergie durch Gelenke, Faszien und das Meridian-Gewebe fließen. Yin Yoga ist vollkommen entspanntes, längeres Halten von tiefwirkenden Yogastellungen für alle, die es genießen, ihre Praxis auf ein erhöhtes Level von Achtsamkeit und Stille zu bringen. Ein optimaler Ausgleich für alle, deren Alltag eher Yang-orientiert ist."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Auf einen Blick.",
+      "items": [
+        {
+          "title": "Umfang",
+          "text": "10 Stunden à 60 oder 90 Minuten."
+        },
+        {
+          "title": "Wann und wo",
+          "text": "Aktuelle Termine findest du im Stundenplan. Alle Stunden sind auch online buchbar."
+        },
+        {
+          "title": "Preis",
+          "text": "Ab 135 € pro Person (10 × 60 Min., ab 5 Teilnehmenden). Bei 3–4 Teilnehmenden 150 €. 10 × 90 Min.: 225 € bzw. 200 € ab 5 Teilnehmenden."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Preise und YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "corporate",
+  "slug": "firmen-yoga",
+  "title": "Büro-Yoga und Auszeit für Unternehmen in Coburg | Yoga Momente",
+  "description": "Büro-Yoga, gesunde Mittagspause und Achtsamkeit für Unternehmen in Coburg: live und online, individuell geplant von Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "Auszeit vom Büroalltag",
+      "lead": "Yoga und Achtsamkeit für Ihr Team: live im Büro oder online, als gesunde Mittagspause oder beim Firmenevent.",
+      "buttons": [
+        {
+          "label": "Angebot anfragen",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        },
+        {
+          "label": "Mehr erfahren",
+          "href": "#angebot",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "angebot",
+      "eyebrow": "Für Unternehmen",
+      "title": "Gönnen Sie Ihren Beschäftigten eine Auszeit im beruflichen Alltag.",
+      "paragraphs": [
+        "Vielleicht ist eine gesunde, gemeinsame Mittagspause oder eine Einheit bei einem Ihrer Firmenevents für Ihre Mitarbeitenden oder Geschäftspartner:innen das Richtige?",
+        "Gerne plane ich mit Ihnen gemeinsam die Einheit, die zu Ihnen passt, und mache Ihnen ein Angebot."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "inhalte",
+      "variant": "benefits",
+      "cols": 4,
+      "title": "Was Ihr Team erlebt.",
+      "items": [
+        {
+          "title": "Bewegung",
+          "text": "Sanfte Übungen, die sich im Büro gut machen lassen und den Rücken entlasten.",
+          "icon": "check"
+        },
+        {
+          "title": "Entspannung",
+          "text": "Raum zum Abschalten, mitten im Arbeitstag.",
+          "icon": "check"
+        },
+        {
+          "title": "Meditation",
+          "text": "Kurze Meditationen, die den Kopf frei machen.",
+          "icon": "check"
+        },
+        {
+          "title": "Achtsamkeit",
+          "text": "Achtsamkeitsübungen für mehr Ruhe und Fokus im Alltag.",
+          "icon": "check"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "id": "ablauf",
+      "variant": "steps",
+      "title": "So kommen wir zusammen.",
+      "items": [
+        {
+          "title": "Anfrage",
+          "text": "Sie rufen an oder schreiben mir eine E-Mail.",
+          "meta": "1"
+        },
+        {
+          "title": "Gemeinsame Planung",
+          "text": "Wir klären, ob live oder online, wie lange und mit welchem Schwerpunkt.",
+          "meta": "2"
+        },
+        {
+          "title": "Ihr Angebot",
+          "text": "Sie erhalten ein Angebot für die passende Einheit.",
+          "meta": "3"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ich freue mich auf Ihren Anruf oder Ihre Anfrage per E-Mail.",
+      "text": "Tel.: +49 (0)9561 29831 · E-Mail: flow@momente.yoga",
+      "buttons": [
+        {
+          "label": "Per E-Mail anfragen",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

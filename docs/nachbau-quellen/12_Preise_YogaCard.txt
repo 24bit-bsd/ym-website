@@ -1,0 +1,59 @@
+
+=== Sektion 1 (id 1550059770772, 2 Spalten) ===
+[text] — Deine YogaCard
+[title] Move
+[title] Momente sammeln
+[IMG] images/2019/10/31/bonuskarte-website.png
+
+=== Sektion 2 (id 1616948467420, 1 Spalten) ===
+[title] Aktuelles:
+[text] Aufgrund der aktuellen Situation finden alle Stunden online bzw. Einzelstunden in Präsenz oder im Freien statt (unter Berücksichtigung der geltenen Hygienemaßnahmen) - Bleiben Sie gesund!
+[title] Move
+
+=== Sektion 3 (id 1572617888795, 2 Spalten) ===
+[title] — Kurspreise für Yoga Momente in Coburg
+[title] Move
+[title] Yin Yoga & Hatha Yoga
+
+=== Sektion 4 (id 1578244917675, 2 Spalten) ===
+[title] Early Morning Yoga
+[title] Move
+[title] Hormon Yoga
+
+=== Sektion 5 (id 1578244918339, 1 Spalten) ===
+[title] Personal Yoga mit Susanne Müller
+[title] Move
+
+=== Sektion 6 (id 1572472714544, 2 Spalten) ===
+[title] — Du bist ein neuer Yogi?
+[title] Schnupperstunde
+[text] 1 Probestunde à 60 Min.
+[title] 60 €
+[title] Rufe uns an oder schreibe uns eine E-Mail, um Deine Yoga-Stunde zu vereinbaren —
+[text] Tel.:     +49 (0)9561 29831
+E-Mail: flow[at]momente.yoga
+[title] Was erwartet Dich?
+[text] Alle Anfänger, die neu im Yoga sind, sollten mit Level 1 oder Basis-Kursen beginnen.
+
+Bringe eine Wasserflasche und ein kleines Handtuch mit. 
+
+Wenn Du eine Yoga-Matte hast, kannst Du sie gerne mitbringen. Falls nicht, haben wir selbstverständlich Studiomatten, die Du benutzen kannst.
+
+Komme 5 - 15 Minuten vor dem Beginn zum Unterricht, damit Du Dir Zeit nehmen kannst, um anzukommen.
+
+Trage bequeme Kleidung wie Sweatshirts, Leggings, T-Shirts, Tank-Tops, damit Du dich ganz wohlfühlen und gut bewegen kannst. Es werden keine Schuhe benötigt.
+
+Bitte informiere mich vor Beginn des Unterrichts über eventuelle Verletzungen, Schwangerschaften oder medizinische Probleme.
+
+=== Sektion 7 (id 1572617889599, 1 Spalten) ===
+[title] Move
+
+=== Sektion 8 (id 1550144358312, 2 Spalten) ===
+[title] Move
+[title] — Hol Dir Deine YogaCard und sammle Deine Yoga Momente
+[text] Mit diesem kleinen Kärtchen hast Du einen Überblick über Deine absolvierten Stunden. Es soll Dich zu Hause auch an Deine Yoga Momente erinnern.
+
+Die YogaCard erhältst Du bei Deiner Anmeldung.
+[IMG] images/2019/10/31/bonuskarte-website.png
+
+=== Sektion 9 (id 1573680055200, 1 Spalten) ===

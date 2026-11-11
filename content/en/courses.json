@@ -1,0 +1,72 @@
+{
+  "id": "courses",
+  "slug": "yoga-classes-coburg",
+  "title": "Yoga classes in Coburg: yin, hatha, hormone and personal yoga",
+  "description": "Find your yoga class in Coburg: yin, hatha, early morning, hormone and personal yoga with Susanne Müller, also online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Yoga classes in Coburg",
+      "lead": "Find the training that suits you and your needs."
+    },
+    {
+      "type": "text",
+      "id": "einstieg",
+      "paragraphs": [
+        "In yoga, exercises and knowledge are traditionally passed on from teacher to student, with your personal experience at the center. Walking the path of yoga takes space and time. I am happy to take this valuable time for you. Treat yourself to these yoga moments.\n\nAll classes can also be booked virtually."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "kurse",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Your classes at a glance.",
+      "items": [
+        {
+          "title": "Yin Yoga",
+          "text": "Keeps your body deeply supple and lets life energy flow through joints, fascia and meridian tissue. Yin yoga means holding deeply effective poses for longer in complete relaxation, for everyone who enjoys taking their practice to a higher level of mindfulness and stillness. An ideal balance for everyone whose daily life is more yang-oriented.",
+          "href": "page:yin-yoga",
+          "cta": "Learn more"
+        },
+        {
+          "title": "Hatha Yoga",
+          "text": "Varied classes with all the basic asanas of hatha yoga, tailored to the needs of the participants. You improve your flexibility and stretch, and strength and stamina grow too.",
+          "href": "page:hatha-yoga",
+          "cta": "Learn more"
+        },
+        {
+          "title": "Early Morning Yoga",
+          "text": "Start your day with conscious breathing, mindfulness and movement. You bring activity into your body, improve your mobility and bring joy and balance into your day.",
+          "href": "page:early-morning",
+          "cta": "Learn more"
+        },
+        {
+          "title": "Hormone Yoga",
+          "text": "Based on the proven system of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child.",
+          "href": "page:hormon-yoga",
+          "cta": "Learn more"
+        },
+        {
+          "title": "Personal Yoga",
+          "text": "In your individual class you practice hatha yoga with Susanne, entirely according to your physical needs. Series of exercises are developed specifically for you, which you can also practice at home. In the studio in Coburg or at your home (within a 20 km radius, including Rödental and Neustadt bei Coburg).",
+          "href": "page:personal-yoga",
+          "cta": "Learn more"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us or call, and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "home",
+  "slug": "",
+  "title": "Yoga Momente – Yoga in Coburg, online und im Rottal",
+  "description": "Yoga mit Susanne Müller: Kurse in Coburg, Online-Yoga und das Yoga-Retreat im Rottal vom 13. bis 15. November 2026.",
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "home",
+      "image": "assets/img/hero-yogaraum.jpg",
+      "title": "Yoga für Momente, in denen du",
+      "subtitle": "{{wirklich ankommst.}}",
+      "tagline": "Kurse, Online-Yoga und Retreats mit Susanne – für Körper, Atem und einen klaren Kopf.",
+      "buttons": [
+        {
+          "label": "Zum Rottal-Retreat",
+          "href": "page:retreat-rottal",
+          "style": "primary"
+        },
+        {
+          "label": "Stundenplan ansehen",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "bereiche",
+      "variant": "tiles",
+      "title": "Dein Weg zu uns.",
+      "lead": "Ob wöchentlich im Kurs, von zu Hause oder als Auszeit im Grünen: Such dir den Rahmen, der gerade passt.",
+      "items": [
+        {
+          "title": "Kurse",
+          "text": "Yoga im Kurs, mit Stundenplan und Preisen.",
+          "image": "assets/img/hero-yogaraum.jpg",
+          "href": "page:courses"
+        },
+        {
+          "title": "Online-Yoga",
+          "text": "Flexibel, wo und wann du willst.",
+          "href": "page:online",
+          "image": "assets/img/studio.jpg"
+        },
+        {
+          "title": "Events & Retreats",
+          "text": "Workshops und Auszeiten, aktuell im Rottal.",
+          "image": "assets/img/rottal-haus.jpg",
+          "href": "page:events"
+        },
+        {
+          "title": "Ölgeflüster",
+          "text": "Pflege und Düfte aus der Natur.",
+          "href": "page:oils",
+          "image": "assets/img/oele-hero.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "13.–15. November 2026",
+      "title": "Yoga-Retreat im Rottal",
+      "text": "Ein Wochenende zum Durchatmen im Neue Welt Haus: Yoga, Stille und Zeit in der Natur. Maximal 10 Teilnehmende, 295 €.",
+      "buttons": [
+        {
+          "label": "Zum Retreat",
+          "href": "page:retreat-rottal",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

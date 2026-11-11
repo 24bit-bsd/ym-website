@@ -1,0 +1,192 @@
+{
+  "id": "privacy",
+  "slug": "privacy-policy",
+  "title": "Privacy | Yoga Momente",
+  "description": "Privacy policy of Yoga Momente: which data is processed when you visit this website and send inquiries, and what rights you have.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Privacy policy",
+      "lead": "Your data is in safe hands."
+    },
+    {
+      "type": "legal",
+      "blocks": [
+        {
+          "p": [
+            "Courtesy translation. The German version is authoritative."
+          ]
+        },
+        {
+          "h": "1. Privacy at a glance",
+          "level": 2
+        },
+        {
+          "h": "General information",
+          "level": 3,
+          "p": [
+            "The following notes give a simple overview of what happens to your personal data when you use our products and services or visit our website. Personal data is any data that can be used to identify you personally. For detailed information on data protection, please refer to the privacy policy below this text."
+          ]
+        },
+        {
+          "h": "Data collection on our website",
+          "level": 3,
+          "p": [
+            "**Who is responsible for data collection on our website?**\nData processing on this website is carried out by the website operator. You can find their contact details in the imprint of this website.",
+            "**How do we collect your data?**\nOn the one hand, your data is collected when you provide it to us. This may be, for example, data you enter in a contact form or send to us by email.\nOther data is collected automatically by our IT systems when you visit the website. This is mainly technical data (e.g. internet browser, operating system or time of the page view). This data is collected automatically as soon as you enter our website.",
+            "**What do we use your data for?**\nPart of the data is collected to ensure the website is provided without errors. We primarily use your data to initiate and handle business and contractual relationships.",
+            "**What rights do you have regarding your data?**\nYou have the right at any time to receive information free of charge about the origin, recipients and purpose of your stored personal data. You also have the right to request the correction, blocking or deletion of this data. For this and further questions on data protection, you can contact us at any time at the address given in the imprint. You also have the right to lodge a complaint with the competent supervisory authority."
+          ]
+        },
+        {
+          "h": "Analytics and third-party tools",
+          "level": 3,
+          "p": [
+            "This website does not use analytics or tracking tools and does not embed third-party content (e.g. fonts, maps, videos). Fonts are provided by your device’s operating system."
+          ]
+        },
+        {
+          "h": "2. General notes and mandatory information",
+          "level": 2
+        },
+        {
+          "h": "Data protection",
+          "level": 3,
+          "p": [
+            "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.",
+            "When you use our website or contact us in other ways, various personal data is collected. Personal data is data that can be used to identify you personally. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.",
+            "Please note that data transmission over the internet (e.g. when communicating by email) can have security gaps. Complete protection of data against access by third parties is not possible."
+          ]
+        },
+        {
+          "h": "Note on the controller",
+          "level": 3,
+          "p": [
+            "The controller responsible for data processing on this website is:\nSusanne Müller\nBreslauer Straße 21, D-96450 Coburg, Germany\nEmail: flow(at)momente.yoga",
+            "The controller is the natural or legal person who, alone or jointly with others, decides on the purposes and means of processing personal data (e.g. names, email addresses or the like)."
+          ]
+        },
+        {
+          "h": "Revocation of your consent to data processing",
+          "level": 3,
+          "p": [
+            "Many data processing operations are only possible with your express consent. You can revoke consent you have already given at any time. An informal email to us is sufficient. The lawfulness of the data processing carried out until the revocation remains unaffected."
+          ]
+        },
+        {
+          "h": "Right to lodge a complaint with the competent supervisory authority",
+          "level": 3,
+          "p": [
+            "In the event of data protection violations, data subjects have the right to lodge a complaint with the competent supervisory authority. The competent supervisory authority for data protection matters is the state data protection commissioner of the federal state in which our company has its registered office."
+          ]
+        },
+        {
+          "h": "Right to data portability",
+          "level": 3,
+          "p": [
+            "You have the right to have data that we process automatically on the basis of your consent or in fulfillment of a contract handed over to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another controller, this will only be done where technically feasible."
+          ]
+        },
+        {
+          "h": "SSL/TLS encryption",
+          "level": 3,
+          "p": [
+            "For security reasons and to protect the transmission of confidential content, such as inquiries you send to us as the site operator, this site uses SSL/TLS encryption. You can recognize an encrypted connection by the browser’s address bar changing from “http://” to “https://” and by the lock symbol in your browser bar.",
+            "If SSL/TLS encryption is enabled, the data you transmit to us cannot be read by third parties."
+          ]
+        },
+        {
+          "h": "Information, blocking, deletion",
+          "level": 3,
+          "p": [
+            "Within the framework of the applicable statutory provisions, you have the right at any time to free information about your stored personal data, its origin and recipients and the purpose of the data processing and, where applicable, a right to correction, blocking or deletion of this data. For this and further questions on personal data, you can contact us at any time at the address given in the imprint."
+          ]
+        },
+        {
+          "h": "Objection to promotional emails",
+          "level": 3,
+          "p": [
+            "We hereby object to the use of contact data published as part of the imprint obligation for sending unsolicited advertising and information materials. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited advertising, such as spam emails."
+          ]
+        },
+        {
+          "h": "3. Data collection on our website",
+          "level": 2
+        },
+        {
+          "h": "Cookies",
+          "level": 3,
+          "p": [
+            "This website does not set any cookies itself and does not use tracking technologies. Only the data technically required to deliver the pages is processed (see server log files)."
+          ]
+        },
+        {
+          "h": "Server log files",
+          "level": 3,
+          "p": [
+            "We use the following web hosting provider:\nIONOS SE\nElgendorfer Str. 57, D-56410 Montabaur, Germany",
+            "The provider of the pages automatically collects and stores information in so-called server log files, which your browser transmits to us automatically."
+          ],
+          "list": [
+            "Browser type and browser version",
+            "Operating system used",
+            "Referrer URL",
+            "Host name of the accessing computer",
+            "Time of the server request",
+            "IP address"
+          ]
+        },
+        {
+          "p": [
+            "This data is not merged with other data sources.",
+            "The basis for the data processing is Art. 6(1)(f) GDPR, which permits the processing of data to safeguard legitimate interests."
+          ]
+        },
+        {
+          "h": "Contact form",
+          "level": 3,
+          "p": [
+            "If you send us inquiries via the contact form, your details from the inquiry form, including the contact data you provide there, are stored by us and transmitted to us by email for the purpose of handling the inquiry and in case of follow-up questions. We do not pass on this data without your consent.",
+            "The data entered in the contact form is therefore processed exclusively on the basis of your consent (Art. 6(1)(a) GDPR). You can revoke this consent at any time. An informal email to us is sufficient. The lawfulness of the data processing carried out until the revocation remains unaffected.",
+            "The data you enter in the contact form remains with us until you ask us to delete it, revoke your consent to storage or the purpose for the data storage no longer applies (e.g. after your inquiry has been processed). Mandatory statutory provisions – in particular retention periods – remain unaffected."
+          ]
+        },
+        {
+          "h": "Retreat registration via Jotform",
+          "level": 3,
+          "p": [
+            "For registration for the yoga retreat we use a form from the provider Jotform (Jotform Inc., 4 Embarcadero Center, Suite 780, San Francisco, CA 94105, USA). The form is only loaded when you click “Register now”. A connection to Jotform's servers is then established, and what you enter in the form (for example name, contact details, payment details) is transmitted directly to Jotform and processed there.",
+            "The legal basis is performance of a contract or pre-contractual measures (Art. 6(1)(b) GDPR). Where data is transferred to the USA, this is done on the basis of the EU Commission's standard contractual clauses or an adequacy decision. You can find more details in Jotform's privacy policy."
+          ]
+        },
+        {
+          "h": "Processing of data (customer and contract data)",
+          "level": 3,
+          "p": [
+            "We collect, process and use personal data only to the extent necessary for establishing, shaping the content of or changing the legal relationship (master data). This is done on the basis of Art. 6(1)(b) GDPR, which permits the processing of data for the performance of a contract or pre-contractual measures. We collect, process and use personal data about the use of our websites (usage data) only to the extent necessary to enable the user to use the service or to bill for it.",
+            "The customer data collected will be deleted after completion of the order or termination of the business relationship. Statutory retention periods remain unaffected."
+          ]
+        },
+        {
+          "h": "Data transmission upon conclusion of a contract for services and digital content",
+          "level": 3,
+          "p": [
+            "We only transmit personal data to third parties if this is necessary in the course of contract processing, for example to the credit institution commissioned with payment processing.",
+            "No further transmission of the data takes place, or only if you have expressly consented to the transmission. Your data is not passed on to third parties without your express consent, for example for advertising purposes.",
+            "The basis for the data processing is Art. 6(1)(b) GDPR, which permits the processing of data for the performance of a contract or pre-contractual measures."
+          ]
+        },
+        {
+          "h": "4. External links",
+          "level": 2
+        },
+        {
+          "p": [
+            "This website contains links to external services, for example for booking appointments or to social networks. Data is only transmitted to the respective provider once you click such a link. The privacy information of the respective provider applies to the processing there."
+          ]
+        }
+      ]
+    }
+  ],
+  "_readme": "ENTWURF: Rechtstexte vor dem Live-Gang auf den Kunden anpassen (Firmendaten, Hoster, Formular, eingesetzte Dienste) und rechtlich prüfen lassen."
+}

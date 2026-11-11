@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Onboarding Website-Projekt <Kunde></title>
+<style>
+  @page { size: A4; margin: 18mm 18mm 18mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #1d1d1f; font-size: 10.5pt; line-height: 1.5; margin: 0; }
+  h1 { font-size: 24pt; margin: 0 0 4px; letter-spacing: -0.5px; }
+  .sub { color: #6e6e73; margin: 0 0 18px; font-size: 11pt; }
+  h2 { font-size: 14pt; margin: 22px 0 8px; color: #0a3d91; break-after: avoid; }
+  h3 { font-size: 11pt; margin: 14px 0 4px; break-after: avoid; }
+  p { margin: 6px 0; }
+  ol, ul { margin: 6px 0; padding-left: 20px; }
+  li { margin: 3px 0; }
+  code, pre { font-family: Menlo, Consolas, monospace; font-size: 9.5pt; }
+  code { background: #f2f4f8; padding: 1px 5px; border-radius: 4px; }
+  pre { background: #f2f4f8; border-radius: 8px; padding: 10px 12px; margin: 8px 0; white-space: pre-wrap; break-inside: avoid; }
+  .box { border: 1px solid #d2d9e6; background: #f7f9fc; border-radius: 10px; padding: 10px 14px; margin: 12px 0; break-inside: avoid; }
+  .box strong.t { display: block; margin-bottom: 2px; }
+  .warn { border-color: #f0c9a8; background: #fff6ee; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; break-inside: avoid; }
+  th, td { border: 1px solid #d2d9e6; padding: 6px 9px; text-align: left; vertical-align: top; }
+  th { background: #eef2f9; }
+  .step { counter-increment: s; }
+  .rules { margin: 10px 0; }
+  .rule { display: flex; gap: 12px; align-items: flex-start; border: 1px solid #d2d9e6; background: #f7f9fc; border-radius: 10px; padding: 9px 13px; margin: 7px 0; break-inside: avoid; }
+  .rule strong { display: block; margin-bottom: 1px; }
+  .rule .n { flex: 0 0 24px; height: 24px; border-radius: 50%; background: #0a3d91; color: #fff; font-weight: 700; font-size: 10pt; text-align: center; line-height: 24px; margin-top: 1px; }
+  .rule--key { border-color: #0a3d91; background: #eaf1fd; }
+  .foot { margin-top: 24px; color: #6e6e73; font-size: 9pt; border-top: 1px solid #d2d9e6; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Mitarbeiten an der Website</h1>
+<p class="sub">Onboarding-Anleitung für das Projekt <domain> (Vorlage: Namen, Rollen und Zugänge anpassen) · Stand Oktober 2026</p>
+
+<p>Die Einrichtung dauert für dich als Nutzer vermutlich nur etwa 10 Minuten, sofern <Verantwortliche Person> die Vorarbeit (Abschnitt 2) erledigt hat. Du brauchst <strong>keine Programmierkenntnisse</strong>: Texte änderst du im Live-Editor, alles Weitere übernimmt Claude Code.</p>
+
+<h2>1. Das Wichtigste in Kürze</h2>
+<table>
+  <tr><th style="width:32%">Was</th><th>Wozu</th></tr>
+  <tr><td>GitHub-Account</td><td>Zugang zum Projekt (Repository <code><org>/<kunde>-website</code>, privat)</td></tr>
+  <tr><td>Claude-Zugang <em>(optional)</em></td><td>Nur für Arbeiten mit Claude Code. Für den Live-Editor nicht nötig.</td></tr>
+  <tr><td>Git und Python 3</td><td>Auf dem Mac einmalig installieren (siehe Schritt 3)</td></tr>
+  <tr><td>Ordner auf deinem Rechner</td><td>Kopie des Projekts, <strong>nicht</strong> in Synology Drive, iCloud oder Dropbox</td></tr>
+</table>
+<p><strong>So läuft die Arbeit:</strong> Änderung auf eigenem Branch → Pull Request → automatisch Staging (<code><staging-url></code>) prüfen → <Verantwortliche Person> prüft und setzt live.</p>
+
+<h2>2. Einmalig durch <Verantwortliche Person> (Inhaber, Vorarbeit)</h2>
+<p>Dieser Abschnitt ist für die Transparenz enthalten. Du musst hier nichts tun.</p>
+<ol>
+  <li>GitHub: <em>Organisation <org> → People → Invite member</em> (oder <em>Repo → Settings → Collaborators</em>) und Schreibrechte (Write) auf <code>website</code> vergeben.</li>
+  <li>Claude-Zugang klären: Wer mit Claude Code arbeitet, braucht einen eigenen Zugang (Pro, Max oder Team-Seat). Ein gemeinsamer Account ist nicht vorgesehen.</li>
+  <li>Schutz: Zwei-Faktor-Anmeldung für alle mit Schreibrechten, Schreibrechte nur an Vertraute. Eine technische Freigabe für Produktion (Required reviewers, Branch-Schutz mit Pull-Request-Pflicht) gibt es erst im bezahlten GitHub-Plan. Bis dahin gilt: <strong>ein <code>live-…</code>-Tag geht sofort live</strong>.</li>
+</ol>
+<div class="box warn"><strong class="t">Niemals weitergeben</strong>SFTP-Zugangsdaten und der Deploy Key von <Verantwortliche Person>. Sie sind nur als Secrets in GitHub hinterlegt. Du brauchst sie nicht, denn dein Rechner lädt nie selbst auf den Server.</div>
+
+<h2>3. Einrichtung auf deinem Rechner (macOS)</h2>
+<h3>Schritt 1: GitHub-Account</h3>
+<p>Auf github.com registrieren (falls noch nicht vorhanden), Zwei-Faktor-Anmeldung aktivieren und die Einladung zur Organisation <code><org></code> annehmen. Gib <Verantwortliche Person> deinen Benutzernamen.</p>
+
+<h3>Schritt 2: Claude (nur für Claude Code)</h3>
+<p>Claude-Desktop-App von claude.ai/download installieren, mit deinem Claude-Zugang anmelden und den Tab <strong>Code</strong> öffnen.</p>
+
+<h3>Schritt 3: Git und Python 3</h3>
+<p>Im Terminal (Programme → Dienstprogramme → Terminal):</p>
+<pre>xcode-select --install</pre>
+<p>Das installiert Git und Python 3. Prüfen mit <code>git --version</code> und <code>python3 --version</code>.</p>
+
+<h3>Schritt 4: Projekt herunterladen</h3>
+<p>Einfachste Variante: <strong>GitHub Desktop</strong> (desktop.github.com), mit deinem GitHub-Account anmelden, <em>File → Clone Repository → <org>/<kunde>-website</em>. Zielordner zum Beispiel <code>~/Websites/<Kunde>-website</code>.</p>
+<p>Alternativ im Terminal (nach <code>brew install gh</code> und <code>gh auth login</code>):</p>
+<pre>mkdir -p ~/Websites &amp;&amp; cd ~/Websites
+gh repo clone <org>/<kunde>-website <Kunde>-website</pre>
+<p>Git braucht außerdem deinen Namen und deine Mail für die Änderungsprotokolle (einmalig):</p>
+<pre>git config --global user.name "Dein Name"
+git config --global user.email "deine@mail.de"</pre>
+
+<h3>Schritt 5: Testen, ob alles läuft</h3>
+<pre>cd ~/Websites/<Kunde>-website
+python3 build.py --preview</pre>
+<p>Es erscheint „Prüfung bestanden“ oder eine Liste mit Hinweisen. Dann ist die Einrichtung fertig.</p>
+
+<h2>4. Arbeiten: zwei Wege</h2>
+<h3>Weg A: Texte ändern mit dem Live-Editor (ohne Claude)</h3>
+<ol>
+  <li>Im Projektordner <code>Editor starten.command</code> doppelklicken (beim ersten Mal Rechtsklick → Öffnen). Alternativ im Terminal <code>python3 editor.py</code>.</li>
+  <li>Im Browser öffnet sich die Seite. Text anklicken, ändern, <em>Speichern</em> (⌘↵). Die andere Sprache steht daneben.</li>
+  <li>Vor dem Veröffentlichen kurz im Team abstimmen (siehe Regeln). <em>Veröffentlichen</em> prüft die Texte und lädt sie hoch. Staging aktualisiert sich nach etwa 1 bis 2 Minuten.</li>
+</ol>
+<div class="box"><strong class="t">Wichtig</strong>Der Editor veröffentlicht derzeit direkt auf <code>main</code>. Arbeiten mehrere Personen gleichzeitig, kann der Upload mit einer Fehlermeldung abbrechen. Dann bitte nichts erzwingen, sondern <Verantwortliche Person> oder Claude Code fragen. Eine mehrbenutzerfähige Version ist als nächste technische Aufgabe geplant.</div>
+
+<h3>Weg B: Größere Änderungen mit Claude Code</h3>
+<ol>
+  <li>In der Claude-App im Tab <strong>Code</strong> den Projektordner öffnen.</li>
+  <li>Claude liest automatisch <code>CLAUDE.md</code> und kennt damit Aufbau, Regeln und Befehle des Projekts.</li>
+  <li>Aufgabe beschreiben, zum Beispiel: „Lege einen Branch <code>texte-startseite</code> an und ändere …“. Claude baut, prüft und zeigt das Ergebnis.</li>
+  <li>Commit und Pull Request nur auf Aufforderung: „Bitte committe und erstelle einen Pull Request.“</li>
+</ol>
+<p><strong>Tipp:</strong> Pro Thema eine neue Sitzung starten (z. B. „Landingpage X“, „Rechtstexte“). Das hält Claude fokussiert.</p>
+
+<h2>5. Spielregeln im Team</h2>
+<p>Sieben einfache Regeln, damit mehrere Personen sicher an derselben Website arbeiten.</p>
+<div class="rules">
+  <div class="rule"><span class="n">1</span><div><strong>Eigener Branch für größere Arbeiten</strong>Kleine Textkorrekturen gehen direkt. Alles andere läuft auf einem eigenen Branch (z. B. <code>landing-produkt-x</code>) und kommt per Pull Request nach <code>main</code>.</div></div>
+  <div class="rule"><span class="n">2</span><div><strong>Jeder Push auf <code>main</code> aktualisiert Staging</strong>Staging (<code><staging-url></code>) ist nicht öffentlich auffindbar, aber erreichbar. Keine vertraulichen Inhalte hochladen.</div></div>
+  <div class="rule rule--key"><span class="n">3</span><div><strong>Live geht nur über <Verantwortliche Person></strong>Als Website-Owner startet <Verantwortliche Person> jede Veröffentlichung auf die Produktion (<domain>) selbst. Nur <Verantwortliche Person> setzt den Tag <code>live-…</code> oder startet den Workflow für <code>production</code>. Eine technische Sperre gibt es derzeit nicht (kein bezahlter GitHub-Plan): Der Tag geht sofort live, deshalb gilt die Regel verbindlich. Meld dich bei <Verantwortliche Person>, wenn eine Änderung nach Prüfung auf Staging live gehen soll.</div></div>
+  <div class="rule"><span class="n">4</span><div><strong>Immer beide Sprachen pflegen</strong>Jede Änderung in <code>content/de</code> und <code>content/en</code>. Fehlt etwas, bricht der Build mit einer verständlichen Meldung ab.</div></div>
+  <div class="rule"><span class="n">5</span><div><strong>Sprachregeln einhalten</strong>Englisch ist American English, „Digitization“ statt „Digitalization“, Menüpunkte in Title Case. Deutsch ist geschlechtsneutral. Das Glossar (<code>content/glossary.json</code>) prüft automatisch mit.</div></div>
+  <div class="rule"><span class="n">6</span><div><strong>Keine Preise, keine externen Skripte oder Schriften</strong>Die Website nennt keine Preise. Ohne Fremdeinbindungen braucht sie keinen Cookie-Banner.</div></div>
+  <div class="rule"><span class="n">7</span><div><strong>Konflikte sind normal</strong>Wurde dieselbe Stelle von zwei Personen geändert, entsteht ein Konflikt. Claude Code löst ihn auf („Löse den Merge-Konflikt“).</div></div>
+</div>
+
+<h2>6. Wenn etwas nicht klappt</h2>
+<table>
+  <tr><th style="width:38%">Problem</th><th>Lösung</th></tr>
+  <tr><td>Push abgelehnt („rejected“, „non-fast-forward“)</td><td>Erst holen: <code>git pull --rebase</code>, dann erneut pushen. Oder Claude Code fragen.</td></tr>
+  <tr><td>Editor lässt sich nicht öffnen</td><td>Port 8777 belegt oder Editor läuft schon: altes Terminal-Fenster schließen und neu starten.</td></tr>
+  <tr><td>Build meldet Fehler im Glossar oder Struktur</td><td>Meldung lesen, sie nennt Datei und Stelle. Meist fehlt eine Übersetzung oder eine verbotene Schreibweise wurde verwendet.</td></tr>
+  <tr><td>Staging zeigt noch alte Version</td><td>1 bis 2 Minuten warten. Auf GitHub unter <em>Actions</em> prüfen, ob der Lauf grün ist. Browser mit ⇧⌘R neu laden.</td></tr>
+  <tr><td>Etwas ist unklar</td><td><Verantwortliche Person> fragen oder Claude Code: „Erkläre mir, wie ich …“</td></tr>
+</table>
+
+<h2>7. Wo steht was?</h2>
+<ul>
+  <li><code>README.md</code>: Gesamtübersicht, Deployment, offene Punkte, Ideenspeicher</li>
+  <li><code>CLAUDE.md</code>: Projektregeln und Befehle (von Claude gelesen)</li>
+  <li><code>content/de</code>, <code>content/en</code>: alle Texte, eine Datei je Seite</li>
+  <li><code>content/glossary.json</code>: Sprachregeln und Fachbegriffe</li>
+  <li><code>static/</code>: Design (CSS), Skripte, Bilder, Kontaktformular</li>
+</ul>
+
+<p class="foot">Projekt: <domain> · Repository <org>/<kunde>-website (privat) · Staging <staging-url> · Quelle dieser Anleitung: docs/onboarding.html</p>
+</body>
+</html>

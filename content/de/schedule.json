@@ -1,0 +1,61 @@
+{
+  "id": "schedule",
+  "slug": "stundenplan",
+  "title": "Stundenplan | Yoga Momente Coburg",
+  "description": "Aktueller Stundenplan von Yoga Momente in Coburg: Hormon Yoga, Yoga im Tanztraum, Early Morning Yoga und Personal Yoga mit Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Stundenplan",
+      "lead": "Der aktuelle Stundenplan von Yoga Momente in Coburg."
+    },
+    {
+      "type": "grid",
+      "id": "plan",
+      "variant": "cards",
+      "cols": 2,
+      "items": [
+        {
+          "n": "Dienstag",
+          "title": "Hormon Yoga",
+          "text": "17:00–18:30 Uhr\n\nFindet ab 2–3 Teilnehmerinnen statt. Aktuell als Online-Kurs.",
+          "href": "page:contact",
+          "cta": "Jetzt buchen"
+        },
+        {
+          "n": "Donnerstag",
+          "title": "Yoga.momente im Tanztraum",
+          "text": "17:30–18:30 Uhr\n\nPräsenz & Online-Kurs\nTanztraum, Dieselstraße 14, 96450 Coburg",
+          "href": "page:contact",
+          "cta": "Jetzt buchen"
+        },
+        {
+          "n": "Freitag",
+          "title": "Early Morning Yoga",
+          "text": "06:30–07:30 Uhr\n\nOnline-Kurs",
+          "href": "page:contact",
+          "cta": "Jetzt buchen"
+        },
+        {
+          "n": "Freitag",
+          "title": "Personal Yoga",
+          "text": "14:00–15:00 Uhr\n\nEinzelstunde mit Susanne",
+          "href": "page:contact",
+          "cta": "Jetzt buchen"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Zeit für deine Stunde?",
+      "text": "Montag, Mittwoch, Samstag und Sonntag sind noch Zeiten für Personal Yoga und Hormon Yoga verfügbar. Schreib uns einfach.",
+      "buttons": [
+        {
+          "label": "Stunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

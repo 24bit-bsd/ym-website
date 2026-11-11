@@ -1,0 +1,72 @@
+{
+  "id": "courses",
+  "slug": "yoga-kurse-coburg",
+  "title": "Yoga-Kurse in Coburg: Yin, Hatha, Hormon und Personal Yoga",
+  "description": "Finde deinen Yoga-Kurs in Coburg: Yin Yoga, Hatha, Early Morning, Hormon Yoga und Personal Yoga mit Susanne Müller, auch online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Yoga-Kurse in Coburg",
+      "lead": "Finde das passende Training für dich und deine Bedürfnisse."
+    },
+    {
+      "type": "text",
+      "id": "einstieg",
+      "paragraphs": [
+        "Übungen und Wissen werden im Yoga traditionell von Lehrer:in zu Schüler:in weitergegeben, mit deinen persönlichen Erfahrungen im Mittelpunkt. Um den Weg des Yoga zu gehen, werden Raum und Zeit gebraucht. Diese wertvolle Zeit nehme ich mir gerne für dich. Gönne dir diese Yoga-Momente.\n\nAlle Stunden sind auch virtuell buchbar."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "kurse",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Deine Kurse im Überblick.",
+      "items": [
+        {
+          "title": "Yin Yoga",
+          "text": "Hält deinen Körper zutiefst geschmeidig und lässt Lebensenergie durch Gelenke, Faszien und das Meridian-Gewebe fließen. Yin Yoga ist vollkommen entspanntes, längeres Halten von tiefwirkenden Yogastellungen für alle, die es genießen, ihre Praxis auf ein erhöhtes Level von Achtsamkeit und Stille zu bringen. Ein optimaler Ausgleich für alle, deren Alltag eher Yang-orientiert ist.",
+          "href": "page:yin-yoga",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "title": "Hatha Yoga",
+          "text": "Abwechslungsreiche Stunden mit allen grundlegenden Asanas des Hatha Yoga, orientiert an den Bedürfnissen der Teilnehmenden. Du steigerst deine Beweglichkeit und Dehnbarkeit, auch Kraft und Ausdauer nehmen zu.",
+          "href": "page:hatha-yoga",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "title": "Early Morning Yoga",
+          "text": "Starte deinen Tag mit bewusster Atmung, Achtsamkeit und Bewegung. So bringst du Aktivität in deinen Körper, verbesserst deine Beweglichkeit und bringst Freude und Ausgeglichenheit in deinen Tag.",
+          "href": "page:early-morning",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "title": "Hormon Yoga",
+          "text": "Nach dem bewährten System von Dinah Rodrigues werden dynamische Körperübungen mit speziellen Atemtechniken und Visualisierungen kombiniert, die das Drüsensystem regulieren. Antistress- und Entspannungsübungen harmonisieren Körper und Geist. Zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Problemen, auch für jüngere Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch.",
+          "href": "page:hormon-yoga",
+          "cta": "Mehr erfahren"
+        },
+        {
+          "title": "Personal Yoga",
+          "text": "In deiner individuellen Stunde praktizierst du mit Susanne Hatha Yoga ganz nach deinen körperlichen Bedürfnissen. Es werden gezielt Übungsreihen für dich erarbeitet, die du auch zu Hause üben kannst. Im Studio in Coburg oder bei dir zu Hause (im Radius von 20 km, inkl. Rödental und Neustadt bei Coburg).",
+          "href": "page:personal-yoga",
+          "cta": "Mehr erfahren"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns oder ruf an, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

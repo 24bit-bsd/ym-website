@@ -1,0 +1,102 @@
+{
+  "id": "prices",
+  "slug": "preise",
+  "title": "Preise & YogaCard | Yoga Momente Coburg",
+  "description": "Kurspreise für Yin, Hatha, Early Morning, Hormon und Personal Yoga in Coburg, dazu Schnupperstunde und YogaCard.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Preise & YogaCard",
+      "lead": "Klare Preise für deine Yoga-Momente in Coburg."
+    },
+    {
+      "type": "pricing",
+      "id": "kurspreise",
+      "title": "Kurspreise",
+      "footnote": "Alle Preise pro Person. Aktuelle Termine findest du im Stundenplan.",
+      "items": [
+        {
+          "name": "Yin Yoga & Hatha Yoga",
+          "subtitle": "10 Stunden",
+          "from": "ab",
+          "price": "135 €",
+          "period": "pro Person",
+          "features": [
+            "10 × 60 Min.: 150 € (3–4 Teilnehmende), 135 € ab 5 Teilnehmenden",
+            "10 × 90 Min.: 225 € (3–4 Teilnehmende), 200 € ab 5 Teilnehmenden"
+          ]
+        },
+        {
+          "name": "Early Morning Yoga",
+          "subtitle": "10 × 60 Min.",
+          "from": "",
+          "price": "150 €",
+          "period": "pro Person",
+          "features": [
+            "bei 3–4 Teilnehmenden",
+            "Starte frisch in den Tag"
+          ]
+        },
+        {
+          "name": "Hormon Yoga",
+          "subtitle": "5 × 90 Min.",
+          "from": "ab",
+          "price": "150 €",
+          "period": "pro Person",
+          "features": [
+            "3 Teilnehmende: 200 €, 4 Teilnehmende: 150 € pro Person",
+            "inklusive Hormon-Booklet"
+          ]
+        },
+        {
+          "name": "Personal Yoga mit Susanne",
+          "subtitle": "Einzelstunde",
+          "from": "ab",
+          "price": "75 €",
+          "period": "pro Stunde",
+          "features": [
+            "60 Min.: 75 €",
+            "90 Min.: 100 €",
+            "im Studio oder bei dir zu Hause"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "schnupperstunde",
+      "eyebrow": "Du bist neu im Yoga?",
+      "title": "Schnupperstunde: 60 €",
+      "paragraphs": [
+        "Eine Probestunde à 60 Minuten. Ruf uns an oder schreib uns eine E-Mail, um deine Yoga-Stunde zu vereinbaren.",
+        "Tel.: +49 (0)9561 29831\nE-Mail: flow@momente.yoga"
+      ],
+      "wideBody": false
+    },
+    {
+      "type": "text",
+      "id": "erwartung",
+      "title": "Was erwartet dich?",
+      "list": [
+        "Anfänger:innen starten am besten mit Level 1 oder Basis-Kursen.",
+        "Bring eine Wasserflasche und ein kleines Handtuch mit. Wenn du eine Yoga-Matte hast, bring sie gern mit, sonst nutzt du unsere Studiomatten.",
+        "Komm 5 bis 15 Minuten vor Beginn, damit du in Ruhe ankommen kannst.",
+        "Trag bequeme Kleidung, in der du dich gut bewegen kannst. Schuhe brauchst du nicht.",
+        "Sag mir vor der Stunde bitte Bescheid bei Verletzungen, Schwangerschaft oder medizinischen Problemen."
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Deine YogaCard",
+      "title": "Sammle deine Yoga-Momente.",
+      "text": "Mit der kleinen YogaCard behältst du den Überblick über deine absolvierten Stunden. Sie erinnert dich auch zu Hause an deine Yoga-Momente. Du erhältst sie bei deiner Anmeldung.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

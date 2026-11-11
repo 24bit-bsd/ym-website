@@ -1,0 +1,52 @@
+{
+  "id": "oils",
+  "slug": "aetherische-oele",
+  "title": "Ölgeflüster: ätherische Öle mit doTERRA | Yoga Momente",
+  "description": "Ölgeflüster von Susanne Müller: ätherische Öle als Begleiter für Körper und Gefühl, Beratung, Ölpröbchen und Einstieg als doTERRA Wellness-Botschafterin.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/oele-hero.jpg",
+      "title": "Kraft der Öle",
+      "lead": "Erlebe Ölgeflüster: ätherische Öle als tägliche Begleiter für Körper und Gefühl."
+    },
+    {
+      "type": "text",
+      "id": "oele-1",
+      "title": "Was können die Öle?",
+      "paragraphs": [
+        "Sie sind tägliche gute Begleiter für deine Gesundheit, körperlich und auch emotional. Sie sind rein und natürlich und hochwirksam, um eine gute Basis für einen gesunden Lebensstil zu schaffen."
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-2",
+      "title": "Was biete ich?",
+      "paragraphs": [
+        "Ich biete ein Netzwerk für engagierte Frauen, die ihre Begeisterung für ätherische Öle nach außen tragen. Gemeinsam bauen wir durch Networkmarketing ein eigenes Business auf und wachsen jede eigenständig, individuell und im eigenen Tempo. Wir unterstützen uns gegenseitig und haben das großartige doTERRA-Netzwerk im Hintergrund.",
+        "Du profitierst von meinem Wissen in Sachen Gesundheit und Beratung, zum einen aus meinem beruflichen Hintergrund, zum anderen durch meinen Yoga-Weg mit Interesse an Bewegung, Ernährung und Entspannung. Meine Begeisterung strahle ich nicht nur in persönlichen Beratungen aus, sondern gern auch bei Gruppentreffen. Einer meiner Werte ist eine positive Lebenseinstellung mit der Devise: Geht nicht, gibt's nicht, einfach tun.",
+        "In meinen Yoga-Stunden kommen die Yogis in den Genuss der Öle. Ich freue mich, wenn ich auch dich mit meiner Begeisterung anstecke und du selbst als Botschafterin die Öle weiterträgst."
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-3",
+      "title": "Wie kann ich einsteigen?",
+      "paragraphs": [
+        "Mit viel Begeisterung und Interesse für das Thema Öle und Gesundheit mit Ölen. Du investierst in eine Grundausstattung an Ölen, um sie selbst richtig kennenzulernen. Über eine monatliche Bestellung von 125 PV vertiefst du nach und nach dein Wissen zu den Ölen."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Gerne sende ich dir Ölpröbchen zu.",
+      "text": "Du darfst mir dein Thema (Schlaf, Verdauung, Schmerzen, Stimmung) „zuflüstern“. Melde dich gern für mehr Infos!",
+      "buttons": [
+        {
+          "label": "Ölpröbchen anfragen",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

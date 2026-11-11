@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prototyp A – Foto-Hero</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c99a06;--gold-soft:#e8c75a;--petrol:#1f5563;--petrol-dk:#163e4a;--sky:#5f8a9c;--cream:#f7f0e2;--sand:#eadfc8;--ink:#2b1f1a}
+*{box-sizing:border-box}body{margin:0;font:400 17px/1.65 Montserrat,sans-serif;color:var(--ink);background:var(--cream)}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:absolute;inset:0 0 auto;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+header img{height:60px;background:rgba(247,240,226,.94);padding:8px 18px;border-radius:999px}
+nav{display:flex;gap:28px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;font-weight:500}
+@media(max-width:820px){nav{display:none}header img{height:48px}}
+.hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;padding:140px 20px 90px;background:linear-gradient(rgba(22,62,74,.55),rgba(22,62,74,.7)),url(proto-img/yogaraum.jpg) center/cover}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;margin:0}
+.hero h1{font-size:clamp(38px,6vw,68px);max-width:15em;margin:0 auto 20px}
+em{font-style:italic;font-weight:500;color:var(--gold-soft)}
+.hero p{max-width:34em;margin:0 auto 32px;color:#f3efe6}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin:6px}
+.btn.gold{background:var(--gold);color:#fff}.btn.ghost{border:1.5px solid #fff;color:#fff}
+section{padding:88px 0}
+h2{font-size:clamp(30px,4vw,44px);color:var(--petrol);margin-bottom:14px}
+.lead{max-width:38em;color:#5a4a42}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:40px}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(43,31,26,.08)}
+.card .ph{height:170px;background:var(--sand) center/cover}
+.card div.t{padding:22px}.card h3{font-size:22px;color:var(--petrol);margin-bottom:6px}.card p{margin:0 0 12px;font-size:15px;color:#5a4a42}
+.card a.l{color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.retreat{background:var(--petrol);color:#fff}
+.retreat .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+@media(max-width:820px){.retreat .grid{grid-template-columns:1fr}}
+.retreat h2{color:#fff}.retreat .pic{border-radius:240px 240px 22px 22px;aspect-ratio:4/5;background:url(proto-img/haus.jpg) 35% center/cover}
+.facts{list-style:none;padding:0;margin:22px 0 28px;display:grid;gap:8px}.facts li:before{content:"◦ ";color:var(--gold-soft)}
+.price{font-family:'Playfair Display',serif;font-size:34px;color:var(--gold-soft)}
+footer{background:var(--petrol-dk);color:#cfd9dc;text-align:center;padding:40px 20px;font-size:14px}
+.note{position:fixed;right:12px;bottom:12px;background:#fff;border:1px solid #ccc;padding:6px 10px;font:12px sans-serif;border-radius:6px;z-index:9}
+</style></head><body>
+<div class="note">Prototyp A · Entwurf</div>
+<header><img src="proto-img/logo.png" alt="Yoga Momente"><nav><a>Kurse</a><a>Stundenplan</a><a>Preise</a><a>Events</a><a>Online</a><a>Kontakt</a></nav></header>
+<div class="hero"><div><h1>Yoga für Momente, in denen du <em>wirklich ankommst.</em></h1>
+<p>Kurse, Online-Yoga und Retreats mit Susanne – für Körper, Atem und einen klaren Kopf.</p>
+<a class="btn gold" href="#">Zum Rottal-Retreat</a><a class="btn ghost" href="#">Stundenplan ansehen</a></div></div>
+<section><div class="wrap"><h2>Dein Weg zu uns</h2><p class="lead">Ob wöchentlich im Kurs, von zu Hause oder als Auszeit im Grünen – such dir den Rahmen, der gerade passt.</p>
+<div class="cards">
+<a class="card" href="#"><div class="ph" style="background-image:url(proto-img/yogaraum.jpg)"></div><div class="t"><h3>Kurse</h3><p>Hatha, Flow und sanftes Yoga.</p><span class="l" style="color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Mehr erfahren</span></div></a>
+<a class="card" href="#"><div class="ph" style="background-image:url(proto-img/pool.jpg)"></div><div class="t"><h3>Online-Yoga</h3><p>Flexibel, wo und wann du willst.</p><span style="color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Mehr erfahren</span></div></a>
+<a class="card" href="#"><div class="ph" style="background-image:url(proto-img/stein.jpg)"></div><div class="t"><h3>Events</h3><p>Workshops und Retreats.</p><span style="color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Mehr erfahren</span></div></a>
+<a class="card" href="#"><div class="ph"></div><div class="t"><h3>Ölgeflüster</h3><p>Pflege aus der Natur.</p><span style="color:var(--gold);font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase">Mehr erfahren</span></div></a>
+</div></div></section>
+<section class="retreat"><div class="wrap grid"><div><h2>Yoga-Retreat im Rottal</h2>
+<p>Ein Wochenende zum Durchatmen im Neue Welt Haus – mit Yoga, Stille und viel Zeit in der Natur.</p>
+<ul class="facts"><li>13.–15. November 2026</li><li>Neue Welt Haus im Rottal</li><li>Maximal 10 Teilnehmende</li><li>Anreise ab 17:00 Uhr</li></ul>
+<div class="price">295 €</div><br><a class="btn gold" href="#">Platz anfragen</a></div><div class="pic"></div></div></section>
+<footer>© Yoga Momente · Impressum · Datenschutz · AGB</footer>
+</body></html>

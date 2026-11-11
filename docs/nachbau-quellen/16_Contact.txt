@@ -1,0 +1,25 @@
+
+=== Sektion 1 (id 1576324319678, 1 Spalten) ===
+[title] Deine Yoga Oase
+[title] Move
+[IMG] images/2020/01/05/img_5001.jpg
+
+=== Sektion 2 (id 1550232079255, 2 Spalten) ===
+[title] Bei Fragen.
+[title] Move
+[title] — Telefon
+[text] +49 (0)9561 29831
+[title] — Mobil
+[text] +49 (0)175 5643744
+[title] — E-Mail
+[text] flow[at]momente.yoga
+[title] Dein Yoga-Studio.
+[text] Breslauer Str. 21
+D-96450 Coburg
+[title] Yoga Momente
+[IMG] images/Yoga/yoga-logo-rund.png
+
+=== Sektion 3 (id 1550232079412, 1 Spalten) ===
+[title] — Sag hallo.
+[button_text] Jetzt absenden
+[IMG] images/2020/01/05/img_5001.jpg

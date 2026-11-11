@@ -1,0 +1,47 @@
+{
+  "id": "events",
+  "slug": "events",
+  "title": "Events & Retreats | Yoga Momente Coburg",
+  "description": "Yoga retreat in the Rottal, fasting-season workshop and special occasions such as a girls' day or bachelorette party with Yoga Momente.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Events & retreats",
+      "lead": "In our classes and at our events you discover how to build a positive connection with yourself and with others."
+    },
+    {
+      "type": "grid",
+      "id": "angebote",
+      "variant": "cards",
+      "cols": 2,
+      "title": "Our events.",
+      "items": [
+        {
+          "title": "Yoga retreat in the Rottal",
+          "text": "13–15 November 2026 at the Neue Welt Haus. Yoga, meditation and mindfulness, maximum of 10 participants, €295 per person.",
+          "href": "page:retreat-rottal",
+          "cta": "To the retreat"
+        },
+        {
+          "title": "Fasting season with yoga.momente",
+          "text": "We accompany you through 40 days of fasting season so you can follow through on your resolutions. With 3 online sessions, exchange in a WhatsApp group, information material, recipes and essential oils. From 5 people €140, from 10 people €90 per person.",
+          "href": "mailto:flow@momente.yoga",
+          "cta": "Ask for dates"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Special occasions",
+      "title": "A girls' day or bachelorette party?",
+      "text": "Write to us and we will shape your yoga moment together.",
+      "buttons": [
+        {
+          "label": "Send an inquiry",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

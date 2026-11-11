@@ -1,0 +1,64 @@
+
+=== Sektion 1 (id 1576327457721, 1 Spalten) ===
+[title] Yoga Kurse in Coburg
+[title] Move
+[text] Finde das passende Training für Dich und Deine Bedürfnisse
+[IMG] images/2019/10/30/lesly-juarez-dftjxyd5pto-unsplash.jpg
+
+=== Sektion 2 (id 1590410943245, 1 Spalten) ===
+[title] Gallery Item 1
+[title] Move
+[title] Finde hier deinen passenden Yoga Kurs in Coburg
+[text] Du suchst nach dem passenden Yoga-Kurs? 
+Ich biete bei Yoga Momente Yin Yoga, Early Morning Yoga für Frühaufsteher, Hormonyoga für Frauen und Männer an. Auch Hatha Yoga ist eine Möglichkeit, um Abwechslung in dein Training zu bringen und um den Stoffwechsel anzuregen. Außerdem biete ich Personal Yoga bei mir im Studio in Coburg oder auch ganz flexibel bei Dir zuhause (im Radius von 20km inkl. Rödental & Neustadt bei Coburg) an.
+
+All meine Stunden sind auch virtuell buchbar. Mehr erfährst du hier.
+[text] Zum virtuellen Yoga 4.0
+[url] index.php/yoga/yoga-4-0
+[IMG] images/2020/05/25/untitled-design.png
+
+=== Sektion 3 (id 1572612244023, 1 Spalten) ===
+[text] — Übungen und Wissen werden im Yoga traditionell von Lehrer/in zu Schüler/in weitergegeben. Der/die Schüler/in mit den persönlichen Erfahrungen steht dabei im Mittelpunkt. Um den Weg des Yoga zu beschreiten und Entwicklungen stattfinden zu lassen, werden Raum und Zeit benötigt. Diese wertvolle Zeit nehme ich mir gerne für Dich –
+
+gönne Dir diese Yoga Momente.
+[title] Move
+
+=== Sektion 4 (id 1572604611847, 2 Spalten) ===
+[heading] Yin Yoga
+[text] hält Deinen Körper zutiefst geschmeidig und lässt Lebensenergie durch Gelenke, Faszien, das Meridian-Gewebe, fließen. Yin Yoga ist vollkommen entspanntes, längeres Halten von tiefwirkenden Yogastellungen für alle, die es genießen, ihre Praxis auf ein erhöhtes Level von Achtsamkeit und Stille zu bringen – ein optimaler Ausgleich für alle, deren Alltag eher Yang orientiert ist.
+[text] Zu den Preisen
+[title] Move
+[url] index.php/momente/card#pricing-yin-hatha
+[IMG] images/2019/12/14/get-your-fresh-produce-straight-from-clearwaters-organic-farmers-join-us-every-weekend-of-june-2017-clearwater-communiy-center-6-am-to-11-am.png
+
+=== Sektion 5 (id 1549949952851, 2 Spalten) ===
+[heading] Early Morning Yoga
+[text] Starte Deinen Tag mit bewusster Atmung, Achtsamkeit und Bewegungen. So bringst Du Aktivität in Deinen Körper für einen optimalen Alltag voller Lebensenergie. Du verbesserst damit nicht nur Deine Beweglichkeit, sondern bringst damit auch Freude und Ausgeglichenheit in Deinen Tag.
+[text] Zu den Preisen
+[title] Move
+[url] index.php/momente/card#morning-hormon-yoga
+[IMG] images/2019/11/01/3.png
+
+=== Sektion 6 (id 1549949952846, 2 Spalten) ===
+[heading] Hormon Yoga - Vitalität für Frauen & Männer
+[text] Nach dem bewährten System von Dinah Rodrigues werden dynamische Körperübungen mit speziellen Atemtechniken und Visualisierungen kombiniert, die das Drüsensystem regulieren. Wirkungsvolle Antistress- und Entspannungsübungen harmonisieren deinen Körper und Geist. Zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Probleme. Auch für jüngere Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch.
+[text] Zu den Preisen
+[title] Move
+[url] index.php/momente/card#morning-hormon-yoga
+[IMG] images/2020/08/01/get-your-fresh-produce-straight-from-clearwaters-organic-farmers-join-us-every-weekend-of-june-2017-clearwater-communiy-center-6-am-to-11-am.png
+
+=== Sektion 7 (id 1572604612072, 2 Spalten) ===
+[heading] Hatha Yoga – abwechslungsreiche Stunden
+[text] In unserer gemeinsamen Yogapraxis praktiziere ich abwechslungsreiche Stunden, die alle grundlegenden Asanas des Hatha Yoga beinhalten. Die Stunden orientiere ich an den Bedürfnissen der Yogaschüler/innen um einen größtmöglichen Effekt spürbar werden zu lassen. Du steigerst Deine Beweglichkeit, Deine Dehnbarkeit und auch Kraft und Ausdauer werden zunehmen.
+[text] Zu den Preisen
+[title] Move
+[url] index.php/momente/card#pricing-yin-hatha
+[IMG] images/2019/11/01/get-your-fresh-produce-straight-from-clearwaters-organic-farmers-join-us-every-weekend-of-june-2017-clearwater-communiy-center-6-am-to-11-am.png
+
+=== Sektion 8 (id 1549951982373, 2 Spalten) ===
+[title] Move
+[heading] Personal Yoga mit Susanne Müller
+[text] In Deiner individuellen Yoga Stunde praktizierst Du mit mir Hatha Yoga ganz nach Deinen körperlichen Bedürfnissen. So können gezielt Übungsreihen für Dich erarbeitet werden, die Du auch zu Hause üben kannst. So bemerkst Du schnell Fortschritte und spürbare Verbesserungen Deiner körperlichen Konstitution. Denn mit einer kontinuierlichen Yogapraxis lässt sich Körper, Geist und Seele in Einklang bringen.
+[text] Zu den Preisen
+[url] index.php/momente/card
+[IMG] images/2019/11/01/personalyoga.png

@@ -1,0 +1,52 @@
+{
+  "id": "oils",
+  "slug": "essential-oils",
+  "title": "Oil Whispers: Essential Oils with doTERRA | Yoga Momente",
+  "description": "Oil Whispers by Susanne Müller: essential oils as companions for body and emotions, consultation, oil samples and joining as a doTERRA wellness advocate.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/oele-hero.jpg",
+      "title": "The power of oils",
+      "lead": "Experience Oil Whispers: essential oils as daily companions for body and emotions."
+    },
+    {
+      "type": "text",
+      "id": "oele-1",
+      "title": "What can the oils do?",
+      "paragraphs": [
+        "They are good daily companions for your health, physically and emotionally. They are pure and natural and highly effective in laying a good foundation for a healthy lifestyle."
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-2",
+      "title": "What do I offer?",
+      "paragraphs": [
+        "I offer a network for committed women who share their enthusiasm for essential oils. Together we build our own business through network marketing and each grow independently, individually and at our own pace. We support one another and have the great doTERRA network behind us.",
+        "You benefit from my knowledge of health and consulting, on the one hand from my professional background, on the other from my yoga path with an interest in movement, nutrition and relaxation. I share my enthusiasm not only in personal consultations but gladly at group meetings too. One of my values is a positive outlook on life with the motto: there is no such thing as “can’t”, just do it.",
+        "In my yoga classes, yogis get to enjoy the oils. I am happy if I can infect you with my enthusiasm too and you carry the oils on as an advocate yourself."
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-3",
+      "title": "How can I get started?",
+      "paragraphs": [
+        "With lots of enthusiasm and interest in oils and health with oils. You invest in a basic set of oils to get to know them properly yourself. Through a monthly order of 125 PV you gradually deepen your knowledge of the oils."
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "I am happy to send you oil samples.",
+      "text": "Feel free to “whisper” your topic (sleep, digestion, pain, mood) to me. Get in touch for more info!",
+      "buttons": [
+        {
+          "label": "Request oil samples",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

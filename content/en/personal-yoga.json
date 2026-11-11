@@ -1,0 +1,73 @@
+{
+  "id": "personal-yoga",
+  "slug": "yoga-classes-coburg/personal-yoga",
+  "title": "Personal Yoga in Coburg | Yoga Momente",
+  "description": "Personal yoga in Coburg: individual classes with Susanne Müller in the studio or at your home, entirely according to your physical needs.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Personal Yoga",
+      "lead": "Your class, tailored exactly to you.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "What it is about",
+      "title": "Personal Yoga: what to expect.",
+      "paragraphs": [
+        "In your individual class you practice hatha yoga with Susanne, entirely according to your physical needs. Series of exercises are developed specifically for you, which you can also practice at home. In the studio in Coburg or at your home (within a 20 km radius, including Rödental and Neustadt bei Coburg)."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "At a glance.",
+      "items": [
+        {
+          "title": "Scope",
+          "text": "Individual class of 60 or 90 minutes."
+        },
+        {
+          "title": "When and where",
+          "text": "In the studio in Coburg or at your home (within 20 km, including Rödental and Neustadt bei Coburg). Fridays 14:00–15:00, other times on request."
+        },
+        {
+          "title": "Price",
+          "text": "60 minutes: €75. 90 minutes: €100."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Prices and YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

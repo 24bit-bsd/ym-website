@@ -1,0 +1,18 @@
+{
+  "id": "contact",
+  "slug": "contact",
+  "title": "Contact | Yoga Momente Coburg",
+  "description": "Contact Yoga Momente in Coburg: write to me, call, or arrange your trial class with Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "Your yoga oasis",
+      "lead": "For questions or your trial class: write to me, call, or drop by."
+    },
+    {
+      "type": "contact",
+      "id": "kontaktformular"
+    }
+  ]
+}

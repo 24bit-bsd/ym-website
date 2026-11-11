@@ -1,0 +1,11 @@
+# generiert
+dist/
+preview/
+
+# lokal
+.DS_Store
+.claude/*
+!.claude/skills/
+__pycache__/
+*.pyc
+edit/

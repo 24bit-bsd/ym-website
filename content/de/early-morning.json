@@ -1,0 +1,73 @@
+{
+  "id": "early-morning",
+  "slug": "yoga-kurse-coburg/early-morning-yoga",
+  "title": "Early Morning Yoga in Coburg | Yoga Momente",
+  "description": "Early Morning Yoga in Coburg: bewusste Atmung, Achtsamkeit und Bewegung für einen aktiven Start in den Tag, freitags online mit Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Early Morning Yoga",
+      "lead": "Mit Atmung, Achtsamkeit und Bewegung in den Tag starten.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "Worum es geht",
+      "title": "Early Morning Yoga: was dich erwartet.",
+      "paragraphs": [
+        "Starte deinen Tag mit bewusster Atmung, Achtsamkeit und Bewegung. So bringst du Aktivität in deinen Körper, verbesserst deine Beweglichkeit und bringst Freude und Ausgeglichenheit in deinen Tag."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Auf einen Blick.",
+      "items": [
+        {
+          "title": "Umfang",
+          "text": "10 Stunden à 60 Minuten."
+        },
+        {
+          "title": "Wann und wo",
+          "text": "Freitags 06:30–07:30 Uhr als Online-Kurs."
+        },
+        {
+          "title": "Preis",
+          "text": "150 € pro Person bei 3–4 Teilnehmenden."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Preise und YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

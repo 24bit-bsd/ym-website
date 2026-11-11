@@ -1,0 +1,195 @@
+{
+  "_readme": "Zentrale Einstellungen der Website. Marke, Domains, Kontakt, Design-Variablen (theme), SEO-Daten (seo) und Weiterleitungen. Änderungen wirken nach dem nächsten Build.",
+  "brand": {
+    "name": "Yoga Momente"
+  },
+  "company": "Momente Macher GbR",
+  "domain": "https://www.momente.yoga",
+  "staging_url": "https://website.momente.yoga",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "default_language": "de",
+  "language_names": {
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "mail": {
+    "user": "flow",
+    "domain": "momente.yoga"
+  },
+  "form_from": "",
+  "phone": "+49 (0)9561 29831",
+  "street": "Breslauer Straße 21",
+  "zip": "96450",
+  "city": "Coburg",
+  "booking_url": "",
+  "linkedin_url": "",
+  "form_action": "/api/contact.php",
+  "logo_image": "assets/img/logo.png",
+  "logo_width": 800,
+  "logo_height": 384,
+  "logo_icon": "assets/img/logo-icon.png",
+  "map_url": "",
+  "map_image": "",
+  "team_profiles": "staging",
+  "theme": {
+    "accent": "#d4af37",
+    "accent-hover": "#e2c04e",
+    "accent-ink": "#7a5c00",
+    "ink": "#2b1f1a",
+    "bg-2": "#eadfc8",
+    "navy": "#163e4a",
+    "radius": "22px",
+    "btn-radius": "999px",
+    "ink-2": "rgba(43,31,26,0.7)",
+    "bg": "#f7f0e2",
+    "font": "\"Montserrat\", system-ui, sans-serif",
+    "font-display": "\"Playfair Display\", Georgia, serif"
+  },
+  "seo": {
+    "org_types": [
+      "Organization"
+    ],
+    "country_code": "DE",
+    "founding_year": "",
+    "area_served": {
+      "de": [
+        "Deutschland"
+      ],
+      "en": [
+        "Germany"
+      ]
+    },
+    "knows_about": {
+      "de": [
+        "Thema 1",
+        "Thema 2"
+      ],
+      "en": [
+        "Topic 1",
+        "Topic 2"
+      ]
+    },
+    "same_as": [],
+    "person": {
+      "name": "",
+      "job_title": {
+        "de": "",
+        "en": ""
+      },
+      "image": "",
+      "same_as": []
+    },
+    "service_pages": [
+      "services"
+    ],
+    "llms": {
+      "summary": {
+        "de": "Kurzbeschreibung des Unternehmens in 2–3 Sätzen: Was, für wen, wo, seit wann.",
+        "en": "Short description of the company in 2–3 sentences: what, for whom, where, since when."
+      },
+      "section_title": {
+        "de": "Leistungen und Kontakt (Deutsch)",
+        "en": "Services and contact (English)"
+      },
+      "pages": [
+        "services",
+        "contact"
+      ],
+      "facts": [
+        "Ansprechperson / contact person: Name, Funktion"
+      ]
+    }
+  },
+  "redirects": [
+    {
+      "from": "^(index\\.php/)?about/?$",
+      "to": "/ueber-mich"
+    },
+    {
+      "from": "^(index\\.php/)?yoga/classes/?$",
+      "to": "/yoga-kurse-coburg"
+    },
+    {
+      "from": "^(index\\.php/)?momente/card/?$",
+      "to": "/preise"
+    },
+    {
+      "from": "^(index\\.php/)?momente/schedule/?$",
+      "to": "/stundenplan"
+    },
+    {
+      "from": "^(index\\.php/)?yoga/poses/?$",
+      "to": "/yoga-uebungen"
+    },
+    {
+      "from": "^(index\\.php/)?yoga/yoga-4-0/?$",
+      "to": "/online-yoga"
+    },
+    {
+      "from": "^(index\\.php/)?oelgefluester/?$",
+      "to": "/aetherische-oele"
+    },
+    {
+      "from": "^(index\\.php/)?contact-us/?$",
+      "to": "/kontakt"
+    },
+    {
+      "from": "^(index\\.php/)?privacy-policy/?$",
+      "to": "/datenschutz"
+    },
+    {
+      "from": "^(index\\.php/)?terms-conditions/?$",
+      "to": "/agb"
+    },
+    {
+      "from": "^(index\\.php/)?events/yoga-retreats/?$",
+      "to": "/events/yoga-retreat-rottal"
+    },
+    {
+      "from": "^(index\\.php/)?yoga-retreat-2022/?$",
+      "to": "/events"
+    },
+    {
+      "from": "^(index\\.php/)?events/yoga-retreat-allgaeu-okt-2026/?$",
+      "to": "/events"
+    },
+    {
+      "from": "^(index\\.php/)?event-kunst/?$",
+      "to": "/events"
+    },
+    {
+      "from": "^(index\\.php/)?yoga/?$",
+      "to": "/yoga-kurse-coburg"
+    },
+    {
+      "from": "^(index\\.php/)?momente/?$",
+      "to": "/preise"
+    },
+    {
+      "from": "^index\\.php/?$",
+      "to": "/"
+    }
+  ],
+  "extra_hosts": [],
+  "intro": false,
+  "design": {
+    "status": "offen",
+    "concept": "Warm und erdig: Creme-Flächen, Gold und Petrol aus dem Logo, großer Foto-Hero mit Playfair-Serif-Headline und kursivem Goldwort, Pillen-Buttons. Ruhigere, weiße Flächen mit feinen Linien für Kurse, Preise und Stundenplan.",
+    "inspirations": [
+      "unpluggedyoga.com.au (Foto-Hero, Serif mit kursivem Akzentwort, Pillen-Buttons)",
+      "yogaonthelane.com (Weißraum, Serifen, ruhige Typografie)"
+    ],
+    "dimensions": [
+      "farbe",
+      "schrift",
+      "formensprache",
+      "hero",
+      "bildstil"
+    ],
+    "signature": "Foto-Hero mit kursivem Goldwort"
+  },
+  "logo_dark": "assets/img/logo-dark.png"
+}

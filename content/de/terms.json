@@ -1,0 +1,89 @@
+{
+  "id": "terms",
+  "slug": "agb",
+  "title": "AGB | Yoga Momente",
+  "description": "Allgemeine Geschäftsbedingungen von Yoga Momente: Anmeldung, Teilnahmegebühren, Stornierung, Haftung und Änderungen bei Kursen und Events.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lead": "Die wichtigsten Regeln für Kurse und Events."
+    },
+    {
+      "type": "legal",
+      "blocks": [
+        {
+          "h": "1. Vertragspartner",
+          "level": 3,
+          "p": [
+            "Vertragspartner sind Susanne Müller und der Kunde."
+          ]
+        },
+        {
+          "h": "2. Vertragsgegenstand",
+          "level": 3,
+          "p": [
+            "Der Vertragsgegenstand ergibt sich aus diesen Allgemeinen Geschäftsbedingungen sowie aus den in den Leistungsbeschreibungen und Preislisten getroffenen Regelungen."
+          ]
+        },
+        {
+          "h": "3. Anmeldung / Teilnahmegebühren",
+          "level": 3,
+          "p": [
+            "Anmeldungen müssen per Mail erfolgen und werden nach Eingang der Zahlung auf dem angegebenen Konto rechtskräftig. Die Anmeldung ist vorbehaltlich der Regelung des § 8 verbindlich. Bei yoga momente ist eine Kursteilnahme bei Schwangerschaft ab Eintritt der Schwangerschaftswoche 15 möglich. Die Kursleitung ist vor Kursbeginn über bestehende Schwangerschaft und bestehende Erkrankungen zu informieren."
+          ]
+        },
+        {
+          "h": "4. Pflichten des Kunden",
+          "level": 3,
+          "p": [
+            "Der Kunde hat für zeitnahe Zahlung zu sorgen. Geht die Zahlung nicht bis 14 Tage nach Buchung auf dem genannten Konto ein, behält sich yoga momente vor, die entstandenen Kosten in Rechnung zu stellen."
+          ]
+        },
+        {
+          "h": "5. Anmeldebestätigung / Rechnung",
+          "level": 3,
+          "p": [
+            "Nach Eingang der Anmeldung wird eine Anmeldebestätigung per E-Mail (flow@momente.yoga) zugesandt. Bitte überprüfen Sie als Kunde Ihren Spam-Ordner."
+          ]
+        },
+        {
+          "h": "6. Stornierung",
+          "level": 3,
+          "p": [
+            "Der Teilnehmer kann jederzeit vom Vertrag zurücktreten. Die Erklärung muss schriftlich per Post oder per E-Mail erfolgen. Es gilt folgende Regelung für Stornogebühren (maßgeblich ist der Eingang der Erklärung beim Veranstalter): Bis zu 30 Tage vor Veranstaltungsbeginn 25 % des Veranstaltungspreises, bis zu 7 Tage vor Veranstaltungsbeginn 50 % des Veranstaltungspreises, bis zu 1 Tag vor Veranstaltungsbeginn 80 % des Veranstaltungspreises.",
+            "Bei Absage am Tag der Veranstaltung ist keine Stornierung mehr möglich. Die Regelungen gelten unabhängig vom Grund der Stornierung."
+          ]
+        },
+        {
+          "h": "7. Haftung",
+          "level": 3,
+          "p": [
+            "Die Haftung des Veranstalters für Sach- und Vermögensschäden, insbesondere für vom Teilnehmer mitgebrachte Sachen wie Kleidung, Wertgegenstände und Geld, wird für den Fall leichter Fahrlässigkeit ausgeschlossen."
+          ]
+        },
+        {
+          "h": "8. Änderungen",
+          "level": 3,
+          "p": [
+            "Änderungen der ausgeschriebenen Termine, des Programm-/Zeitablaufes und der Lehrer bleiben bei begründetem Anlass, wie insbesondere Reparatur- und Instandsetzungsarbeiten, Krankheit etc. vorbehalten, soweit dies unter Berücksichtigung der Interessen des Veranstalters für den Teilnehmer zumutbar ist. Bei einer Teilnehmerzahl von weniger als 3 behält sich der Veranstalter die ersatzlose Streichung von Veranstaltungen vor. Die Teilnehmer werden im Falle von Terminabsagen rechtzeitig in Kenntnis gesetzt."
+          ]
+        },
+        {
+          "h": "9. Urheberrecht",
+          "level": 3,
+          "p": [
+            "Die Teilnehmer werden darauf hingewiesen, dass das Urheberrecht sämtlicher Veröffentlichungen bei yoga momente liegt und deren weitere Nutzung jedweder Art, insbesondere Vervielfältigung oder Weitergabe an Dritte, der schriftlichen Genehmigung durch yoga momente bedarf. Zuwiderhandlungen werden in jedem Einzelfall mit einer Konventionalstrafe von 4.000 € geahndet. Weiterreichende Ersatzansprüche werden hierdurch nicht berührt."
+          ]
+        },
+        {
+          "h": "10. Salvatorische Klausel",
+          "level": 3,
+          "p": [
+            "Sind einzelne Bestandteile der Geschäftsbedingungen unwirksam, wird die Gültigkeit der übrigen hierdurch nicht berührt. Die Parteien anerkennen für diesen Fall diejenige gültige Regelung, die dem der Regelungsintention des unwirksamen Bestandteils inhaltlich am Nächsten kommt."
+          ]
+        }
+      ]
+    }
+  ]
+}

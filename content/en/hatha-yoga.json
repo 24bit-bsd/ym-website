@@ -1,0 +1,73 @@
+{
+  "id": "hatha-yoga",
+  "slug": "yoga-classes-coburg/hatha-yoga",
+  "title": "Hatha Yoga in Coburg | Yoga Momente",
+  "description": "Hatha yoga in Coburg: varied classes with all the basic asanas for flexibility, strength and stamina, with Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hatha Yoga",
+      "lead": "Practice with variety and build flexibility, strength and stamina.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "What it is about",
+      "title": "Hatha Yoga: what to expect.",
+      "paragraphs": [
+        "Varied classes with all the basic asanas of hatha yoga, tailored to the needs of the participants. You improve your flexibility and stretch, and strength and stamina grow too."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "At a glance.",
+      "items": [
+        {
+          "title": "Scope",
+          "text": "10 classes of 60 or 90 minutes."
+        },
+        {
+          "title": "When and where",
+          "text": "You can find current dates in the timetable. All classes can also be booked online."
+        },
+        {
+          "title": "Price",
+          "text": "From €135 per person (10 × 60 min, from 5 participants). €150 with 3–4 participants. 10 × 90 min: €225 or €200 from 5 participants."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Prices and YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

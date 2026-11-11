@@ -1,0 +1,73 @@
+{
+  "id": "early-morning",
+  "slug": "yoga-classes-coburg/early-morning-yoga",
+  "title": "Early Morning Yoga in Coburg | Yoga Momente",
+  "description": "Early Morning Yoga in Coburg: conscious breathing, mindfulness and movement for an active start to the day, Fridays online with Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Early Morning Yoga",
+      "lead": "Start the day with breath, mindfulness and movement.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "What it is about",
+      "title": "Early Morning Yoga: what to expect.",
+      "paragraphs": [
+        "Start your day with conscious breathing, mindfulness and movement. You bring activity into your body, improve your mobility and bring joy and balance into your day."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "At a glance.",
+      "items": [
+        {
+          "title": "Scope",
+          "text": "10 classes of 60 minutes."
+        },
+        {
+          "title": "When and where",
+          "text": "Fridays 06:30–07:30 as an online class."
+        },
+        {
+          "title": "Price",
+          "text": "€150 per person with 3–4 participants."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Prices and YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

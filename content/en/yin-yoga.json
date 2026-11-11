@@ -1,0 +1,73 @@
+{
+  "id": "yin-yoga",
+  "slug": "yoga-classes-coburg/yin-yoga",
+  "title": "Yin Yoga in Coburg | Yoga Momente",
+  "description": "Yin yoga in Coburg: deep, relaxed holding of poses for joints, fascia and calm. Classes with Susanne Müller, also online.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Yin Yoga",
+      "lead": "Relax deeply, become supple, find calm.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "What it is about",
+      "title": "Yin Yoga: what to expect.",
+      "paragraphs": [
+        "Keeps your body deeply supple and lets life energy flow through joints, fascia and meridian tissue. Yin yoga means holding deeply effective poses for longer in complete relaxation, for everyone who enjoys taking their practice to a higher level of mindfulness and stillness. An ideal balance for everyone whose daily life is more yang-oriented."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "At a glance.",
+      "items": [
+        {
+          "title": "Scope",
+          "text": "10 classes of 60 or 90 minutes."
+        },
+        {
+          "title": "When and where",
+          "text": "You can find current dates in the timetable. All classes can also be booked online."
+        },
+        {
+          "title": "Price",
+          "text": "From €135 per person (10 × 60 min, from 5 participants). €150 with 3–4 participants. 10 × 90 min: €225 or €200 from 5 participants."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "New to yoga?",
+      "title": "Start with a trial class.",
+      "text": "One trial class of 60 minutes for €60. Write to us and we will arrange your appointment.",
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Prices and YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

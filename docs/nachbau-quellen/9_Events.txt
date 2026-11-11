@@ -1,0 +1,110 @@
+
+=== Sektion 1 (id 1550034088623, 1 Spalten) ===
+[IMG] images/2021/03/28/img_0123-ba.jpg
+
+=== Sektion 2 (id 1550034822504, 1 Spalten) ===
+[title] — Events
+[text] Du wirst in unseren Kursen und bei unseren Events entdecken, wie Du eine positive Verbindung zu dir selbst und zu anderen aufbauen kannst. Du wirst lernen, Stress abzubauen, Deinen ganzen Körper und Geist in Einklang zu bringen und dich leichter durch alle Arten von Herausforderungen zu bewegen.
+[title] Move
+
+=== Sektion 3 (id 1616951972388, 5 Spalten) ===
+[title] — Noch mehr yoga.momente
+[title] Move
+[text] Hier gibt's Tickets für einen Freundinnen-Tag oder Junggesellinnenabschied!
+[url] mailto:flow@momente.yoga
+[text] Sicher Dir jetzt dein Ticket zum Yoga Retreat
+[url] /index.php/yoga/yoga-retreats
+[text] Sicher Dir jetzt dein Ticket zum BierYoga!
+[IMG] images/2023/04/23/bieryoga1.png
+[IMG] images/2023/04/23/bieryoga2.png
+[IMG] images/2023/04/26/junggesellinnenabschied.png
+[IMG] images/2026/01/06/yoga.momente_retreat-2026_details.png
+[IMG] images/2026/01/06/yoga.momente_retreat-2026_flyer.png
+[IMG] images/2026/05/06/yoga.momente_yoga-retreat-oktober-2026.png
+[IMG] images/2026/05/06/yoga.momente_yoga-retreat-oktober-2026_details.png
+
+=== Sektion 4 (id 1682254765311, 3 Spalten) ===
+[title] — Unser neustes Event
+[title] Fastenzeit mit yoga.momente
+[text] Wir begleiten Dich durch 40 Tage Fastenzeit - damit Du Deine individuellen Vorsätze umsetzen kannst. Es geht dabei weniger um Verzicht, sonder eher darum, was Du Dir in Deinen Alltag einladen willst und wie Du in die Fülle kommst. Denn gemeinsam geht es leichter!
+
+
+
+UNSER FAHRPLAN
+
+
+3 Onlineeinheiten - Workshop zur Zielsetzung, Yogaeinheit, Meditation
+
+Austausch und Begleitung in einer WhatsApp Gruppe
+
+Infomaterial
+
+Rezepte
+
+Kursgebühr inkl. ätherischer Öle - ab 5 Personen 140 €,
+ab 10 Personen 90 € pro Person!
+
+
+
+
+Für mehr Infos rund um den Workshop, zu den Inhalten oder zum Kursstart / Termine, schreibt mir gerne eine E-Mail!
+[title] Move
+[text] Sicher Dir jetzt dein Ticket zum Fastenworkshop
+[url] mailto:flow@momente.yoga
+[IMG] images/2022/01/29/fastenzeit.png
+
+=== Sektion 5 (id 1643479114156, 1 Spalten) ===
+[title] — Überblick unserer Retreats in 2026
+[title] Retreat im Allgäu | Zeit für Dich
+[text] Datum: 30. Oktober bis 01. November 2026
+Ort: Maierhöfen im Allgäu
+Tickets & Anmeldung hier verfügbar!
+[button_text] Sichere Dir dein Ticket hier!
+[url] /index.php/yoga/yoga-retreats
+[title] Move
+[title] Retreat im Rottal | Deine Yoga-Auszeit
+[text] Datum: 13.-15. November 2026
+Ort: Rottal
+Tickets & Anmeldung hier verfügbar!
+[IMG] images/2021/03/28/img_0031_2.jpg
+[IMG] images/2026/05/06/partner-yoga.jpg
+
+=== Sektion 6 (id 1624177957464, 1 Spalten) ===
+[title] — Auszeit vom Büroalltag
+[title] Yoga | Gesunde Mittagspause & Achtsamkeit für Unternehmen
+[text] Gönnen Sie Ihren Mitarbeitern eine Auszeit im beruflichen Alltag. Vielleicht ist eine gesunde, gemeinsame Mittagspause oder eine Einheit bei einem Ihrer Firmenevents für Ihre Mitarbeitenden oder Geschäftspartner*innen genau das Richtige? Gerne plane ich mit Ihnen gemeinsam, die für Sie passende Einheit – Bewegung, Entspannung, Meditation oder Achtsamkeitsübungen!
+
+Ich freue mich auf Ihren Anruf oder Ihre Anfrage per E-Mail.
+[button_text] Verwöhnen Sie Ihre Mitarbeiter 
+ Zur Anfrage
+[url] mailto:flow@momente.yoga
+[title] Move
+[IMG] images/2021/06/20/bro-yoga-v2_final.png
+
+=== Sektion 7 (id 1550813354746, 2 Spalten) ===
+[title] — Upcoming Events
+
+=== Sektion 8 (id 1550813354766, 3 Spalten) ===
+[title] Ab Jetzt!
+[text] Per zoom oder Video
+[title] Deine virtuelle Yogastunde
+[text] Ich biete neben kleinen individuellen Yogastunden auch virtuelle Stunden per zoom / Video an. Praktiziere von jedem beliebigen Ort deiner Wahl.
+
+Habe ich deine Interesse geweckt? Dann schreibe mir und du erhältst gegen eine Kursgebühr einen Zugang in die virtuelle Yogawelt.
+[text] Weitere Infos!
+[url] index.php/yoga/yoga-4-0
+
+=== Sektion 9 (id 1550813354774, 3 Spalten) ===
+[title] Ab 7. Oktober 2021
+[text] Adresse:
+Kunstverein Coburg e.V.
+Park 4a
+96450 Coburg
+[title] Move
+[title] Yoga & Kunst
+[text] Wie bei Yoga lässt Du auch ein Kunstwerk auf Dich wirken. Du hörst in Dich hinein und spürst, was Dich bewegt.
+
+Genieße jeden Mittwoch von 17 bis 18 Uhr Deine Yoga Momente in einer kleinen Gruppe. Für Anfänger und fortgeschrittene Yogis geeignet.
+[text] Weitere Infos!
+[url] index.php/event-kunst
+[IMG] images/2020/10/03/bildschirmfoto-2020-10-03-um-20.01.05.png

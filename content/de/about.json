@@ -1,0 +1,61 @@
+{
+  "id": "about",
+  "slug": "ueber-mich",
+  "title": "Über mich | Susanne Müller, Yoga Momente Coburg",
+  "description": "Susanne Müller, Yogalehrerin in Coburg (SPANDA, 200 Stunden, Yoga Alliance): mein Weg zum Yoga und was ich bei Yoga Momente anbiete.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "Mein Weg zum Yoga",
+      "lead": "Ommmmm. Wunderbare Momente mit mir selbst, mit Raum für Kraft, Ruhe und Freude an Stille und Bewegung."
+    },
+    {
+      "type": "about",
+      "id": "susanne",
+      "eyebrow": "Susanne Müller",
+      "title": "Yogalehrerin, Yoga Momente",
+      "lead": "Yoga heißt für mich: wunderbare Momente mit mir selbst zu haben, um Raum für Kraft, Ruhe sowie Freude an der Stille und der Bewegung zu haben.",
+      "bullets": [],
+      "team": [
+        {
+          "name": "Susanne Müller",
+          "role": "Yogalehrerin, Yoga Momente",
+          "image": "assets/img/susanne.jpg"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "weg",
+      "paragraphs": [
+        "Zu Beginn dachte ich, bei Yoga geht es ausschließlich um Entspannung und Beweglichkeit. Nachdem ich immer tiefer in die Yoga-Welt eingetaucht bin, habe ich erkannt, dass Yoga so viel mehr ist.\n\nWer sagt, „Yoga ist nichts für mich“, hat sicherlich nur noch nicht die passende Richtung für sich gefunden. Denn Yoga-Richtungen gibt es sehr viele, und sie sind sehr unterschiedlich.",
+        "Eine Yoga-Praxis ist für mich nie gleich. Als Sportlerin war ich immer sehr aktiv und eher Yang-orientiert. Je nach Tageszeit, Stimmung oder Energie passe ich meine eigene Praxis an: mal ein schweißtreibendes Workout, ein entspanntes Dehnen oder auch ein Yin Yoga, das ein mentales Durchhalten erfordert und die tiefliegende Muskulatur und Faszien stimuliert, manchmal gar ohne Schwitzen.",
+        "Was ich über die vielen Jahre bemerkt habe: Die Form des Körpers folgt der Funktion. Wie bei allen körperlichen Aktivitäten stellt sich der Körper auf die Anforderung ein und kann durch Yoga komplett geformt werden. Das ist das Schöne an einer Yoga-Stunde: Ich habe meinen Körper in alle Richtungen bewegt und ihm Gutes getan. Und nicht nur dem Körper! Viele Asanas erfordern auch geistige Stabilität, Ruhe und Fokus. Du bringst mit deiner Atmung deinen Geist zur Ruhe, um bei dir selbst anzukommen, in Einklang mit dir zu sein und dich zu spüren."
+      ]
+    },
+    {
+      "type": "text",
+      "id": "ausbildung",
+      "title": "Ausbildung und Studio",
+      "paragraphs": [
+        "Nach vielen Jahren eigener Praxis habe ich mir einen Traum erfüllt: die Yoga-Lehrerausbildung bei SPANDA – The Evolution of Being in München. In über 200 Stunden Ausbildung, geleitet von einem erfahrenen Expertenteam, habe ich ein breites Spektrum von Yoga-Klassen erlebt, von dynamisch und vinyasa-orientiert bis sanft und auf Entspannung ausgerichtet, mit Yoga-Lehrenden aus aller Welt. Mein Unterrichtsstil ist durch diese vielfältigen Eindrücke geprägt. Die Ausbildung trägt das weltweit anerkannte Siegel der Yoga Alliance.",
+        "Über die Jahre habe ich gelernt, meinen eigenen Weg zum Yoga zu finden und ihn lieben zu lernen. Man muss für sich entdecken, welche Form die richtige ist und was einem gut tut. Gerne helfe ich dir dabei, das Passende für dich zu finden.",
+        "Im Herbst 2019 habe ich mein eigenes Yoga-Studio in Coburg eröffnet, in dem ich nun täglich mit Freude Yoga für meine Teilnehmenden und für mich praktiziere.",
+        "Viel Spaß auf dieser spannenden Entdeckungsreise zu dir selbst mit deinen Yoga-Momenten.\n\nNamaste, Susanne Müller"
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Entdecke Yoga",
+      "text": "Finde heute deine innere Ruhe. Starte mit einer Probestunde.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

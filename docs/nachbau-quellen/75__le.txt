@@ -1,0 +1,55 @@
+
+=== Sektion 1 (id 1550660396260, 1 Spalten) ===
+[title] Kraft der Öle
+[title] Move
+[IMG] images/2022/07/08/aromatouch-oils-with-lavender.jpg
+
+=== Sektion 2 (id 1550660396291, 2 Spalten) ===
+[title] Erlebe Ölgeflüster
+[title] Move
+[title] — Was können die Öle?
+[text] Sie sind tägliche gute Begleiter für Deine Gesundheit – körperlich und auch emotional. Sie sind rein und natürlich und hoch wirkungsvoll um eine gute Basis für einen gesunden Lebensstil zu bereiten.
+[title] — Was biete ich?
+[text] Ich biete ein Netzwerk für engagierte Frauen, die ihre Begeisterung für ätherische Öle nach außen tragen. Gemeinsam bauen wir uns durch Networkmarketing ein eigenes Business auf und wachsen jede eigenständig, individuell und im eigenen Tempo. Wir unterstützen uns gegenseitig und haben das großartige doTerra Netzwerk im Hintergrund.
+
+Du profitierst von meinem großen Wissen in Sachen Gesundheit und Beratung zum Einen aus meinem beruflichen Hintergrund, zum Anderen durch meinen Yogaweg mit Interesse an Themen wie Bewegung, Ernährung und Entspannung. 
+
+Meine Begeisterung und Freude strahle ich nicht nur in den persönlichen Beratungen aus, sondern gerne auch bei Gruppentreffen. Einer meiner Werte ist eine positive Lebenseinstellung mit der Devise: Geht nicht, gibt's nicht – einfach tun. 
+
+In meinen Yogastunden kommen die Yogis in den Genuss der Öle. Ich freue mich, wenn ich auch Dich mit meiner Begeisterung anstecke und Du selbst als Botschafterin die Öle weiterträgst.
+[title] — Wie kann ich einsteigen?
+[text] Mit ganz viel Begeisterung und Interesse für das Thema Öle und Gesundheit mit Ölen. Du investierst in eine Grundausstattung an Ölen, um sie selbst richtig kennenzulernen. Über eine monatliche Bestellung von 125 PV vertiefst Du nach und nach noch Dein Wissen zu den Ölen.
+
+=== Sektion 3 (id 1657305944958, 1 Spalten) ===
+[title] Move
+[IMG] images/2022/07/08/bildschirmfoto-2022-07-08-um-20.50.26.png
+
+=== Sektion 4 (id 1657300760145, 1 Spalten) ===
+[title] Gerne sende ich Dir Ölpröbchen zu.
+[title] Move
+
+=== Sektion 5 (id 1657300760122, 1 Spalten) ===
+[text] Du darfst mir gerne Dein Thema (Schlaf, Verdauung, Schmerzen, Stimmung) „zuflüstern“.
+[title] Move
+[title] Melde Dich gerne für mehr Infos!
+[url] mailto:flow@momente.yoga
+
+=== Sektion 6 (id 1657300760318, 6 Spalten) ===
+[IMG] images/2022/07/08/img_2231.jpg
+[IMG] images/2022/07/08/img_22341.jpg
+[IMG] images/2022/07/08/img_2236.jpg
+[IMG] images/2022/07/08/img_2239.jpg
+[IMG] images/2022/07/08/img_2242.jpg
+[IMG] images/2022/07/08/img_2243.jpg
+
+=== Sektion 7 (id 1572606699384, 1 Spalten) ===
+
+=== Sektion 8 (id 1657300760073, 2 Spalten) ===
+[IMG] images/2022/07/08/img_2229.jpg
+[IMG] images/2022/07/08/img_2245.jpg
+
+=== Sektion 9 (id 1657300760079, 2 Spalten) ===
+[IMG] images/2022/07/08/img_2227.jpg
+[IMG] images/2022/07/08/img_2233.jpg
+[IMG] images/2022/07/08/img_22401.jpg
+[IMG] images/2022/07/08/img_22441.jpg

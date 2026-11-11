@@ -1,0 +1,27 @@
+{
+  "id": "notfound",
+  "slug": "404",
+  "output": "404.html",
+  "noindex": true,
+  "title": "Seite nicht gefunden | Muster",
+  "description": "Diese Seite gibt es nicht (mehr).",
+  "sections": [
+    {
+      "type": "notfound",
+      "title": "Diese Seite gibt es nicht.",
+      "lead": "Der Link ist veraltet oder falsch getippt. Von der Startseite aus finden Sie alles.",
+      "buttons": [
+        {
+          "label": "Zur Startseite",
+          "href": "page:home",
+          "style": "primary"
+        },
+        {
+          "label": "Kontakt",
+          "href": "page:contact",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

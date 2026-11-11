@@ -1,0 +1,187 @@
+{
+  "id": "privacy",
+  "slug": "datenschutz",
+  "title": "Datenschutz | Yoga Momente",
+  "description": "Datenschutzerklärung von Yoga Momente: Welche Daten beim Besuch dieser Website und bei Kontaktanfragen verarbeitet werden und welche Rechte du hast.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Datenschutz",
+      "lead": "Für eine gesunde Datensicherheit ist gesorgt."
+    },
+    {
+      "type": "legal",
+      "blocks": [
+        {
+          "h": "1. Datenschutz auf einen Blick",
+          "level": 2
+        },
+        {
+          "h": "Allgemeine Hinweise",
+          "level": 3,
+          "p": [
+            "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Produkte und Leistungen nutzen oder unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+          ]
+        },
+        {
+          "h": "Datenerfassung auf unserer Website",
+          "level": 3,
+          "p": [
+            "**Wer ist verantwortlich für die Datenerfassung auf unserer Website?**\nDie Datenverarbeitung auf der Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+            "**Wie erfassen wir Ihre Daten?**\nIhre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben oder die Sie uns per E-Mail übermitteln.\nAndere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.",
+            "**Wofür nutzen wir Ihre Daten?**\nEin Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Vorrangig nutzen wir Ihre Daten zur Anbahnung und Abwicklung von Geschäfts-/Vertragsverhältnissen.",
+            "**Welche Rechte haben Sie bezüglich Ihrer Daten?**\nSie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu."
+          ]
+        },
+        {
+          "h": "Analyse-Tools und Tools von Drittanbietern",
+          "level": 3,
+          "p": [
+            "Diese Website verwendet keine Analyse- oder Tracking-Tools und bindet keine Inhalte von Drittanbietern (z.B. Schriftarten, Karten, Videos) ein. Schriftarten werden vom Betriebssystem Ihres Geräts bereitgestellt."
+          ]
+        },
+        {
+          "h": "2. Allgemeine Hinweise und Pflichtinformationen",
+          "level": 2
+        },
+        {
+          "h": "Datenschutz",
+          "level": 3,
+          "p": [
+            "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+            "Wenn Sie unsere Website benutzen oder auf andere Weise mit uns in Kontakt treten, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
+            "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
+          ]
+        },
+        {
+          "h": "Hinweis zur verantwortlichen Stelle",
+          "level": 3,
+          "p": [
+            "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:\nSusanne Müller\nBreslauer Straße 21, D-96450 Coburg\nE-Mail: flow(at)momente.yoga",
+            "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet."
+          ]
+        },
+        {
+          "h": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+          "level": 3,
+          "p": [
+            "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
+          ]
+        },
+        {
+          "h": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+          "level": 3,
+          "p": [
+            "Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem unser Unternehmen seinen Sitz hat."
+          ]
+        },
+        {
+          "h": "Recht auf Datenübertragbarkeit",
+          "level": 3,
+          "p": [
+            "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist."
+          ]
+        },
+        {
+          "h": "SSL- bzw. TLS-Verschlüsselung",
+          "level": 3,
+          "p": [
+            "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+            "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
+          ]
+        },
+        {
+          "h": "Auskunft, Sperrung, Löschung",
+          "level": 3,
+          "p": [
+            "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden."
+          ]
+        },
+        {
+          "h": "Widerspruch gegen Werbe-Mails",
+          "level": 3,
+          "p": [
+            "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+          ]
+        },
+        {
+          "h": "3. Datenerfassung auf unserer Website",
+          "level": 2
+        },
+        {
+          "h": "Cookies",
+          "level": 3,
+          "p": [
+            "Diese Website setzt selbst keine Cookies und verwendet keine Tracking-Technologien. Es werden lediglich die für die Auslieferung der Seiten technisch erforderlichen Daten verarbeitet (siehe Server-Log-Dateien)."
+          ]
+        },
+        {
+          "h": "Server-Log-Dateien",
+          "level": 3,
+          "p": [
+            "Als Provider des Webhostings nutzen wir:\nIONOS SE\nElgendorfer Str. 57, D-56410 Montabaur",
+            "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt."
+          ],
+          "list": [
+            "Browsertyp und Browserversion",
+            "verwendetes Betriebssystem",
+            "Referrer URL",
+            "Hostname des zugreifenden Rechners",
+            "Uhrzeit der Serveranfrage",
+            "IP-Adresse"
+          ]
+        },
+        {
+          "p": [
+            "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.",
+            "Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO, der die Verarbeitung von Daten zur Wahrung berechtigter Interessen gestattet."
+          ]
+        },
+        {
+          "h": "Kontaktformular",
+          "level": 3,
+          "p": [
+            "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert und per E-Mail an uns übermittelt. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+            "Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt somit ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.",
+            "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+          ]
+        },
+        {
+          "h": "Retreat-Anmeldung über Jotform",
+          "level": 3,
+          "p": [
+            "Für die Anmeldung zum Yoga-Retreat nutzen wir ein Formular des Anbieters Jotform (Jotform Inc., 4 Embarcadero Center, Suite 780, San Francisco, CA 94105, USA). Das Formular wird erst geladen, wenn du auf „Jetzt anmelden“ klickst. Dabei wird eine Verbindung zu den Servern von Jotform aufgebaut, und deine Eingaben im Formular (zum Beispiel Name, Kontaktdaten, Zahlungsangaben) werden direkt an Jotform übermittelt und dort verarbeitet.",
+            "Rechtsgrundlage ist die Durchführung des Vertrags bzw. vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO). Soweit Daten in die USA übermittelt werden, erfolgt dies auf Grundlage der Standardvertragsklauseln der EU-Kommission bzw. eines Angemessenheitsbeschlusses. Näheres findest du in der Datenschutzerklärung von Jotform."
+          ]
+        },
+        {
+          "h": "Verarbeiten von Daten (Kunden- und Vertragsdaten)",
+          "level": 3,
+          "p": [
+            "Wir erheben, verarbeiten und nutzen personenbezogene Daten nur, soweit sie für die Begründung, inhaltliche Ausgestaltung oder Änderung des Rechtsverhältnisses erforderlich sind (Bestandsdaten). Dies erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet. Personenbezogene Daten über die Inanspruchnahme unserer Internetseiten (Nutzungsdaten) erheben, verarbeiten und nutzen wir nur, soweit dies erforderlich ist, um dem Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen.",
+            "Die erhobenen Kundendaten werden nach Abschluss des Auftrags oder Beendigung der Geschäftsbeziehung gelöscht. Gesetzliche Aufbewahrungsfristen bleiben unberührt."
+          ]
+        },
+        {
+          "h": "Datenübermittlung bei Vertragsschluss für Dienstleistungen und digitale Inhalte",
+          "level": 3,
+          "p": [
+            "Wir übermitteln personenbezogene Daten an Dritte nur dann, wenn dies im Rahmen der Vertragsabwicklung notwendig ist, etwa an das mit der Zahlungsabwicklung beauftragte Kreditinstitut.",
+            "Eine weitergehende Übermittlung der Daten erfolgt nicht bzw. nur dann, wenn Sie der Übermittlung ausdrücklich zugestimmt haben. Eine Weitergabe Ihrer Daten an Dritte ohne ausdrückliche Einwilligung, etwa zu Zwecken der Werbung, erfolgt nicht.",
+            "Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet."
+          ]
+        },
+        {
+          "h": "4. Externe Links",
+          "level": 2
+        },
+        {
+          "p": [
+            "Diese Website enthält Links zu externen Diensten, zum Beispiel zur Terminbuchung oder zu sozialen Netzwerken. Erst wenn Sie einen solchen Link anklicken, werden Daten an den jeweiligen Anbieter übertragen. Für die Verarbeitung dort gelten die Datenschutzhinweise des jeweiligen Anbieters."
+          ]
+        }
+      ]
+    }
+  ],
+  "_readme": "ENTWURF: Rechtstexte vor dem Live-Gang auf den Kunden anpassen (Firmendaten, Hoster, Formular, eingesetzte Dienste) und rechtlich prüfen lassen."
+}

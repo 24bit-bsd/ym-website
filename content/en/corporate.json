@@ -1,0 +1,100 @@
+{
+  "id": "corporate",
+  "slug": "corporate-yoga",
+  "title": "Office Yoga and Time Out for Companies in Coburg | Yoga Momente",
+  "description": "Office yoga, a healthy lunch break and mindfulness for companies in Coburg: live and online, planned individually by Susanne Müller.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/studio.jpg",
+      "title": "A break from office life",
+      "lead": "Yoga and mindfulness for your team: live at the office or online, as a healthy lunch break or at a company event.",
+      "buttons": [
+        {
+          "label": "Request an offer",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        },
+        {
+          "label": "Learn more",
+          "href": "#angebot",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "angebot",
+      "eyebrow": "For companies",
+      "title": "Give your employees a break from everyday working life.",
+      "paragraphs": [
+        "Perhaps a healthy shared lunch break or a session at one of your company events is the right thing for your employees or business partners?",
+        "I am happy to plan the session that suits you together with you and send you an offer."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "inhalte",
+      "variant": "benefits",
+      "cols": 4,
+      "title": "What your team experiences.",
+      "items": [
+        {
+          "title": "Movement",
+          "text": "Gentle exercises that work well in the office and relieve the back.",
+          "icon": "check"
+        },
+        {
+          "title": "Relaxation",
+          "text": "Room to switch off, in the middle of the working day.",
+          "icon": "check"
+        },
+        {
+          "title": "Meditation",
+          "text": "Short meditations that clear the mind.",
+          "icon": "check"
+        },
+        {
+          "title": "Mindfulness",
+          "text": "Mindfulness exercises for more calm and focus in everyday life.",
+          "icon": "check"
+        }
+      ]
+    },
+    {
+      "type": "process",
+      "id": "ablauf",
+      "variant": "steps",
+      "title": "How we get together.",
+      "items": [
+        {
+          "title": "Inquiry",
+          "text": "You call or write me an email.",
+          "meta": "1"
+        },
+        {
+          "title": "Planning together",
+          "text": "We clarify whether live or online, how long and with what focus.",
+          "meta": "2"
+        },
+        {
+          "title": "Your offer",
+          "text": "You receive an offer for the right session.",
+          "meta": "3"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "I look forward to your call or your inquiry by email.",
+      "text": "Phone: +49 (0)9561 29831 · Email: flow@momente.yoga",
+      "buttons": [
+        {
+          "label": "Inquire by email",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

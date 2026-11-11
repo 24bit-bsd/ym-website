@@ -1,0 +1,73 @@
+{
+  "id": "personal-yoga",
+  "slug": "yoga-kurse-coburg/personal-yoga",
+  "title": "Personal Yoga in Coburg | Yoga Momente",
+  "description": "Personal Yoga in Coburg: Einzelstunden mit Susanne Müller im Studio oder bei dir zu Hause, ganz nach deinen körperlichen Bedürfnissen.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Personal Yoga",
+      "lead": "Deine Stunde, genau auf dich abgestimmt.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "info",
+      "eyebrow": "Worum es geht",
+      "title": "Personal Yoga: was dich erwartet.",
+      "paragraphs": [
+        "In deiner individuellen Stunde praktizierst du mit Susanne Hatha Yoga ganz nach deinen körperlichen Bedürfnissen. Es werden gezielt Übungsreihen für dich erarbeitet, die du auch zu Hause üben kannst. Im Studio in Coburg oder bei dir zu Hause (im Radius von 20 km, inkl. Rödental und Neustadt bei Coburg)."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "fakten",
+      "variant": "cards",
+      "cols": 3,
+      "title": "Auf einen Blick.",
+      "items": [
+        {
+          "title": "Umfang",
+          "text": "Einzelstunde mit 60 oder 90 Minuten."
+        },
+        {
+          "title": "Wann und wo",
+          "text": "Im Studio in Coburg oder bei dir zu Hause (im Radius von 20 km, inklusive Rödental und Neustadt bei Coburg). Freitags 14:00–15:00 Uhr, weitere Zeiten auf Anfrage."
+        },
+        {
+          "title": "Preis",
+          "text": "60 Minuten: 75 €. 90 Minuten: 100 €."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Neu im Yoga?",
+      "title": "Starte mit einer Schnupperstunde.",
+      "text": "Eine Probestunde à 60 Minuten für 60 €. Schreib uns, wir vereinbaren deinen Termin.",
+      "buttons": [
+        {
+          "label": "Probestunde anfragen",
+          "href": "page:contact",
+          "style": "primary"
+        },
+        {
+          "label": "Preise und YogaCard",
+          "href": "page:prices",
+          "style": "secondary"
+        }
+      ]
+    }
+  ]
+}

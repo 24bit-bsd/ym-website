@@ -1,0 +1,47 @@
+{
+  "id": "events",
+  "slug": "events",
+  "title": "Events & Retreats | Yoga Momente Coburg",
+  "description": "Yoga-Retreat im Rottal, Fastenzeit-Workshop und besondere Anlässe wie Freundinnen-Tag oder Junggesellinnenabschied mit Yoga Momente.",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Events & Retreats",
+      "lead": "In unseren Kursen und bei unseren Events entdeckst du, wie du eine positive Verbindung zu dir selbst und zu anderen aufbaust."
+    },
+    {
+      "type": "grid",
+      "id": "angebote",
+      "variant": "cards",
+      "cols": 2,
+      "title": "Unsere Events.",
+      "items": [
+        {
+          "title": "Yoga-Retreat im Rottal",
+          "text": "13.–15. November 2026 im Neue Welt Haus. Yoga, Meditation und Achtsamkeit, maximal 10 Teilnehmende, 295 € pro Person.",
+          "href": "page:retreat-rottal",
+          "cta": "Zum Retreat"
+        },
+        {
+          "title": "Fastenzeit mit yoga.momente",
+          "text": "Wir begleiten dich durch 40 Tage Fastenzeit, damit du deine Vorsätze umsetzen kannst. Mit 3 Online-Einheiten, Austausch in einer WhatsApp-Gruppe, Infomaterial, Rezepten und ätherischen Ölen. Ab 5 Personen 140 €, ab 10 Personen 90 € pro Person.",
+          "href": "mailto:flow@momente.yoga",
+          "cta": "Termine anfragen"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Besondere Anlässe",
+      "title": "Freundinnen-Tag oder Junggesellinnenabschied?",
+      "text": "Schreib uns, wir gestalten deinen Yoga-Moment gemeinsam.",
+      "buttons": [
+        {
+          "label": "Anfrage senden",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}
