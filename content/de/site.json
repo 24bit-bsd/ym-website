@@ -203,27 +203,33 @@
     "topics": [
       {
         "value": "probestunde",
-        "label": "Probestunde"
+        "label": "Probestunde",
+        "icon": "smile"
       },
       {
         "value": "kurse",
-        "label": "Kurse und Stundenplan"
+        "label": "Frage zu Kursen & Kursbuchung",
+        "icon": "cal"
       },
       {
         "value": "retreat",
-        "label": "Retreat im Rottal"
+        "label": "Retreats & Events",
+        "icon": "heart"
       },
       {
-        "value": "online",
-        "label": "Online-Yoga"
+        "value": "firma",
+        "label": "Firmenangebot",
+        "icon": "chart"
       },
       {
         "value": "oele",
-        "label": "Ölgeflüster"
+        "label": "Ölgeflüster & Zusammenarbeit",
+        "icon": "drop"
       },
       {
         "value": "sonstiges",
-        "label": "Sonstiges"
+        "label": "Sonstiges",
+        "icon": "chat"
       }
     ],
     "message": "Deine Nachricht",
@@ -235,9 +241,11 @@
     "err": "Das hat leider nicht geklappt. Bitte versuche es erneut oder schreib mir direkt per E-Mail.",
     "invalid": "Bitte fülle die Pflichtfelder aus und stimme der Datenverarbeitung zu.",
     "previewMsg": "Vorschau-Modus: Das Formular wird hier nicht versendet.",
-    "title": "Sag hallo.",
+    "title": "Namaste.",
     "mapLabel": "Standort in Google Maps öffnen",
     "slow": "Bitte versuchen Sie es in einem Moment noch einmal.",
-    "back": "Zurück zur Website"
+    "back": "Zurück zur Website",
+    "firstName": "Vorname",
+    "lastName": "Nachname"
   }
 }

@@ -300,12 +300,10 @@
     }
     loadToken();
 
-    var topic = form.querySelector('select[name="topic"]');
     var param = new URLSearchParams(window.location.search).get('thema');
-    if (topic && param) {
-      for (var i = 0; i < topic.options.length; i++) {
-        if (topic.options[i].value === param) { topic.selectedIndex = i; break; }
-      }
+    if (param) {
+      var radio = form.querySelector('input[name="topic"][value="' + param.replace(/[^a-z0-9_-]/gi, '') + '"]');
+      if (radio) radio.checked = true;
     }
 
     function say(msg, cls) { status.textContent = msg; status.className = 'form-status ' + (cls || ''); }

@@ -1269,7 +1269,7 @@ body.no-scroll { overflow: hidden; }
 .plan-feat .marks { margin-top: 0; }
 @media (min-width: 900px) {
   .plans:has(.plan--prices) { row-gap: 0; }
-  .plan--prices { grid-row: span 6; grid-template-rows: subgrid; row-gap: 12px; }
+  .plan--prices { grid-row: span var(--rows, 6); grid-template-rows: subgrid; row-gap: 12px; }
   .plan--prices > span:empty { display: block; }
 }
 .plan--prices > .plan-feat-lead { margin: 0; align-self: end; }
@@ -1289,3 +1289,164 @@ body.no-scroll { overflow: hidden; }
 .cta-media img { display: block; width: 100%; height: auto; max-width: 460px; margin-inline: auto; filter: drop-shadow(0 18px 28px rgba(13, 38, 48, .35)); }
 @media (min-width: 860px) { .cta-panel--media { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); } }
 .cta-panel--media .h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); }
+
+/* Info-Box mit Icon und Button (z. B. Online teilnehmen) */
+#online-hinweis .callout { display: none; }
+.infobox { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; background: var(--bg-2); border-radius: var(--radius, 22px); padding: clamp(20px, 3vw, 28px) clamp(22px, 3vw, 36px); border-left: 4px solid #d4af37; }
+#online-hinweis .infobox { margin-top: 0; }
+.infobox-ic { flex: none; width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(150deg, var(--petrol) 0%, var(--petrol-dk) 100%); }
+.infobox-ic .i { width: 28px; height: 28px; fill: none; stroke: #e8c75a; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.infobox-text { flex: 1 1 260px; margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.3; color: var(--petrol); }
+@media (max-width: 700px) { .infobox { flex-direction: column; align-items: flex-start; } }
+/* Abstand vor "Deine Kurse im Überblick." etwas kleiner */
+.section:has(+ #kurse) { padding-bottom: clamp(24px, 3.5vw, 48px); }
+#kurse { padding-top: clamp(24px, 3.5vw, 48px); }
+
+/* Events als Liste mit Kalender-Icon */
+.ev-list { list-style: none; margin: clamp(24px, 3vw, 36px) 0 0; padding: 0; display: grid; gap: 16px; }
+.ev-link { display: flex; align-items: stretch; gap: clamp(18px, 3vw, 32px); background: #fff; border-radius: 22px; padding: 18px clamp(18px, 3vw, 28px) 18px 18px; text-decoration: none !important; color: inherit; transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.ev-link:hover { transform: translateY(-3px); box-shadow: 0 18px 34px -24px rgba(38, 80, 94, .6); }
+.ev-cal { flex: none; width: 136px; border-radius: 16px; overflow: hidden; background: #fff; border: 2px solid var(--petrol); display: grid; grid-template-rows: auto 1fr auto auto; text-align: center; }
+.ev-mon { background: linear-gradient(150deg, var(--petrol), var(--petrol-dk)); color: #fff; font-size: .8rem; font-weight: 600; letter-spacing: .06em; padding: 7px 6px; text-transform: uppercase; }
+.ev-day { font-family: var(--font-display); font-weight: 700; font-size: 2.3rem; line-height: 1.1; color: var(--petrol); padding: 8px 4px 0; }
+.ev-dow { font-weight: 600; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--petrol-cd); padding-bottom: 6px; }
+.ev-time { background: #e8c75a; color: var(--petrol-dk); font-weight: 600; font-size: .78rem; padding: 6px 4px; }
+.ev-body { display: grid; align-content: center; gap: 8px; min-width: 0; }
+.ev-body .h3 { margin: 0; font-size: clamp(1.3rem, 2.2vw, 1.7rem); color: var(--petrol); }
+.ev-text { color: var(--ink-2, #6a5a50); line-height: 1.5; }
+.ev-body .link-more { margin-top: 2px; }
+@media (max-width: 640px) { .ev-link { flex-direction: column; } .ev-cal { width: 100%; grid-template-rows: auto auto auto auto; grid-template-columns: 1fr; } }
+.ev-day--text { font-size: 1.35rem; padding-top: 14px; padding-bottom: 4px; overflow-wrap: anywhere; }
+
+/* Event-Liste: Ort und Preis als Pillen */
+.ev-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.ev-fact { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px; border-radius: 999px; border: 1px solid #d4af37; background: rgba(212, 175, 55, .12); color: var(--petrol-dk); font-weight: 600; font-size: .9rem; line-height: 1.2; }
+.ev-fact .i { width: 16px; height: 16px; flex: none; fill: none; stroke: var(--petrol); stroke-width: 1.8; }
+.ev-fact--price { background: linear-gradient(135deg, #e8c75a, #d4af37); border-color: transparent; font-size: 1rem; }
+.ev-fact--price .i { stroke: var(--petrol-dk); }
+
+/* Event-Seite: Eckdaten als Pillen im Hero und im Preisplan */
+.hero-facts { margin: 22px 0 6px; }
+.plan-facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.plan--prices.plan--featured { box-shadow: 0 0 0 2px #d4af37, 0 18px 44px rgba(13, 27, 38, 0.1); }
+.plan--prices > .plan-cta { margin-top: 8px; }
+.plan--prices > .plan-cta .btn { width: 100%; }
+
+/* Ölgeflüster: Logo im Hero, Text mit Bild zweispaltig */
+.hero-logo { display: block; width: clamp(150px, 20vw, 230px); height: auto; margin: 0 auto 12px; filter: drop-shadow(0 4px 14px rgba(13, 38, 48, .35)); }
+.text-split { display: grid; gap: 28px 56px; align-items: center; }
+.text-split .prose { max-width: none; }
+.text-fig { margin: 0; }
+.text-fig img { display: block; width: 100%; height: auto; border-radius: 22px 22px 22px 120px; aspect-ratio: 4 / 3; object-fit: cover; box-shadow: 0 22px 44px -26px rgba(38, 80, 94, .55); }
+@media (min-width: 860px) { .text-split { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); } }
+
+/* Ölgeflüster: Angebotskarten mit Icon, Untertitel und Haken */
+.card-ic { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; margin-bottom: 14px; background: linear-gradient(150deg, var(--petrol) 0%, var(--petrol-dk) 100%); }
+.card-ic .i { width: 27px; height: 27px; fill: none; stroke: #e8c75a; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.card-sub { margin: 4px 0 14px; font-weight: 600; line-height: 1.4; color: var(--petrol-cd); }
+.card-bullets .marks { margin-top: 0; }
+.card-bullets .marks li span { font-size: .975rem; }
+.infobox--long .infobox-text { font-family: var(--font); font-weight: 500; font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.55; color: var(--ink); }
+.section:has(+ #oele-angebote) { padding-bottom: clamp(24px, 3.5vw, 48px); }
+#oele-angebote { padding-top: 0; padding-bottom: clamp(24px, 3.5vw, 48px); }
+#oele-yoga { padding-top: 0; padding-bottom: clamp(40px, 6vw, 72px); }
+#oele-yoga .infobox { margin-top: 0; }
+
+/* Ölgeflüster: Anwendungsarten als Icon-Boxen, Ölpröbchen-Box rechts neben dem Einstieg */
+.tiles-title { margin: clamp(32px, 4vw, 48px) 0 0; text-align: center; color: var(--petrol); font-size: clamp(1.3rem, 2.2vw, 1.7rem); }
+#oele-1 .need-tiles { max-width: 760px; }
+.text-split--aside { align-items: stretch; }
+.text-split--aside .text-left { display: grid; align-content: start; gap: 20px; }
+.text-split--aside .prose { max-width: none; }
+.cta-panel--aside { padding: clamp(28px, 3.5vw, 44px); display: grid; align-content: center; justify-items: center; gap: 12px; }
+.cta-panel--aside .h2 { font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.15; margin: 0; max-width: none; }
+.cta-panel--aside .lead { margin: 0 auto; max-width: 34ch; font-size: 1rem; }
+.cta-panel--aside .btn-row { margin-top: 8px; }
+.text-cta { margin-top: 4px; }
+.cta-panel--aside .h2 { color: #fff; }
+
+/* Ölgeflüster "Was biete ich?": Absätze über ca. 85 % der Breite */
+#oele-2 .prose { max-width: 85%; }
+@media (max-width: 700px) { #oele-2 .prose { max-width: none; } }
+
+/* Icon-Boxen in der Textspalte: linksbündig direkt unter dem Text */
+.text-left .tiles-title { text-align: left; margin-top: 28px; }
+.text-left .need-tiles { justify-content: flex-start; max-width: none; margin-top: 14px; }
+.text-left .need-tile { flex: 0 1 170px; padding: 18px 14px; }
+#oele-1 .text-left .need-tiles { max-width: none; }
+
+/* Freigestelltes Produktbild: rechtsbündig vor goldenem Kreis */
+.text-fig--cutout { position: relative; display: flex; justify-content: flex-end; align-items: center; min-height: 380px; }
+.text-fig--cutout::before { content: ""; position: absolute; right: clamp(0px, 4vw, 48px); top: 50%; width: min(360px, 80%); aspect-ratio: 1; transform: translateY(-50%); border-radius: 50%; background: radial-gradient(circle at 35% 30%, #f0d47a, #d4af37); opacity: .9; }
+.text-fig--cutout img { position: relative; width: auto; max-width: 100%; height: clamp(300px, 34vw, 440px); aspect-ratio: auto; object-fit: contain; border-radius: 0; box-shadow: none; margin-right: clamp(40px, 8vw, 110px); filter: drop-shadow(0 18px 22px rgba(38, 80, 94, .35)); }
+
+/* Karten mit Haken: Zeilen (Titel, Untertitel, Haken) auf gleicher Höhe */
+.card--cells { display: grid; gap: 12px; align-content: start; }
+.card--cells > span:empty { display: none; }
+.card--cells .card-ic { margin-bottom: 2px; justify-self: start; }
+.card--cells .card-sub { margin: 0; }
+.card--cells .card-foot { color: var(--ink-2, #6a5a50); margin-top: 6px; }
+@media (min-width: 900px) {
+  .grid--cells { row-gap: 0; }
+  .card--cells { grid-row: span var(--rows, 5); grid-template-rows: subgrid; row-gap: 12px; }
+  .card--cells > span:empty { display: block; }
+}
+.grid-cta { margin-top: clamp(28px, 4vw, 40px); }
+/* Ölpröbchen-Box wie die anderen Boxen */
+.cta-panel--aside .h2 { font-size: clamp(1.7rem, 2.6vw, 2.4rem); line-height: 1.12; }
+.cta-panel--aside .lead { max-width: 36ch; }
+/* Cleanse & Restore: Checkliste statt Bubbles */
+.cta-checks { list-style: none; margin: 18px auto 8px; padding: 0; display: grid; gap: 10px; justify-items: start; text-align: left; width: fit-content; max-width: 100%; }
+.cta-checks li { display: flex; align-items: flex-start; gap: 10px; font-size: 1.05rem; line-height: 1.4; color: #fff; }
+.cta-checks .i { width: 20px; height: 20px; flex: none; margin-top: 2px; fill: none; stroke: #e8c75a; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.cta-panel--wide .cta-facts { margin-top: 14px; }
+/* Ölpröbchen-Box: gleicher Look wie die CTA-Boxen */
+.cta-panel--aside { background: linear-gradient(135deg, var(--petrol-dk) 0%, var(--petrol) 55%, var(--petrol-cd) 100%); background-color: var(--petrol); color: #fff; }
+.cta-panel--aside::before { height: 100%; background: radial-gradient(60% 90% at 85% 0%, rgba(212, 175, 55, 0.28) 0%, transparent 70%); }
+.cta-panel--aside::after { content: ""; position: absolute; z-index: -1; right: -70px; bottom: -90px; width: 240px; height: 240px; border-radius: 50%; background: rgba(212, 175, 55, 0.14); }
+.cta-panel--aside .lead { color: #dde7ea; }
+
+/* Über mich: Bild ragt etwa zu zwei Dritteln nach oben aus dem Kasten */
+@media (min-width: 861px) {
+  .section--about .about-panel { margin-top: clamp(330px, 28vw, 380px); padding-block: 32px; }
+  .section--about .about-panel { overflow: visible; }
+  .section--about .team-photo { margin-top: -92%; }
+}
+
+/* Über mich: Fließtext links, Zitat und Porträt in der rechten Spalte */
+.story-grid { display: grid; gap: clamp(32px, 5vw, 64px); align-items: start; }
+.story-block + .story-block { margin-top: clamp(28px, 4vw, 44px); }
+.story-main .prose { max-width: none; }
+.story-h { margin: 0 0 16px; }
+.story-aside { display: grid; gap: 28px; justify-items: center; }
+.story-quote { margin: 0; position: relative; padding: 8px 0 0 0; text-align: left; }
+.story-quote::before { content: "\201C"; display: block; font-family: var(--font-display); font-size: 5rem; line-height: .6; color: #d4af37; margin-bottom: 8px; }
+.story-quote p { margin: 0; font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.35; color: var(--petrol); }
+.story-fig { margin: 0; width: 100%; max-width: 380px; display: grid; gap: 14px; justify-items: center; text-align: center; }
+.story-fig .team-photo { width: 100%; aspect-ratio: 4 / 5; border-radius: 999px 999px 18px 18px; margin: 0; box-shadow: 0 22px 44px -24px rgba(38, 80, 94, .55); }
+.story-fig .team-photo img { object-position: 50% 30%; }
+.story-fig figcaption { display: grid; gap: 4px; }
+.story-fig .team-name { font-size: 1.5rem; color: var(--petrol); }
+.story-fig .team-role { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--petrol-cd); line-height: 1.7; }
+@media (min-width: 900px) {
+  .story-grid { grid-template-columns: minmax(0, 1.5fr) minmax(0, .8fr); }
+  .story-aside { position: sticky; top: 120px; }
+}
+
+/* Kontakt: Karten in einer Zeile, Formular mit Themen als Icon-Auswahl */
+.bento--row { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .bento--row .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.topics { border: 0; margin: 0; padding: 0; min-width: 0; }
+.topics legend { padding: 0; margin-bottom: 10px; font-size: .9375rem; font-weight: 600; }
+.topic-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.topic { position: relative; display: block; cursor: pointer; }
+.topic input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.topic-card { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 10px; height: 100%; padding: 16px 10px 14px; text-align: center; background: #fff; border: 2px solid rgba(60, 106, 121, .22); border-radius: 18px; transition: border-color .25s var(--ease), background .25s var(--ease), transform .25s var(--ease), box-shadow .25s var(--ease); }
+.topic:hover .topic-card { border-color: var(--petrol); transform: translateY(-2px); }
+.topic-ic { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(150deg, var(--petrol), var(--petrol-dk)); transition: background .25s var(--ease); }
+.topic-ic .i { width: 22px; height: 22px; fill: none; stroke: #e8c75a; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.topic-text { font-size: .9rem; font-weight: 600; line-height: 1.3; color: var(--petrol-dk); }
+.topic input:checked + .topic-card { border-color: #d4af37; background: rgba(212, 175, 55, .14); box-shadow: 0 10px 24px -16px rgba(38, 80, 94, .55); }
+.topic input:checked + .topic-card .topic-ic { background: linear-gradient(135deg, #e8c75a, #d4af37); }
+.topic input:checked + .topic-card .topic-ic .i { stroke: var(--petrol-dk); }
+.topic input:focus-visible + .topic-card { outline: 3px solid var(--petrol); outline-offset: 3px; }

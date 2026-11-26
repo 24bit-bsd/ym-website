@@ -8,17 +8,31 @@
       "type": "hero",
       "image": "assets/img/advent-steine.jpg",
       "title": "Yoga in Advent",
-      "lead": "Fragrant time out: self-care before Christmas. Saturday, 5 December 2026, 14:00–16:00 at the Rostscheune in Bamberg.",
+      "lead": "Fragrant time out: self-care before Christmas.",
       "buttons": [
         {
           "label": "Sign up now",
-          "href": "mailto:flow@momente.yoga",
+          "href": "page:contact",
           "style": "primary"
         },
         {
           "label": "All details",
           "href": "#infos",
           "style": "secondary"
+        }
+      ],
+      "facts": [
+        {
+          "icon": "cal",
+          "label": "Saturday, 5 December 2026"
+        },
+        {
+          "icon": "clock",
+          "label": "14:00–16:00"
+        },
+        {
+          "icon": "pin",
+          "label": "Rostscheune, Bamberg"
         }
       ]
     },
@@ -62,25 +76,40 @@
       "items": [
         {
           "name": "Yoga in Advent: Fragrant Time Out",
-          "subtitle": "Saturday, 5 December 2026",
-          "price": "€49",
-          "period": "per person",
-          "featured": true,
-          "badge": "Sign up by 30 Nov",
+          "facts": [
+            {
+              "icon": "cal",
+              "label": "Sat, 5 December 2026"
+            },
+            {
+              "icon": "clock",
+              "label": "14:00–16:00"
+            },
+            {
+              "icon": "pin",
+              "label": "Rostscheune, Bamberg"
+            }
+          ],
+          "prices": [
+            {
+              "label": "per person",
+              "value": "€49"
+            }
+          ],
           "features": [
-            "14:00–16:00, arrive from 13:45",
+            "Arrive from 13:45",
             "Yoga, essential oils and more",
-            "Rostscheune, Färbergasse 28, Bamberg",
             "Suitable for all levels"
           ],
+          "featured": true,
+          "badge": "Sign up by 30 Nov",
           "cta": {
             "label": "Sign up now",
-            "href": "mailto:flow@momente.yoga",
+            "href": "page:contact",
             "style": "primary"
           }
         }
-      ],
-      "footnote": "Sign up by 30 November 2026 by email to flow[at]momente.yoga."
+      ]
     },
     {
       "type": "cta",

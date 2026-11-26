@@ -84,11 +84,10 @@
     {
       "type": "cta",
       "title": "I look forward to your call or your inquiry by email.",
-      "text": "Phone: +49 (0)175 5643744 · Email: flow@momente.yoga",
       "buttons": [
         {
-          "label": "Inquire by email",
-          "href": "mailto:flow@momente.yoga",
+          "label": "Inquire now",
+          "href": "page:contact",
           "style": "primary"
         }
       ]

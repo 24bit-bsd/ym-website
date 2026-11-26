@@ -38,8 +38,8 @@
               "value": "€120"
             }
           ],
-          "note": "3-, 5- and 10-class cards are also available.",
           "features": [
+            "3-, 5- and 10-class cards also available",
             "In the studio or at your home"
           ]
         },
@@ -124,6 +124,47 @@
         "Arrive 5 to 15 minutes before the start so you can settle in.",
         "Wear comfortable clothes you can move in. You do not need shoes.",
         "Please let me know before class about injuries, pregnancy or medical problems."
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Special guidance",
+      "title": "Cleanse & Restore",
+      "text": "Cleansing and regeneration of your body in 30 days,\nguided with suitable essential oils and yoga.",
+      "facts": [
+        {
+          "icon": "coins",
+          "label": "€60 per person",
+          "price": true
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Book now",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ],
+      "wide": true,
+      "checks": [
+        "Specifically matched oil set (available separately)",
+        "30 days of daily guidance",
+        "Exchange in a WhatsApp group with participants",
+        "Info material & recipes",
+        "3 online yoga sessions"
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Special occasions",
+      "title": "A girls' day or bachelorette party?",
+      "text": "Write to us and we will shape your Yoga Moment together.",
+      "buttons": [
+        {
+          "label": "Send an inquiry",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
       ]
     },
     {

@@ -103,9 +103,10 @@ if (is_file($lock) && (time() - (int) @filemtime($lock)) < 30) {
     respond(false, 'slow', 429, $wantJson, $lang);
 }
 
-$name    = one_line(clean(isset($_POST['name']) ? $_POST['name'] : '', 120));
+$first   = one_line(clean(isset($_POST['firstname']) ? $_POST['firstname'] : '', 60));
+$last    = one_line(clean(isset($_POST['lastname']) ? $_POST['lastname'] : '', 60));
+$name    = trim($first . ' ' . $last);
 $email   = one_line(clean(isset($_POST['email']) ? $_POST['email'] : '', 160));
-$company = one_line(clean(isset($_POST['company']) ? $_POST['company'] : '', 160));
 $phone   = one_line(clean(isset($_POST['phone']) ? $_POST['phone'] : '', 60));
 $message = clean(isset($_POST['message']) ? $_POST['message'] : '', 5000);
 $topicRaw = (isset($_POST['topic']) && is_string($_POST['topic'])) ? $_POST['topic'] : '';
@@ -113,7 +114,7 @@ $topicKeys = array_keys(TOPICS);
 $topicKey = array_key_exists($topicRaw, TOPICS) ? $topicRaw : end($topicKeys);
 $consent = !empty($_POST['consent']);
 
-if ($name === '' || $message === '' || !$consent || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if ($first === '' || $last === '' || $message === '' || !$consent || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond(false, 'invalid', 400, $wantJson, $lang);
 }
 
@@ -129,7 +130,6 @@ $body    = "Neue Anfrage über das Kontaktformular auf " . SITE_NAME . "\n"
          . "Thema:       " . $topic . "\n"
          . "Name:        " . $name . "\n"
          . "E-Mail:      " . $email . "\n"
-         . "Unternehmen: " . ($company !== '' ? $company : '-') . "\n"
          . "Telefon:     " . ($phone !== '' ? $phone : '-') . "\n"
          . "Sprache:     " . strtoupper($lang) . "\n"
          . "Einwilligung zur Datenverarbeitung: ja (" . date('Y-m-d H:i:s') . ")\n"

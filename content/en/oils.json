@@ -8,44 +8,159 @@
       "type": "hero",
       "image": "assets/img/oele-hero.jpg",
       "title": "The power of oils",
-      "lead": "Experience Oil Whispers: essential oils as daily companions for body and emotions."
+      "lead": "Experience Oil Whispers:\nessential oils as daily companions for body and soul.",
+      "logo": "assets/img/oelgefluester-logo-weiss.png",
+      "logoAlt": "Ölgeflüster"
     },
     {
       "type": "text",
       "id": "oele-1",
       "title": "What can the oils do?",
       "paragraphs": [
-        "They are good daily companions for your health, physically and emotionally. They are pure and natural and highly effective in laying a good foundation for a healthy lifestyle."
-      ]
+        "They are 100 % pure, natural and highly effective in laying a good foundation for a healthy lifestyle."
+      ],
+      "image": "assets/img/oel-balance.png",
+      "imageAlt": "doTERRA Balance essential oil blend (15 ml)",
+      "tilesTitle": "How to use them:",
+      "tiles": [
+        {
+          "icon": "aroma",
+          "text": "Aromatic"
+        },
+        {
+          "icon": "hand",
+          "text": "Topical"
+        },
+        {
+          "icon": "glass",
+          "text": "Internal"
+        }
+      ],
+      "imageStyle": "cutout"
     },
     {
       "type": "text",
       "id": "oele-2",
       "title": "What do I offer?",
       "paragraphs": [
-        "I offer a network for committed women who share their enthusiasm for essential oils. Together we build our own business through network marketing and each grow independently, individually and at our own pace. We support one another and have the great doTERRA network behind us.",
-        "You benefit from my knowledge of health and consulting, on the one hand from my professional background, on the other from my yoga path with an interest in movement, nutrition and relaxation. I share my enthusiasm not only in personal consultations but gladly at group meetings too. One of my values is a positive outlook on life with the motto: there is no such thing as “can’t”, just do it.",
-        "In my yoga classes, yogis get to enjoy the oils. I am happy if I can infect you with my enthusiasm too and you carry the oils on as an advocate yourself."
+        "You benefit from my knowledge of health and consulting, on the one hand from my professional background, on the other from my yoga path with an interest in movement, nutrition and relaxation.",
+        "I share my enthusiasm not only in personal consultations but gladly at group meetings too. One of my values is a positive outlook on life with the motto: there is no such thing as “can’t”, just do it.",
+        "**This is how we can work together:**"
       ]
+    },
+    {
+      "type": "grid",
+      "id": "oele-angebote",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "icon": "drop",
+          "title": "Your start with the oils",
+          "sub": "Individual consulting for health and well-being",
+          "bullets": [
+            "Start with a feel-good week via WhatsApp",
+            "Trial evenings",
+            "Individual one-to-one consulting",
+            "Information and exchange in the community via WhatsApp or Telegram",
+            "Training and events"
+          ]
+        },
+        {
+          "icon": "chart",
+          "title": "Your start into business",
+          "sub": "Together we build your self-employed business, as a location-independent side activity or all-in.",
+          "bullets": [
+            "Little investment needed: your health benefits from your start-up capital",
+            "Grow at your own pace, independently and individually",
+            "A network for committed people who support one another",
+            "The great worldwide doTERRA network behind us"
+          ]
+        },
+        {
+          "icon": "heart",
+          "title": "Cooperation around essential oils",
+          "sub": "This is where the oils are put to sensible and ideal use:",
+          "bullets": [
+            "Cosmetics",
+            "Occupational therapy",
+            "Physiotherapy",
+            "Personal services",
+            "Business premises, hotels & hospitality"
+          ],
+          "foot": "Do you work in health care or in the service sector? Let us look together at how the oils can enrich and further enhance your work."
+        }
+      ],
+      "alignRows": true,
+      "buttons": [
+        {
+          "label": "Work with us now",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-yoga",
+      "infobox": {
+        "icon": "drop",
+        "text": "In our yoga classes, too, yogis get to enjoy the oils. I am happy if I can infect you with my enthusiasm and you carry the oils on as an advocate yourself."
+      }
     },
     {
       "type": "text",
       "id": "oele-3",
       "title": "How can I get started?",
       "paragraphs": [
-        "With lots of enthusiasm and interest in oils and health with oils. You invest in a basic set of oils to get to know them properly yourself. Through a monthly order of 125 PV you gradually deepen your knowledge of the oils."
-      ]
+        "With enthusiasm and curiosity for oils and health, you discover how versatile the oils are to use, what effects they have and how to use them correctly.",
+        "I am happy to accompany you on your start."
+      ],
+      "buttons": [
+        {
+          "label": "Let’s talk",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ],
+      "aside": {
+        "title": "I am happy to send you oil samples.",
+        "text": "Feel free to “whisper” your topic (sleep, digestion, pain, mood) to me. Get in touch for more info!",
+        "buttons": [
+          {
+            "label": "Request oil samples",
+            "href": "mailto:flow@momente.yoga",
+            "style": "primary"
+          }
+        ]
+      }
     },
     {
       "type": "cta",
-      "title": "I am happy to send you oil samples.",
-      "text": "Feel free to “whisper” your topic (sleep, digestion, pain, mood) to me. Get in touch for more info!",
+      "eyebrow": "Special guidance",
+      "title": "Cleanse & Restore",
+      "text": "Cleansing and regeneration of your body in 30 days,\nguided with suitable essential oils and yoga.",
+      "facts": [
+        {
+          "icon": "coins",
+          "label": "€60 per person",
+          "price": true
+        }
+      ],
       "buttons": [
         {
-          "label": "Request oil samples",
-          "href": "mailto:flow@momente.yoga",
+          "label": "Book now",
+          "href": "page:contact",
           "style": "primary"
         }
+      ],
+      "wide": true,
+      "checks": [
+        "Specifically matched oil set (available separately)",
+        "30 days of daily guidance",
+        "Exchange in a WhatsApp group with participants",
+        "Info material & recipes",
+        "3 online yoga sessions"
       ]
     }
   ]

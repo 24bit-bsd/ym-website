@@ -38,8 +38,8 @@
               "value": "120 €"
             }
           ],
-          "note": "3er-, 5er- und 10er-Karten sind ebenfalls möglich.",
           "features": [
+            "3er-, 5er- und 10er-Karten ebenfalls möglich",
             "Im Studio oder bei dir zu Hause"
           ]
         },
@@ -124,6 +124,47 @@
         "Komm 5 bis 15 Minuten vor Beginn, damit du in Ruhe ankommen kannst.",
         "Trag bequeme Kleidung, in der du dich gut bewegen kannst. Schuhe brauchst du nicht.",
         "Sag mir vor der Stunde bitte Bescheid bei Verletzungen, Schwangerschaft oder medizinischen Problemen."
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Spezielle Begleitung",
+      "title": "Cleanse & Restore",
+      "text": "Reinigung und Regeneration deines Körpers in 30 Tagen,\nbegleitet mit entsprechenden ätherischen Ölen und Yoga.",
+      "facts": [
+        {
+          "icon": "coins",
+          "label": "60 € pro Person",
+          "price": true
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Jetzt buchen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ],
+      "wide": true,
+      "checks": [
+        "Gezielt abgestimmtes Öl-Set (separat erhältlich)",
+        "30 Tage in täglicher Begleitung",
+        "Austausch in WhatsApp-Gruppe mit Teilnehmenden",
+        "Infomaterial & Rezepte",
+        "3 Online-Einheiten Yoga"
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Besondere Anlässe",
+      "title": "Freundinnen-Tag oder Junggesellinnenabschied?",
+      "text": "Schreib uns, wir gestalten deinen Yoga Moment gemeinsam.",
+      "buttons": [
+        {
+          "label": "Anfrage senden",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        }
       ]
     },
     {

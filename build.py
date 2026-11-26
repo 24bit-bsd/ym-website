@@ -139,6 +139,14 @@ ICONS = {
     "mat": '<rect x="4" y="7" width="16" height="10" rx="2"/><circle cx="17" cy="12" r="2.5"/>',
     "bottle": '<path d="M10 3h4v3l1.5 2.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V8.5L10 6z"/><path d="M8.5 12h7"/>',
     "heart": '<path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.3 4.2 4.2 0 0 1 19.5 10C19.5 15.4 12 20 12 20z"/>',
+    "chat": '<path d="M4 5h16v11H10l-4.5 4v-4H4z"/>',
+    "book": '<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H12v15H5.5A1.5 1.5 0 0 0 4 20.5z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H12v15h6.5a1.5 1.5 0 0 1 1.5 1.5z"/>',
+    "drop": '<path d="M12 3s6 6.4 6 10.5A6 6 0 0 1 6 13.5C6 9.4 12 3 12 3z"/>',
+    "clock": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+    "aroma": '<path d="M8 16c-1.5-1.5 1.5-3 0-4.5S9.5 8.5 8 7"/><path d="M13 16c-1.5-1.5 1.5-3 0-4.5S14.5 8.5 13 7"/><path d="M18 16c-1.5-1.5 1.5-3 0-4.5S19.5 8.5 18 7"/><path d="M5 20h16"/>',
+    "hand": '<path d="M8 13V6.5a1.2 1.2 0 0 1 2.4 0V11"/><path d="M10.4 10.5V4.7a1.2 1.2 0 0 1 2.4 0v6"/><path d="M12.8 10.5V6a1.2 1.2 0 0 1 2.4 0v5.5"/><path d="M15.2 9.5a1.2 1.2 0 0 1 2.4 0V14a6 6 0 0 1-6 6h-.6a5 5 0 0 1-4.1-2.1l-2.2-3.1a1.3 1.3 0 0 1 2.1-1.5L8 15"/>',
+    "cup": '<path d="M5 8h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 9.5h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 4v1.6M11 4v1.6"/>',
+    "glass": '<path d="M7 4h10l-1.2 15a1.5 1.5 0 0 1-1.5 1.3H9.7A1.5 1.5 0 0 1 8.2 19z"/><path d="M7.4 9.5h9.2"/>',
     "chev": '<path d="m9 6 6 6-6 6"/>',
     "up": '<path d="M12 19V5M6 11l6-6 6 6"/>',
     "down": '<path d="m6 9 6 6 6-6"/>',
@@ -170,6 +178,8 @@ class Site:
                 if f.name == "site.json":
                     continue
                 p = load_content(f)
+                if p.get("hidden") and not os.environ.get("SHOW_HIDDEN"):  # "hidden": true -> Seite bleibt als Vorlage im Repo, wird aber nicht gebaut und nirgends verlinkt
+                    continue
                 p.setdefault("id", f.stem)
                 p["lang"] = l
                 p["_file"] = f"{l}/{f.name}"
@@ -367,9 +377,15 @@ def r_hero(ctx, sec):
         if sec.get("rotator"):
             out += rot_line(sec)
     else:
+        if sec.get("logo"):
+            out += f'<img class="hero-logo" data-reveal src="{esc(ctx.asset(sec["logo"], False))}" alt="{esc(sec.get("logoAlt", ""))}" width="720" height="516">'
         out += f'<h1 class="hero-title hero-title--page" data-reveal>{rich(sec["title"])}</h1>'
         if sec.get("lead"):
             out += f'<p class="hero-lead" data-reveal>{rich(sec["lead"])}</p>'
+        if sec.get("facts"):
+            out += '<ul class="cta-facts hero-facts" data-reveal>' + "".join(
+                f'<li class="cta-fact">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></li>' for f in sec["facts"]
+            ) + "</ul>"
         if sec.get("rotator"):
             out += rot_line(sec)
     out += buttons(ctx, sec.get("buttons"), "btn-row btn-row--center")
@@ -460,7 +476,15 @@ def r_grid(ctx, sec):
         elif variant == "steps":
             inner = f'<span class="step-n">{T(it.get("n", i + 1))}</span>{title}{text}'
         else:
-            inner = f"{n}{title}{text}{cta}"
+            ic_ = f'<span class="card-ic" aria-hidden="true">{icon(it["icon"], "i")}</span>' if it.get("icon") else ""
+            sub_ = f'<p class="card-sub">{rich(it["sub"])}</p>' if it.get("sub") else ""
+            bl_ = f'<div class="card-bullets">{list_html(it["bullets"], "ticks")}</div>' if it.get("bullets") else ""
+            inner = f"{ic_}{n}{title}{sub_}{text}{bl_}{cta}"
+            if sec.get("alignRows"):  # feste Zeilen: Icon, Titel, Untertitel, Haken, Fußtext -> Haken stehen nebeneinander auf einer Höhe
+                foot_ = f'<div class="card-text card-foot">{paragraphs(it["foot"])}</div>' if it.get("foot") else "<span></span>"
+                cells = [ic_ or "<span></span>", title or "<span></span>", sub_ or "<span></span>", bl_ or "<span></span>", foot_]
+                cards += f'<li class="card grid-item grid-item--{variant} card--cells" data-reveal style="--i:{i};--rows:5">{"".join(cells)}</li>'
+                continue
         if it.get("href") and variant == "cards":
             cards += f'<li class="card card--link grid-item" data-reveal{style}><a class="card-hit" {ctx.link_attrs(it["href"])}>{inner}</a></li>'
         else:
@@ -473,7 +497,8 @@ def r_grid(ctx, sec):
             closing = mark(f'<div class="closing closing--big" data-reveal><p class="closing-label">{esc(lab)}</p><p class="closing-text">{rich(stmt.strip())}</p></div>', cl)
         else:
             closing = f'<p class="closing" data-reveal>{rich(cl)}</p>'
-    inner = head(sec, center=(variant == "numbered")) + f'<ul class="grid grid--{cols} grid--{variant}">{cards}</ul>' + closing
+    gcta = f'<div class="grid-cta" data-reveal>{buttons(ctx, sec["buttons"], "btn-row btn-row--center")}</div>' if sec.get("buttons") else ""
+    inner = head(sec, center=(variant == "numbered")) + f'<ul class="grid grid--{cols} grid--{variant}{" grid--cells" if sec.get("alignRows") else ""}">{cards}</ul>' + gcta + closing
     return wrap(sec, inner)
 
 
@@ -558,7 +583,7 @@ def r_about(ctx, sec):
         f'<h2 class="h2">{rich(sec.get("eyebrow", ""))}</h2>'
         + (f'<p class="lead">{rich(sec["title"])}</p>' if sec.get("title") else "")
         + "</header>"
-    )
+    ) if (sec.get("eyebrow") or sec.get("title")) else ""
     panel = f'<div class="about-panel"><div class="about-text" data-reveal>{lead}{bullets}</div>{team}</div>'
     return wrap(sec, head_html + panel + f'<div class="bar-links" data-reveal>{ctas}</div>' + dialogs, "section--about")
 
@@ -576,7 +601,8 @@ def r_text(ctx, sec):
         body += list_html(sec["list"], sec.get("listStyle", "ticks"))
     tiles_html = ""
     if sec.get("tiles"):
-        tiles_html = '<ul class="need-tiles">' + "".join(
+        tt = f'<h3 class="h3 tiles-title" data-reveal>{rich(sec["tilesTitle"])}</h3>' if sec.get("tilesTitle") else ""
+        tiles_html = tt + '<ul class="need-tiles">' + "".join(
             f'<li class="need-tile" data-reveal style="--i:{i}"><span class="need-ic" aria-hidden="true">{icon(t["icon"], "i")}</span><span class="need-text">{T(t["text"])}</span></li>' for i, t in enumerate(sec["tiles"])
         ) + "</ul>"
     after = ""
@@ -589,7 +615,28 @@ def r_text(ctx, sec):
         )
         after += mark(callout, p)
     btns = f'<div class="text-cta" data-reveal>{buttons(ctx, sec.get("buttons"))}</div>' if sec.get("buttons") else ""
-    return wrap(sec, head(sec) + (f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else "") + btns + qcards + tiles_html + after)
+    info_html = ""
+    if sec.get("infobox"):
+        ib = sec["infobox"]
+        ib_btn = btn(ctx, ib["button"]) if ib.get("button") else ""
+        info_html = (f'<div class="infobox{" infobox--long" if len(ib["text"]) > 110 else ""}" data-reveal><span class="infobox-ic" aria-hidden="true">{icon(ib.get("icon", "laptop"), "i")}</span>'
+                     f'<p class="infobox-text">{rich(ib["text"])}</p>{ib_btn}</div>')
+    prose = f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else ""
+    if sec.get("aside") and prose:
+        ad = sec["aside"]
+        aside = (f'<aside class="cta-panel cta-panel--aside" data-reveal><h2 class="h2">{rich(ad["title"])}</h2>'
+                 + (f'<p class="lead">{rich(ad["text"])}</p>' if ad.get("text") else "")
+                 + buttons(ctx, ad.get("buttons"), "btn-row btn-row--center") + "</aside>")
+        left = prose + (f'<div class="text-cta">{buttons(ctx, sec.get("buttons"))}</div>' if sec.get("buttons") else "")
+        prose = f'<div class="text-split text-split--aside"><div class="text-left">{left}</div>{aside}</div>'
+        btns = ""
+    elif sec.get("image") and prose:
+        cut = " text-fig--cutout" if sec.get("imageStyle") == "cutout" else ""
+        fig = f'<figure class="text-fig{cut}" data-reveal><img src="{esc(ctx.asset(sec["image"], False))}" alt="{esc(sec.get("imageAlt", ""))}" loading="lazy" width="1100" height="825"></figure>'
+        left = prose + tiles_html  # Icon-Boxen (falls vorhanden) direkt unter dem Text, in der linken Spalte
+        tiles_html = ""
+        prose = f'<div class="text-split"><div class="text-left">{left}</div>{fig}</div>'
+    return wrap(sec, head(sec) + prose + btns + qcards + tiles_html + after + info_html)
 
 
 def mock_board(ctx, it):
@@ -811,15 +858,28 @@ def r_pricing(ctx, sec):
             if it.get("features"):
                 feat = f'<div class="plan-feat">{list_html(it["features"], "ticks")}</div>'
             # feste Zeilen je Karte (name, sub, badges, preis, hinweis, haken), damit sie nebeneinander auf einer Höhe stehen
+            if it.get("facts"):
+                sub_cell = '<ul class="plan-facts">' + "".join(
+                    f'<li class="ev-fact">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></li>' for f in it["facts"]
+                ) + "</ul>"
+            else:
+                sub_cell = f'<p class="plan-sub">{rich(it["subtitle"])}</p>' if it.get("subtitle") else "<span></span>"
+            feat_badge = ""
+            if it.get("featured"):
+                feat_badge = f'<span class="plan-badge">{T(it["badge"]) if it.get("badge") else esc(ctx.t["ui"]["recommended"])}</span>'
+            cta_cell = f'<div class="plan-cta">{btn(ctx, it["cta"])}</div>' if it.get("cta") else ""
             cells = [
                 f'<h3 class="h3 plan-name">{rich(it["name"])}</h3>',
-                f'<p class="plan-sub">{rich(it["subtitle"])}</p>' if it.get("subtitle") else "<span></span>",
+                sub_cell,
                 badges or "<span></span>",
                 pr or "<span></span>",
                 f'<p class="card-pricenote">{rich(it["note"])}</p>' if it.get("note") else (f'<p class="plan-feat-lead">{T(it["featuresLead"])}</p>' if it.get("featuresLead") else "<span></span>"),
                 feat or "<span></span>",
             ]
-            cards += f'<li class="card plan plan--prices" data-reveal style="--i:{i}">{"".join(cells)}</li>'
+            feat_cls = " plan--featured" if it.get("featured") else ""
+            if cta_cell:
+                cells.append(cta_cell)
+            cards += f'<li class="card plan plan--prices{feat_cls}" data-reveal style="--i:{i};--rows:{len(cells)}">{feat_badge}{"".join(cells)}</li>'
             continue
         price = (
             '<p class="plan-price">'
@@ -917,12 +977,19 @@ def r_cta(ctx, sec):
     out += f'<h2 class="h2">{rich(sec["title"])}</h2>'
     if sec.get("subtitle"):
         out += f'<p class="cta-sub">{rich(sec["subtitle"])}</p>'
-    if sec.get("facts"):
+    late_facts = bool(sec.get("checks"))
+    if sec.get("facts") and not late_facts:
         out += '<ul class="cta-facts">' + "".join(
             f'<li class="cta-fact{" cta-fact--price" if f.get("price") else ""}">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></li>' for f in sec["facts"]
         ) + "</ul>"
     if sec.get("text"):
         out += f'<p class="lead">{rich(sec["text"])}</p>'
+    if sec.get("checks"):
+        out += '<ul class="cta-checks">' + "".join(f'<li>{icon("check", "i")}<span>{T(c)}</span></li>' for c in sec["checks"]) + "</ul>"
+    if sec.get("facts") and late_facts:
+        out += '<ul class="cta-facts">' + "".join(
+            f'<li class="cta-fact{" cta-fact--price" if f.get("price") else ""}">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></li>' for f in sec["facts"]
+        ) + "</ul>"
     if sec.get("person"):
         out += f'<p class="cta-person">{rich(sec["person"])}</p>'
     if sec.get("teaser"):
@@ -962,7 +1029,12 @@ def r_contact(ctx, sec):
             f'<img src="{esc(ctx.asset(cfg["map_image"], False))}" alt="" loading="lazy" width="1400" height="865">'
             f'<span class="map-chip">{esc(cfg["street"])}, {esc(cfg["city"])}{icon("arrow")}</span></a>'
         )
-    opts = "".join(f'<option value="{esc(o["value"])}">{esc(o["label"])}</option>' for o in f["topics"])
+    ICONS_T = {"probestunde": "smile", "kurse": "cal", "retreat": "heart", "firma": "chart", "oele": "drop", "sonstiges": "chat"}
+    opts = "".join(
+        f'<label class="topic"><input type="radio" name="topic" value="{esc(o["value"])}"><span class="topic-card">'
+        f'<span class="topic-ic" aria-hidden="true">{icon(o.get("icon") or ICONS_T.get(o["value"], "chat"), "i")}</span><span class="topic-text">{esc(o["label"])}</span></span></label>'
+        for o in f["topics"]
+    )
     privacy = f'<a {ctx.link_attrs("page:privacy")}>{T(f["privacyLink"])}</a>'
     consent = esc(f["consent"]).replace("{privacy}", privacy)
     action = "#" if ctx.site.preview else cfg["form_action"]
@@ -974,19 +1046,21 @@ def r_contact(ctx, sec):
   <input type="hidden" name="ts" value="">
   <input type="hidden" name="sig" value="">
   <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-  <div class="field"><label for="f-name">{T(f['name'])} <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120"></div>
-  <div class="field"><label for="f-email">{T(f['email'])} <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
   <div class="field-row">
-    <div class="field"><label for="f-company">{T(f['company'])}</label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="160"></div>
+    <div class="field"><label for="f-first">{T(f['firstName'])} <span class="req" aria-hidden="true">*</span></label><input id="f-first" name="firstname" type="text" autocomplete="given-name" required maxlength="60"></div>
+    <div class="field"><label for="f-last">{T(f['lastName'])} <span class="req" aria-hidden="true">*</span></label><input id="f-last" name="lastname" type="text" autocomplete="family-name" required maxlength="60"></div>
+  </div>
+  <div class="field-row">
+    <div class="field"><label for="f-email">{T(f['email'])} <span class="req" aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
     <div class="field"><label for="f-phone">{T(f['phoneField'])}</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="60"></div>
   </div>
-  <div class="field"><label for="f-topic">{T(f['topic'])}</label><select id="f-topic" name="topic">{opts}</select></div>
+  <fieldset class="topics"><legend>{T(f['topic'])}</legend><div class="topic-grid">{opts}</div></fieldset>
   <div class="field"><label for="f-message">{T(f['message'])} <span class="req" aria-hidden="true">*</span></label><textarea id="f-message" name="message" rows="6" required maxlength="5000"></textarea></div>
   <div class="field field--check"><input id="f-consent" name="consent" type="checkbox" value="1" required><label for="f-consent">{consent} <span class="req" aria-hidden="true">*</span></label></div>
   <button class="btn btn-primary btn-block" type="submit">{T(f['submit'])}</button>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>"""
-    bento = f'<div class="bento"><ul class="tiles" data-reveal>{tiles}</ul>{mp}</div>'
+    bento = f'<div class="bento bento--row"><ul class="tiles" data-reveal>{tiles}</ul>{mp}</div>'
     card = f'<div class="card contact-form" data-reveal><h2 class="h3 form-title">{esc(f["title"])}</h2>{form}</div>'
     return wrap(sec, bento + card)
 
@@ -1050,11 +1124,47 @@ def r_week(ctx, sec):
     return wrap(sec, inner)
 
 
+def r_events(ctx, sec):
+    """Events als Liste: Kalender-Icon (Wochentag, Datum, Uhrzeit), Titel, Kurztext, Link auf die Event-Seite."""
+    lis = ""
+    for i, it in enumerate(sec["items"]):
+        time_ = f'<span class="ev-time">{T(it["time"])}</span>' if it.get("time") else ""
+        day_cls = " ev-day--text" if len(str(it["day"])) > 5 else ""
+        cal = (f'<span class="ev-cal" aria-hidden="true"><span class="ev-mon">{T(it["month"])}</span>'
+               f'<span class="ev-day{day_cls}">{T(it["day"])}</span><span class="ev-dow">{T(it["dow"])}</span>{time_}</span>')
+        facts = ""
+        if it.get("facts"):
+            facts = '<span class="ev-facts">' + "".join(
+                f'<span class="ev-fact{" ev-fact--price" if f.get("price") else ""}">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></span>' for f in it["facts"]
+            ) + "</span>"
+        lis += (
+            f'<li class="ev" data-reveal style="--i:{i}"><a class="ev-link" {ctx.link_attrs(it["href"])}>{cal}'
+            f'<span class="ev-body"><h3 class="h3">{rich(it["title"])}</h3>{facts}<span class="ev-text">{rich(it["text"])}</span>'
+            f'<span class="link-more">{T(it.get("cta", ctx.t["ui"]["more"]))}{icon("chev", "i i-chev")}</span></span></a></li>'
+        )
+    return wrap(sec, head(sec) + f'<ul class="ev-list">{lis}</ul>')
+
+
+def r_story(ctx, sec):
+    """Fließtext links, rechts eine mitlaufende Spalte mit Zitat und Porträt (Bild mit Name/Rolle)."""
+    left = ""
+    for b in sec["blocks"]:
+        h = f'<h2 class="h2 story-h">{rich(b["title"])}</h2>' if b.get("title") else ""
+        left += f'<div class="story-block" data-reveal>{h}<div class="prose">{"".join(paragraphs(p) for p in b["paragraphs"])}</div></div>'
+    a = sec["aside"]
+    quote = f'<blockquote class="story-quote" data-reveal><p>{rich(a["quote"])}</p></blockquote>' if a.get("quote") else ""
+    fig = (f'<figure class="story-fig" data-reveal><span class="team-photo"><img src="{esc(ctx.asset(a["image"], False))}" alt="{esc(a.get("imageAlt", ""))}" loading="lazy" width="800" height="800"></span>'
+           f'<figcaption><span class="team-name">{T(a["name"])}</span><span class="team-role">{rich(a["role"])}</span></figcaption></figure>')
+    return wrap(sec, f'<div class="story-grid"><div class="story-main">{left}</div><aside class="story-aside">{quote}{fig}</aside></div>', "section--story")
+
+
 RENDERERS = {
     "hero": r_hero,
     "rings": r_rings,
     "grid": r_grid,
     "week": r_week,
+    "events": r_events,
+    "story": r_story,
     "logos": r_logos,
     "about": r_about,
     "text": r_text,

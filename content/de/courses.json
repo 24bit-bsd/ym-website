@@ -59,9 +59,15 @@
     {
       "type": "text",
       "id": "online-hinweis",
-      "after": [
-        "Alle Stunden sind auch virtuell buchbar."
-      ]
+      "infobox": {
+        "icon": "laptop",
+        "text": "Du kannst auch online an allen Kursen teilnehmen.",
+        "button": {
+          "label": "Mehr zu Online-Yoga",
+          "href": "page:online",
+          "style": "primary"
+        }
+      }
     },
     {
       "type": "cta",
@@ -73,6 +79,11 @@
           "label": "Probestunde anfragen",
           "href": "page:contact",
           "style": "primary"
+        },
+        {
+          "label": "Zum Stundenplan",
+          "href": "page:schedule",
+          "style": "secondary"
         }
       ]
     }

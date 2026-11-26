@@ -59,9 +59,15 @@
     {
       "type": "text",
       "id": "online-hinweis",
-      "after": [
-        "All classes can also be booked virtually."
-      ]
+      "infobox": {
+        "icon": "laptop",
+        "text": "You can also take part in all classes online.",
+        "button": {
+          "label": "More about Online Yoga",
+          "href": "page:online",
+          "style": "primary"
+        }
+      }
     },
     {
       "type": "cta",
@@ -73,6 +79,11 @@
           "label": "Request a trial class",
           "href": "page:contact",
           "style": "primary"
+        },
+        {
+          "label": "To the timetable",
+          "href": "page:schedule",
+          "style": "secondary"
         }
       ]
     }

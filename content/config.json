@@ -31,7 +31,7 @@
   "logo_width": 800,
   "logo_height": 384,
   "logo_icon": "assets/img/logo-icon.png",
-  "map_url": "",
+  "map_url": "https://maps.app.goo.gl/yyY74geSsFeiTy5s7",
   "map_image": "",
   "team_profiles": "staging",
   "theme": {
@@ -105,6 +105,14 @@
   },
   "redirects": [
     {
+      "from": "^events/yoga-retreat-rottal/?$",
+      "to": "/events"
+    },
+    {
+      "from": "^en/events/yoga-retreat-rottal/?$",
+      "to": "/en/events"
+    },
+    {
       "from": "^(index\\.php/)?about/?$",
       "to": "/ueber-mich"
     },
@@ -146,7 +154,7 @@
     },
     {
       "from": "^(index\\.php/)?events/yoga-retreats/?$",
-      "to": "/events/yoga-retreat-rottal"
+      "to": "/events"
     },
     {
       "from": "^(index\\.php/)?yoga-retreat-2022/?$",

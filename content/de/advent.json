@@ -8,17 +8,31 @@
       "type": "hero",
       "image": "assets/img/advent-steine.jpg",
       "title": "Yoga im Advent",
-      "lead": "Duftende Auszeit: Selfcare in der Vorweihnachtszeit. Samstag, 5. Dezember 2026, 14:00–16:00 Uhr in der Rostscheune in Bamberg.",
+      "lead": "Duftende Auszeit: Selfcare in der Vorweihnachtszeit.",
       "buttons": [
         {
           "label": "Jetzt anmelden",
-          "href": "mailto:flow@momente.yoga",
+          "href": "page:contact",
           "style": "primary"
         },
         {
           "label": "Alle Infos",
           "href": "#infos",
           "style": "secondary"
+        }
+      ],
+      "facts": [
+        {
+          "icon": "cal",
+          "label": "Samstag, 5. Dezember 2026"
+        },
+        {
+          "icon": "clock",
+          "label": "14:00–16:00 Uhr"
+        },
+        {
+          "icon": "pin",
+          "label": "Rostscheune, Bamberg"
         }
       ]
     },
@@ -62,25 +76,40 @@
       "items": [
         {
           "name": "Yoga im Advent: Duftende Auszeit",
-          "subtitle": "Samstag, 5. Dezember 2026",
-          "price": "49 €",
-          "period": "pro Person",
-          "featured": true,
-          "badge": "Anmeldung bis 30.11.",
+          "facts": [
+            {
+              "icon": "cal",
+              "label": "Sa, 5. Dezember 2026"
+            },
+            {
+              "icon": "clock",
+              "label": "14:00–16:00 Uhr"
+            },
+            {
+              "icon": "pin",
+              "label": "Rostscheune, Bamberg"
+            }
+          ],
+          "prices": [
+            {
+              "label": "pro Person",
+              "value": "49 €"
+            }
+          ],
           "features": [
-            "14:00–16:00 Uhr, Ankommen ab 13:45 Uhr",
+            "Ankommen ab 13:45 Uhr",
             "Yoga, ätherische Öle und mehr",
-            "Rostscheune, Färbergasse 28, Bamberg",
             "Für alle Level geeignet"
           ],
+          "featured": true,
+          "badge": "Anmeldung bis 30.11.",
           "cta": {
             "label": "Jetzt anmelden",
-            "href": "mailto:flow@momente.yoga",
+            "href": "page:contact",
             "style": "primary"
           }
         }
-      ],
-      "footnote": "Anmeldung bis 30.11.2026 per E-Mail an flow[at]momente.yoga."
+      ]
     },
     {
       "type": "cta",

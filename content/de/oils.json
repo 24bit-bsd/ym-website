@@ -8,44 +8,159 @@
       "type": "hero",
       "image": "assets/img/oele-hero.jpg",
       "title": "Kraft der Öle",
-      "lead": "Erlebe Ölgeflüster: ätherische Öle als tägliche Begleiter für Körper und Gefühl."
+      "lead": "Erlebe Ölgeflüster:\nÄtherische Öle als tägliche Begleiter für Körper und Seele.",
+      "logo": "assets/img/oelgefluester-logo-weiss.png",
+      "logoAlt": "Ölgeflüster"
     },
     {
       "type": "text",
       "id": "oele-1",
       "title": "Was können die Öle?",
       "paragraphs": [
-        "Sie sind tägliche gute Begleiter für deine Gesundheit, körperlich und auch emotional. Sie sind rein und natürlich und hochwirksam, um eine gute Basis für einen gesunden Lebensstil zu schaffen."
-      ]
+        "Sie sind 100 % rein, natürlich und hochwirksam, um eine gute Basis für einen gesunden Lebensstil zu schaffen."
+      ],
+      "image": "assets/img/oel-balance.png",
+      "imageAlt": "doTERRA Balance, ätherisches Ölgemisch (15 ml)",
+      "tilesTitle": "So wendest du sie an:",
+      "tiles": [
+        {
+          "icon": "aroma",
+          "text": "Aromatisch"
+        },
+        {
+          "icon": "hand",
+          "text": "Äußerlich"
+        },
+        {
+          "icon": "glass",
+          "text": "Innerlich"
+        }
+      ],
+      "imageStyle": "cutout"
     },
     {
       "type": "text",
       "id": "oele-2",
       "title": "Was biete ich?",
       "paragraphs": [
-        "Ich biete ein Netzwerk für engagierte Frauen, die ihre Begeisterung für ätherische Öle nach außen tragen. Gemeinsam bauen wir durch Networkmarketing ein eigenes Business auf und wachsen jede eigenständig, individuell und im eigenen Tempo. Wir unterstützen uns gegenseitig und haben das großartige doTERRA-Netzwerk im Hintergrund.",
-        "Du profitierst von meinem Wissen in Sachen Gesundheit und Beratung, zum einen aus meinem beruflichen Hintergrund, zum anderen durch meinen Yoga-Weg mit Interesse an Bewegung, Ernährung und Entspannung. Meine Begeisterung strahle ich nicht nur in persönlichen Beratungen aus, sondern gern auch bei Gruppentreffen. Einer meiner Werte ist eine positive Lebenseinstellung mit der Devise: Geht nicht, gibt's nicht, einfach tun.",
-        "In meinen Yoga-Stunden kommen die Yogis in den Genuss der Öle. Ich freue mich, wenn ich auch dich mit meiner Begeisterung anstecke und du selbst als Botschafterin die Öle weiterträgst."
+        "Du profitierst von meinem Wissen in Sachen Gesundheit und Beratung, zum einen aus meinem beruflichen Hintergrund, zum anderen durch meinen Yoga-Weg mit Interesse an Bewegung, Ernährung und Entspannung.",
+        "Meine Begeisterung strahle ich nicht nur in persönlichen Beratungen aus, sondern gern auch bei Gruppentreffen. Einer meiner Werte ist eine positive Lebenseinstellung mit der Devise: Geht nicht, gibt’s nicht, einfach tun.",
+        "**So können wir zusammenarbeiten:**"
       ]
+    },
+    {
+      "type": "grid",
+      "id": "oele-angebote",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "icon": "drop",
+          "title": "Dein Einstieg mit den Ölen",
+          "sub": "Individuelle Beratung für Gesundheit und Wohlbefinden",
+          "bullets": [
+            "Einstieg über eine Feel-Good-Woche per WhatsApp",
+            "Schnupperabende",
+            "Individuelle 1:1-Beratung",
+            "Information und Austausch in der Community via WhatsApp oder Telegram",
+            "Schulungen und Events"
+          ]
+        },
+        {
+          "icon": "chart",
+          "title": "Dein Einstieg ins Business",
+          "sub": "Gemeinsam bauen wir dir dein selbständiges Geschäft auf, als ortsunabhängige Nebentätigkeit oder All-In.",
+          "bullets": [
+            "Wenig Invest nötig: Von deinem Startkapital profitiert deine Gesundheit",
+            "Wachsen im eigenen Tempo, eigenständig und individuell",
+            "Ein Netzwerk für Engagierte, die sich gegenseitig unterstützen",
+            "Das großartige und weltweite doTERRA-Netzwerk im Hintergrund"
+          ]
+        },
+        {
+          "icon": "heart",
+          "title": "Kooperation rund um ätherische Öle",
+          "sub": "Hier kommen die Öle sinnvoll und ideal zum Einsatz:",
+          "bullets": [
+            "Kosmetik",
+            "Ergotherapie",
+            "Physiotherapie",
+            "Persönliche Dienstleistungen",
+            "Geschäftsräume, Hotels & Gastronomie"
+          ],
+          "foot": "Du arbeitest im Gesundheitswesen oder im Service-Bereich? Lass uns gemeinsam schauen, wie du deine Tätigkeit durch die Öle bereicherst und weiter aufwertest."
+        }
+      ],
+      "alignRows": true,
+      "buttons": [
+        {
+          "label": "Jetzt zusammenarbeiten",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "oele-yoga",
+      "infobox": {
+        "icon": "drop",
+        "text": "Auch in unseren Yoga-Stunden kommen die Yogis in den Genuss der Öle. Ich freue mich, wenn ich auch dich mit meiner Begeisterung anstecke und du selbst als Botschafterin die Öle weiterträgst."
+      }
     },
     {
       "type": "text",
       "id": "oele-3",
       "title": "Wie kann ich einsteigen?",
       "paragraphs": [
-        "Mit viel Begeisterung und Interesse für das Thema Öle und Gesundheit mit Ölen. Du investierst in eine Grundausstattung an Ölen, um sie selbst richtig kennenzulernen. Über eine monatliche Bestellung von 125 PV vertiefst du nach und nach dein Wissen zu den Ölen."
-      ]
+        "Mit Begeisterung und Neugier für Öle und Gesundheit entdeckst du, wie vielfältig sich die Öle anwenden lassen, welche Wirkung sie haben und wie du sie richtig einsetzt.",
+        "Ich begleite dich gern bei deinem Einstieg."
+      ],
+      "buttons": [
+        {
+          "label": "Lass uns sprechen",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ],
+      "aside": {
+        "title": "Gerne sende ich dir Ölpröbchen zu.",
+        "text": "Du darfst mir dein Thema (Schlaf, Verdauung, Schmerzen, Stimmung) „zuflüstern“. Melde dich gern für mehr Infos!",
+        "buttons": [
+          {
+            "label": "Ölpröbchen anfragen",
+            "href": "mailto:flow@momente.yoga",
+            "style": "primary"
+          }
+        ]
+      }
     },
     {
       "type": "cta",
-      "title": "Gerne sende ich dir Ölpröbchen zu.",
-      "text": "Du darfst mir dein Thema (Schlaf, Verdauung, Schmerzen, Stimmung) „zuflüstern“. Melde dich gern für mehr Infos!",
+      "eyebrow": "Spezielle Begleitung",
+      "title": "Cleanse & Restore",
+      "text": "Reinigung und Regeneration deines Körpers in 30 Tagen,\nbegleitet mit entsprechenden ätherischen Ölen und Yoga.",
+      "facts": [
+        {
+          "icon": "coins",
+          "label": "60 € pro Person",
+          "price": true
+        }
+      ],
       "buttons": [
         {
-          "label": "Ölpröbchen anfragen",
-          "href": "mailto:flow@momente.yoga",
+          "label": "Jetzt buchen",
+          "href": "page:contact",
           "style": "primary"
         }
+      ],
+      "wide": true,
+      "checks": [
+        "Gezielt abgestimmtes Öl-Set (separat erhältlich)",
+        "30 Tage in täglicher Begleitung",
+        "Austausch in WhatsApp-Gruppe mit Teilnehmenden",
+        "Infomaterial & Rezepte",
+        "3 Online-Einheiten Yoga"
       ]
     }
   ]

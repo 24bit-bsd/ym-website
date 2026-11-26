@@ -203,27 +203,33 @@
     "topics": [
       {
         "value": "probestunde",
-        "label": "Trial class"
+        "label": "Trial class",
+        "icon": "smile"
       },
       {
         "value": "kurse",
-        "label": "Classes and timetable"
+        "label": "Question about classes & booking",
+        "icon": "cal"
       },
       {
         "value": "retreat",
-        "label": "Retreat in the Rottal"
+        "label": "Retreats & events",
+        "icon": "heart"
       },
       {
-        "value": "online",
-        "label": "Online yoga"
+        "value": "firma",
+        "label": "Corporate offer",
+        "icon": "chart"
       },
       {
         "value": "oele",
-        "label": "Oil whispers"
+        "label": "Oil Whispers & collaboration",
+        "icon": "drop"
       },
       {
         "value": "sonstiges",
-        "label": "Other"
+        "label": "Other",
+        "icon": "chat"
       }
     ],
     "message": "Your message",
@@ -235,9 +241,11 @@
     "err": "Sorry, that did not work. Please try again or email us directly.",
     "invalid": "Please fill in the required fields and agree to the data processing.",
     "previewMsg": "Preview mode: the form is not sent here.",
-    "title": "Say hello.",
+    "title": "Namaste.",
     "mapLabel": "Open location in Google Maps",
     "slow": "Please try again in a moment.",
-    "back": "Back to the website"
+    "back": "Back to the website",
+    "firstName": "First name",
+    "lastName": "Last name"
   }
 }
