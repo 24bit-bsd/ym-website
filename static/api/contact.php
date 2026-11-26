@@ -145,11 +145,19 @@ $headers = array(
     'X-Mailer: website-contact-form',
 );
 
-$encodedSubject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
-if (CONTACT_USE_ENVELOPE_FROM) {
-    $sent = @mail(CONTACT_TO, $encodedSubject, $body, implode("\r\n", $headers), '-f' . CONTACT_FROM);
+$smtpFile = __DIR__ . '/smtp-config.php';
+if (is_file($smtpFile)) {
+    // SMTP mit Anmeldung (Zugangsdaten stammen aus den GitHub-Secrets, nicht aus dem Repository)
+    require_once __DIR__ . '/smtp.php';
+    $smtp = require $smtpFile;
+    $sent = is_array($smtp) && smtp_send($smtp, CONTACT_FROM, SITE_NAME . ' Website', CONTACT_TO, $email, $subject, $body);
 } else {
-    $sent = @mail(CONTACT_TO, $encodedSubject, $body, implode("\r\n", $headers));
+    $encodedSubject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
+    if (CONTACT_USE_ENVELOPE_FROM) {
+        $sent = @mail(CONTACT_TO, $encodedSubject, $body, implode("\r\n", $headers), '-f' . CONTACT_FROM);
+    } else {
+        $sent = @mail(CONTACT_TO, $encodedSubject, $body, implode("\r\n", $headers));
+    }
 }
 
 if (!$sent) {

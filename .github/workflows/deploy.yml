@@ -52,6 +52,11 @@ jobs:
       COMING_SOON: ${{ (github.event_name == 'workflow_dispatch' && inputs.coming_soon && 'true') || 'false' }}
       DEPLOY_REMOTE_DIR: ${{ vars.DEPLOY_REMOTE_DIR }}
       DEPLOY_PROTOCOL: ${{ vars.DEPLOY_PROTOCOL }}
+      # Mailversand des Kontaktformulars per SMTP (Postfach beim Hoster); ohne diese Secrets nutzt das Formular PHP mail()
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      SMTP_HOST: ${{ vars.SMTP_HOST }}
+      SMTP_PORT: ${{ vars.SMTP_PORT }}
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
@@ -77,6 +82,24 @@ jobs:
           if [ "$TARGET" = "production" ]; then
             test -f dist/sitemap.xml && test -f dist/llms.txt
             if grep -q 'noindex' dist/index.html; then echo "::error::Produktions-Build enthält noindex"; exit 1; fi
+          fi
+
+      - name: SMTP-Zugang für das Kontaktformular bereitstellen
+        if: ${{ env.COMING_SOON != 'true' }}
+        run: |
+          if [ -z "$SMTP_USER" ] || [ -z "$SMTP_PASSWORD" ]; then
+            echo "::notice::SMTP_USER/SMTP_PASSWORD nicht gesetzt: Das Formular nutzt PHP mail()."
+          else
+            python3 - <<'PY'
+          import os
+          q = lambda v: "'" + v.replace("\\", "\\\\").replace("'", "\\'") + "'"
+          host = os.environ.get("SMTP_HOST") or "smtp.ionos.de"
+          port = os.environ.get("SMTP_PORT") or "587"
+          code = "<?php\nreturn array('host' => %s, 'port' => %s, 'user' => %s, 'pass' => %s, 'secure' => %s);\n" % (
+              q(host), int(port), q(os.environ["SMTP_USER"]), q(os.environ["SMTP_PASSWORD"]), q("ssl" if int(port) == 465 else "starttls"))
+          open("dist/api/smtp-config.php", "w").write(code)
+          print("SMTP-Zugang geschrieben für", host, port)
+          PY
           fi
 
       - name: Zugangsdaten prüfen

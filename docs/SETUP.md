@@ -41,6 +41,7 @@ Checkliste für dieses Kundenprojekt. Claude liest sie zu Beginn jeder Sitzung u
 - [ ] GitHub-Environments `staging` und `production`: Secrets (`DEPLOY_HOST/USER/PASSWORD/PORT`) und Variablen (`DEPLOY_REMOTE_DIR`, `DEPLOY_PROTOCOL`)
 - [ ] Erster Staging-Deploy grün, Seite auf der Subdomain geprüft
 - [ ] Formular-Test auf Staging (Mail kommt an)
+- [ ] Mailversand des Formulars: PHP `mail()` funktioniert bei IONOS nicht (Test: Status 500). Lösung: SMTP mit Postfach. In GitHub je Environment (`staging`, `production`) die Secrets `SMTP_USER` (z. B. flow@momente.yoga) und `SMTP_PASSWORD` eintragen (optional Variablen `SMTP_HOST`, Standard smtp.ionos.de, und `SMTP_PORT`, Standard 587). Der Workflow schreibt daraus beim Deploy `api/smtp-config.php`; nichts davon liegt im Repository.
 
 ## F. Qualität und Sicherheit
 - [ ] Prüfliste in `sicherheit.md` und `qualitaet-seo.md` abgearbeitet (2FA, CSP/HSTS getestet, Actions gepinnt)

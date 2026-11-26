@@ -54,6 +54,6 @@ Header always set Cross-Origin-Opener-Policy "same-origin"
 <FilesMatch "^\.">
 Require all denied
 </FilesMatch>
-<Files "common.php">
+<FilesMatch "^(common|smtp|smtp-config|config)\.php$">
 Require all denied
-</Files>
+</FilesMatch>
