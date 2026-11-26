@@ -132,6 +132,13 @@ ICONS = {
     "award": '<circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 8 5-3 5 3-1.5-8"/>',
     "smile": '<circle cx="12" cy="12" r="9"/><path d="M8 14.5c1 1.5 2.4 2.3 4 2.3s3-.8 4-2.3"/><path d="M9 9.5h.01M15 9.5h.01"/>',
     "eye": '<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    "home": '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/>',
+    "wifi": '<path d="M3 9.5a13 13 0 0 1 18 0"/><path d="M6 13a8.5 8.5 0 0 1 12 0"/><path d="M9 16.5a4 4 0 0 1 6 0"/><path d="M12 19.6v.1"/>',
+    "laptop": '<rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 19h18"/>',
+    "phoneoff": '<rect x="8" y="3" width="8" height="18" rx="2"/><path d="M4 4l16 16"/>',
+    "mat": '<rect x="4" y="7" width="16" height="10" rx="2"/><circle cx="17" cy="12" r="2.5"/>',
+    "bottle": '<path d="M10 3h4v3l1.5 2.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V8.5L10 6z"/><path d="M8.5 12h7"/>',
+    "heart": '<path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.3 4.2 4.2 0 0 1 19.5 10C19.5 15.4 12 20 12 20z"/>',
     "chev": '<path d="m9 6 6 6-6 6"/>',
     "up": '<path d="M12 19V5M6 11l6-6 6 6"/>',
     "down": '<path d="m6 9 6 6 6-6"/>',
@@ -439,6 +446,12 @@ def r_grid(ctx, sec):
         if it.get("image"):
             n = f'<img class="card-img" src="{esc(ctx.asset(it["image"], False))}" alt="{esc(it.get("alt", ""))}" loading="lazy" width="320" height="320">' + n
         text = f'<div class="card-text">{paragraphs(it["text"])}</div>' if it.get("text") else ""
+        if it.get("prices"):
+            text += '<ul class="card-prices">' + "".join(
+                f'<li><span class="cp-label">{T(p["label"])}</span><span class="cp-value">{T(p["value"])}</span></li>' for p in it["prices"]
+            ) + "</ul>"
+            if it.get("priceNote"):
+                text += f'<p class="card-pricenote">{rich(it["priceNote"])}</p>'
         cta = ""
         if it.get("href"):
             cta = f'<p class="card-cta"><span class="link-more">{T(it.get("cta", ctx.t["ui"]["more"]))}{icon("chev", "i i-chev")}</span></p>'
@@ -561,6 +574,11 @@ def r_text(ctx, sec):
         ) + "</ol>"
     elif sec.get("list"):
         body += list_html(sec["list"], sec.get("listStyle", "ticks"))
+    tiles_html = ""
+    if sec.get("tiles"):
+        tiles_html = '<ul class="need-tiles">' + "".join(
+            f'<li class="need-tile" data-reveal style="--i:{i}"><span class="need-ic" aria-hidden="true">{icon(t["icon"], "i")}</span><span class="need-text">{T(t["text"])}</span></li>' for i, t in enumerate(sec["tiles"])
+        ) + "</ul>"
     after = ""
     for p in sec.get("after", []):
         main, _, sub_ = str(p).partition("\n")
@@ -571,7 +589,7 @@ def r_text(ctx, sec):
         )
         after += mark(callout, p)
     btns = f'<div class="text-cta" data-reveal>{buttons(ctx, sec.get("buttons"))}</div>' if sec.get("buttons") else ""
-    return wrap(sec, head(sec) + (f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else "") + btns + qcards + after)
+    return wrap(sec, head(sec) + (f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else "") + btns + qcards + tiles_html + after)
 
 
 def mock_board(ctx, it):
@@ -778,6 +796,31 @@ def r_pricing(ctx, sec):
         badge = ""
         if feat:
             badge = f'<span class="plan-badge">{T(it["badge"]) if it.get("badge") else esc(ctx.t["ui"]["recommended"])}</span>'
+        if it.get("prices") or it.get("priceText"):
+            pr = ""
+            if it.get("prices"):
+                pr = '<ul class="card-prices">' + "".join(
+                    f'<li><span class="cp-label">{T(p["label"])}</span><span class="cp-value">{T(p["value"])}</span></li>' for p in it["prices"]
+                ) + "</ul>"
+            if it.get("priceText"):
+                pr += f'<ul class="card-prices"><li><span class="cp-label" aria-hidden="true">&nbsp;</span><span class="cp-value cp-value--ask">{T(it["priceText"])}</span></li></ul>'
+            badges = ""
+            if it.get("badges"):
+                badges = '<ul class="plan-badges">' + "".join(f'<li class="pb pb--{esc(b.get("kind", "x"))}">{T(b["label"])}</li>' for b in it["badges"]) + "</ul>"
+            feat = ""
+            if it.get("features"):
+                feat = f'<div class="plan-feat">{list_html(it["features"], "ticks")}</div>'
+            # feste Zeilen je Karte (name, sub, badges, preis, hinweis, haken), damit sie nebeneinander auf einer Höhe stehen
+            cells = [
+                f'<h3 class="h3 plan-name">{rich(it["name"])}</h3>',
+                f'<p class="plan-sub">{rich(it["subtitle"])}</p>' if it.get("subtitle") else "<span></span>",
+                badges or "<span></span>",
+                pr or "<span></span>",
+                f'<p class="card-pricenote">{rich(it["note"])}</p>' if it.get("note") else (f'<p class="plan-feat-lead">{T(it["featuresLead"])}</p>' if it.get("featuresLead") else "<span></span>"),
+                feat or "<span></span>",
+            ]
+            cards += f'<li class="card plan plan--prices" data-reveal style="--i:{i}">{"".join(cells)}</li>'
+            continue
         price = (
             '<p class="plan-price">'
             + (f'<span class="plan-from">{T(it["from"])}</span>' if it.get("from") else "")
@@ -795,7 +838,8 @@ def r_pricing(ctx, sec):
         cta = f'<div class="plan-cta">{btn(ctx, it["cta"])}</div>' if it.get("cta") else ""
         cards += f'<li class="card plan{" plan--featured" if feat else ""}" data-reveal style="--i:{i}">{badge}<div class="plan-body">{body}</div>{cta}</li>'
     foot = f'<p class="plans-foot" data-reveal>{rich(sec["footnote"])}</p>' if sec.get("footnote") else ""
-    return wrap(sec, head(sec) + f'<ul class="plans plans--{len(sec["items"])}">{cards}</ul>' + foot, "section--pricing")
+    pcta = f'<div class="plans-cta" data-reveal>{buttons(ctx, sec["buttons"], "btn-row btn-row--center")}</div>' if sec.get("buttons") else ""
+    return wrap(sec, head(sec) + f'<ul class="plans plans--{len(sec["items"])}">{cards}</ul>' + pcta + foot, "section--pricing")
 
 
 def posts_for(ctx, limit=None, category=None):
@@ -885,6 +929,9 @@ def r_cta(ctx, sec):
         out += f'<p class="cta-teaser">{rich(sec["teaser"])}</p>'
     out += buttons(ctx, sec.get("buttons"), "btn-row btn-row--center")
     wide = " cta-panel--wide" if sec.get("wide") else ""
+    if sec.get("image"):
+        img = f'<div class="cta-media"><img src="{esc(ctx.asset(sec["image"], False))}" alt="{esc(sec.get("imageAlt", ""))}" loading="lazy" width="1000" height="742"></div>'
+        return f'<section class="section theme-light section--cta"><div class="wrap"><div class="cta-panel cta-panel--media{wide}" data-reveal><div class="cta-copy">{out}</div>{img}</div></div></section>\n'
     return f'<section class="section theme-light section--cta"><div class="wrap"><div class="cta-panel{wide}" data-reveal>{out}</div></div></section>\n'
 
 
@@ -987,12 +1034,12 @@ def r_week(ctx, sec):
                 prev_end = hh[1] if len(hh) > 1 else hh[0] + 1
             tags = "".join(f'<li class="wk-tag wk-tag--{esc(tg.get("kind", "x"))}">{T(tg["label"])}</li>' for tg in sl.get("tags", []))
             place = f'<p class="wk-place">{icon("pin", "i")}{T(sl["place"])}</p>' if sl.get("place") else ""
-            text = f'<p class="wk-text">{T(sl["text"])}</p>' if sl.get("text") else ""
+            text = f'<p class="wk-text">{rich(sl["text"])}</p>' if sl.get("text") else ""
             cta = ""
             if sl.get("href"):
                 cta = f'<a class="wk-cta" {ctx.link_attrs(sl["href"])}>{T(sl.get("cta", ctx.t["ui"]["more"]))}{icon("chev", "i i-chev")}</a>'
             slots += (f'<article class="wk-slot" style="--off:{off}px"><p class="wk-time">{T(sl["time"])}</p><h3 class="wk-title">{T(sl["title"])}</h3>'
-                      f'<ul class="wk-tags">{tags}</ul>{place}{text}{cta}</article>')
+                      f'{place}<ul class="wk-tags">{tags}</ul>{text}{cta}</article>')
         empty = "" if slots else f'<p class="wk-empty" aria-label="{esc(sec.get("emptyLabel", ""))}">–</p>'
         busy = " wk-day--busy" if slots else ""
         cols += (f'<li class="wk-day{busy}" data-d="{d}" data-reveal style="--i:{d}"><p class="wk-head"><abbr title="{esc(days[d])}" class="wk-short">{T(short[d])}</abbr>'

@@ -2,7 +2,7 @@
   "id": "schedule",
   "slug": "stundenplan",
   "title": "Stundenplan | Yoga Momente Coburg",
-  "description": "Wochenplan von Yoga Momente in Coburg: Yoga im Tanztraum mittwochs (Präsenz und online) und Early Morning Yoga freitags online. Drop-in, ohne festen Kurs.",
+  "description": "Wochenplan von Yoga Momente in Coburg: Gruppenstunde mittwochs (Präsenz und online) und Early Morning Yoga freitags online. Drop-in, ohne festen Kurs.",
   "sections": [
     {
       "type": "hero",
@@ -35,8 +35,8 @@
       "slots": [
         {
           "day": 2,
-          "time": "17:30–18:30 Uhr",
-          "title": "Yoga.momente im Tanztraum",
+          "time": "18:00–19:00 Uhr",
+          "title": "Gruppenstunde",
           "tags": [
             {
               "label": "Präsenz",
@@ -47,14 +47,14 @@
               "kind": "online"
             }
           ],
-          "place": "Tanztraum, Dieselstr. 14, Coburg",
-          "text": "Drop-in",
+          "place": "Breslauer Str. 21, Coburg",
+          "text": "Wöchentlich\nDrop-in",
           "href": "page:contact",
           "cta": "Dabei sein"
         },
         {
           "day": 4,
-          "time": "06:30–07:30 Uhr",
+          "time": "06:15–07:15 Uhr",
           "title": "Early Morning Yoga",
           "tags": [
             {
@@ -81,10 +81,10 @@
     {
       "type": "cta",
       "title": "Zeit für deine Stunde?",
-      "text": "Du möchtest einmal reinschnuppern oder eine Einzelstunde vereinbaren? Schreib uns einfach.",
+      "text": "Du möchtest einmal reinschnuppern oder eine Einzelstunde vereinbaren?",
       "buttons": [
         {
-          "label": "Stunde anfragen",
+          "label": "Schreib uns einfach",
           "href": "page:contact",
           "style": "primary"
         }

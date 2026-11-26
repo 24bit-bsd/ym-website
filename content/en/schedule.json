@@ -2,7 +2,7 @@
   "id": "schedule",
   "slug": "schedule",
   "title": "Timetable | Yoga Momente Coburg",
-  "description": "Timetable of Yoga Momente in Coburg: yoga at Tanztraum on Wednesdays (in person and online) and Early Morning Yoga online on Fridays. Drop-in.",
+  "description": "Timetable of Yoga Momente in Coburg: group class on Wednesdays (in person and online) and Early Morning Yoga online on Fridays. Drop-in.",
   "sections": [
     {
       "type": "hero",
@@ -35,8 +35,8 @@
       "slots": [
         {
           "day": 2,
-          "time": "17:30–18:30",
-          "title": "Yoga.momente at Tanztraum",
+          "time": "18:00–19:00",
+          "title": "Group class",
           "tags": [
             {
               "label": "In person",
@@ -47,14 +47,14 @@
               "kind": "online"
             }
           ],
-          "place": "Tanztraum, Dieselstr. 14, Coburg",
-          "text": "Drop-in",
+          "place": "Breslauer Str. 21, Coburg",
+          "text": "Weekly\nDrop-in",
           "href": "page:contact",
           "cta": "Join in"
         },
         {
           "day": 4,
-          "time": "06:30–07:30",
+          "time": "06:15–07:15",
           "title": "Early Morning Yoga",
           "tags": [
             {
@@ -81,10 +81,10 @@
     {
       "type": "cta",
       "title": "Time for your class?",
-      "text": "Would you like to try a class or arrange a single session? Just write to us.",
+      "text": "Would you like to try a class or arrange a single session?",
       "buttons": [
         {
-          "label": "Request a class",
+          "label": "Just write to us",
           "href": "page:contact",
           "style": "primary"
         }

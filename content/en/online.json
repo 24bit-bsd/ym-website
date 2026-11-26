@@ -8,7 +8,7 @@
       "type": "hero",
       "image": "assets/img/studio.jpg",
       "title": "Online yoga",
-      "lead": "Get your yoga mat out and join the virtual class, comfortably from home."
+      "lead": "Get your yoga mat out and join the virtual class,\ncomfortably from home."
     },
     {
       "type": "text",
@@ -17,23 +17,43 @@
       "title": "How your virtual class works.",
       "paragraphs": [
         "I offer very individual yoga classes as well as relaxation with meditation or yoga nidra via a virtual medium from my yoga studio in Coburg. If you have the right technology at home, that is a PC with a camera, an iPad or a phone, we can meet virtually.",
-        "You receive access to a platform, for example Zoom, for your yoga class. Simply log in, position the video properly and off you go. I am happy to help you set up your virtual yoga class by phone.",
-        "All of my classes can also be booked virtually.",
-        "Take care of your health, take forest baths and enjoy nature. And do not forget: yoga does not only happen on the mat!"
+        "You receive an access link to Microsoft Teams and can easily join the session for your yoga class. I am happy to help you set up your virtual yoga class by phone.",
+        "Of course, you can also switch between online yoga and in-person from class to class."
       ]
     },
     {
       "type": "text",
       "id": "bedarf",
-      "title": "What you need for this class",
-      "list": [
-        "A quiet place to retreat to",
-        "A good internet connection",
-        "A laptop, iPad or smartphone",
-        "At least 60 minutes of phone-free time",
-        "A comfortable surface and your yoga mat",
-        "A bottle of water",
-        "Joy in yoga"
+      "title": "What you need for this class.",
+      "tiles": [
+        {
+          "icon": "home",
+          "text": "Quiet place to retreat to"
+        },
+        {
+          "icon": "wifi",
+          "text": "Good internet connection"
+        },
+        {
+          "icon": "laptop",
+          "text": "Laptop, tablet or smartphone"
+        },
+        {
+          "icon": "phoneoff",
+          "text": "At least 60 minutes of phone-free time"
+        },
+        {
+          "icon": "mat",
+          "text": "Comfortable surface and your yoga mat"
+        },
+        {
+          "icon": "bottle",
+          "text": "Bottle of water"
+        },
+        {
+          "icon": "heart",
+          "text": "Joy in yoga"
+        }
       ]
     },
     {

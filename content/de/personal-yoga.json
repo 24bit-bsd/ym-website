@@ -47,7 +47,17 @@
         },
         {
           "title": "Preis",
-          "text": "60 Minuten: 75 €. 90 Minuten: 100 €."
+          "prices": [
+            {
+              "label": "60 Minuten",
+              "value": "85 €"
+            },
+            {
+              "label": "90 Minuten",
+              "value": "120 €"
+            }
+          ],
+          "priceNote": "3er-, 5er- und 10er-Karten sind ebenfalls möglich."
         }
       ]
     },

@@ -13,19 +13,87 @@
       "type": "pricing",
       "id": "kurspreise",
       "title": "Preise",
-      "footnote": "Alle Preise pro Person. Zu den Drop-in-Gruppenstunden und zu Hormon Yoga als Einzelstunde nennen wir dir gern die Preise auf Anfrage.",
+      "footnote": "Alle Preise brutto inkl. gesetzlicher Umsatzsteuer und pro Person.",
       "items": [
         {
           "name": "Personal Yoga mit Susanne",
           "subtitle": "Einzelstunde",
-          "from": "ab",
-          "price": "75 €",
-          "period": "pro Stunde",
+          "badges": [
+            {
+              "label": "Präsenz",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "prices": [
+            {
+              "label": "60 Minuten",
+              "value": "85 €"
+            },
+            {
+              "label": "90 Minuten",
+              "value": "120 €"
+            }
+          ],
+          "note": "3er-, 5er- und 10er-Karten sind ebenfalls möglich.",
           "features": [
-            "60 Min.: 75 €",
-            "90 Min.: 100 €",
-            "im Studio oder bei dir zu Hause"
+            "Im Studio oder bei dir zu Hause"
           ]
+        },
+        {
+          "name": "Gruppenstunde",
+          "subtitle": "Drop-in",
+          "badges": [
+            {
+              "label": "Präsenz",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "prices": [
+            {
+              "label": "pro Stunde",
+              "value": "15 €"
+            }
+          ],
+          "features": [
+            "Termine im Stundenplan",
+            "Du entscheidest von Woche zu Woche, ob du dabei bist"
+          ]
+        },
+        {
+          "name": "Spezielle Yogastunden",
+          "subtitle": "Einzel- oder Gruppenstunde",
+          "badges": [
+            {
+              "label": "Präsenz",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "priceText": "Preis auf Anfrage",
+          "features": [
+            "Hormon Yoga",
+            "Yoga Nidra",
+            "Meditation & Pranayama"
+          ],
+          "featuresLead": "z. B."
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Jetzt buchen",
+          "href": "page:contact",
+          "style": "primary"
         }
       ]
     },
@@ -62,14 +130,9 @@
       "type": "cta",
       "eyebrow": "Deine YogaCard",
       "title": "Sammle deine Yoga Momente.",
-      "text": "Mit der kleinen YogaCard behältst du den Überblick über deine absolvierten Stunden. Sie erinnert dich auch zu Hause an deine Yoga Momente. Du erhältst sie bei deiner Anmeldung.",
-      "buttons": [
-        {
-          "label": "Probestunde anfragen",
-          "href": "page:contact",
-          "style": "primary"
-        }
-      ]
+      "text": "Auf Wunsch erhältst du bei deiner Anmeldung unsere kleine YogaCard. Damit behältst du den Überblick über deine absolvierten Stunden. Sie erinnert dich auch zu Hause an deine Yoga Momente.",
+      "image": "assets/img/yogacard.png",
+      "imageAlt": "Die YogaCard mit zehn Feldern zum Sammeln deiner Yoga Momente"
     }
   ]
 }

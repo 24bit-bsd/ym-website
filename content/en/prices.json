@@ -13,19 +13,87 @@
       "type": "pricing",
       "id": "kurspreise",
       "title": "Prices",
-      "footnote": "All prices per person. We are happy to tell you the prices for the drop-in group classes and for Hormone Yoga as a single class on request.",
+      "footnote": "All prices are gross, including statutory VAT, and per person.",
       "items": [
         {
           "name": "Personal Yoga with Susanne",
           "subtitle": "Single class",
-          "from": "from",
-          "price": "€75",
-          "period": "per class",
+          "badges": [
+            {
+              "label": "In person",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "prices": [
+            {
+              "label": "60 minutes",
+              "value": "€85"
+            },
+            {
+              "label": "90 minutes",
+              "value": "€120"
+            }
+          ],
+          "note": "3-, 5- and 10-class cards are also available.",
           "features": [
-            "60 min: €75",
-            "90 min: €100",
-            "in the studio or at your home"
+            "In the studio or at your home"
           ]
+        },
+        {
+          "name": "Group class",
+          "subtitle": "Drop-in",
+          "badges": [
+            {
+              "label": "In person",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "prices": [
+            {
+              "label": "per class",
+              "value": "€15"
+            }
+          ],
+          "features": [
+            "Dates in the timetable",
+            "You decide from week to week whether you join"
+          ]
+        },
+        {
+          "name": "Special yoga classes",
+          "subtitle": "Single or group class",
+          "badges": [
+            {
+              "label": "In person",
+              "kind": "live"
+            },
+            {
+              "label": "Online",
+              "kind": "online"
+            }
+          ],
+          "priceText": "Price on request",
+          "features": [
+            "Hormone Yoga",
+            "Yoga Nidra",
+            "Meditation & Pranayama"
+          ],
+          "featuresLead": "e.g."
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Book now",
+          "href": "page:contact",
+          "style": "primary"
         }
       ]
     },
@@ -62,14 +130,9 @@
       "type": "cta",
       "eyebrow": "Your YogaCard",
       "title": "Collect your Yoga Momente.",
-      "text": "The small YogaCard helps you keep track of the classes you have completed. It also reminds you of your Yoga Momente at home. You receive it when you register.",
-      "buttons": [
-        {
-          "label": "Request a trial class",
-          "href": "page:contact",
-          "style": "primary"
-        }
-      ]
+      "text": "On request, you receive our little YogaCard when you sign up. It helps you keep track of the classes you have completed and reminds you of your Yoga Momente at home.",
+      "image": "assets/img/yogacard.png",
+      "imageAlt": "The YogaCard with ten fields for collecting your Yoga Momente"
     }
   ]
 }
