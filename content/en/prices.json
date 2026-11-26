@@ -2,52 +2,19 @@
   "id": "prices",
   "slug": "prices",
   "title": "Prices & YogaCard | Yoga Momente Coburg",
-  "description": "Course prices for yin, hatha, early morning, hormone and personal yoga in Coburg, plus trial class and YogaCard.",
+  "description": "Prices for Personal Yoga in Coburg at Yoga Momente, plus the trial class and the YogaCard.",
   "sections": [
     {
       "type": "hero",
       "title": "Prices & YogaCard",
-      "lead": "Clear prices for your yoga moments in Coburg."
+      "lead": "Clear prices for your Yoga Momente in Coburg."
     },
     {
       "type": "pricing",
       "id": "kurspreise",
-      "title": "Course prices",
-      "footnote": "All prices per person. You can find current dates in the timetable.",
+      "title": "Prices",
+      "footnote": "All prices per person. We are happy to tell you the prices for the drop-in group classes and for Hormone Yoga as a single class on request.",
       "items": [
-        {
-          "name": "Yin Yoga & Hatha Yoga",
-          "subtitle": "10 classes",
-          "from": "from",
-          "price": "€135",
-          "period": "per person",
-          "features": [
-            "10 × 60 min: €150 (3–4 participants), €135 from 5 participants",
-            "10 × 90 min: €225 (3–4 participants), €200 from 5 participants"
-          ]
-        },
-        {
-          "name": "Early Morning Yoga",
-          "subtitle": "10 × 60 min",
-          "from": "",
-          "price": "€150",
-          "period": "per person",
-          "features": [
-            "with 3–4 participants",
-            "Start your day fresh"
-          ]
-        },
-        {
-          "name": "Hormone Yoga",
-          "subtitle": "5 × 90 min",
-          "from": "from",
-          "price": "€150",
-          "period": "per person",
-          "features": [
-            "3 participants: €200, 4 participants: €150 per person",
-            "hormone booklet included"
-          ]
-        },
         {
           "name": "Personal Yoga with Susanne",
           "subtitle": "Single class",
@@ -68,17 +35,23 @@
       "eyebrow": "New to yoga?",
       "title": "Trial class: €60",
       "paragraphs": [
-        "One trial class of 60 minutes. Call us or write us an email to arrange your class.",
-        "Phone: +49 (0)9561 29831\nEmail: flow@momente.yoga"
+        "A trial class of 60 minutes as Personal Yoga: your own one-to-one session with Susanne. Write to us to arrange your class."
       ],
-      "wideBody": false
+      "wideBody": false,
+      "buttons": [
+        {
+          "label": "Request a trial class",
+          "href": "page:contact",
+          "style": "primary"
+        }
+      ]
     },
     {
       "type": "text",
       "id": "erwartung",
       "title": "What to expect",
       "list": [
-        "Beginners are best off starting with level 1 or basic classes.",
+        "New to yoga? No problem: the classes suit beginners and advanced practitioners alike.",
         "Bring a water bottle and a small towel. If you have a yoga mat, feel free to bring it, otherwise you can use our studio mats.",
         "Arrive 5 to 15 minutes before the start so you can settle in.",
         "Wear comfortable clothes you can move in. You do not need shoes.",
@@ -88,8 +61,8 @@
     {
       "type": "cta",
       "eyebrow": "Your YogaCard",
-      "title": "Collect your yoga moments.",
-      "text": "The small YogaCard helps you keep track of the classes you have completed. It also reminds you of your yoga moments at home. You receive it when you register.",
+      "title": "Collect your Yoga Momente.",
+      "text": "The small YogaCard helps you keep track of the classes you have completed. It also reminds you of your Yoga Momente at home. You receive it when you register.",
       "buttons": [
         {
           "label": "Request a trial class",

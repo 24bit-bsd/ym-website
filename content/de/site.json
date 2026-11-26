@@ -1,6 +1,6 @@
 {
   "locale": "de_DE",
-  "tagline": "Yoga für Körper, Atem und Herz.",
+  "tagline": "Yoga für Körper, Geist und Seele.",
   "nav": [
     {
       "label": "Yoga",
@@ -73,7 +73,7 @@
           }
         ],
         "cta": {
-          "text": "Neu im Yoga? Starte mit einer Schnupperstunde.",
+          "text": "Neu im Yoga? Starte mit deiner persönlichen Schnupperstunde.",
           "label": "Probestunde anfragen",
           "href": "page:contact"
         }

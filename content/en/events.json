@@ -2,7 +2,7 @@
   "id": "events",
   "slug": "events",
   "title": "Events & Retreats | Yoga Momente Coburg",
-  "description": "Yoga retreat in the Rottal, fasting-season workshop and special occasions such as a girls' day or bachelorette party with Yoga Momente.",
+  "description": "Yoga in Advent, yoga retreat in the Rottal, Lent workshop and special occasions such as a girls' day or hen party with Yoga Momente.",
   "sections": [
     {
       "type": "hero",
@@ -14,8 +14,14 @@
       "id": "angebote",
       "variant": "cards",
       "cols": 2,
-      "title": "Our events.",
+      "title": "Find your moment here.",
       "items": [
+        {
+          "title": "Yoga in Advent: Fragrant Time Out",
+          "text": "Saturday, 5 December 2026, 14:00–16:00 at the Rostscheune in Bamberg. Gentle yoga, face yoga, breathwork and essential oils for all levels, €49 per person.",
+          "href": "page:advent",
+          "cta": "To the event"
+        },
         {
           "title": "Yoga retreat in the Rottal",
           "text": "13–15 November 2026 at the Neue Welt Haus. Yoga, meditation and mindfulness, maximum of 10 participants, €295 per person.",
@@ -34,7 +40,7 @@
       "type": "cta",
       "eyebrow": "Special occasions",
       "title": "A girls' day or bachelorette party?",
-      "text": "Write to us and we will shape your yoga moment together.",
+      "text": "Write to us and we will shape your Yoga Moment together.",
       "buttons": [
         {
           "label": "Send an inquiry",

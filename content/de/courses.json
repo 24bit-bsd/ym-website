@@ -7,14 +7,15 @@
     {
       "type": "hero",
       "title": "Yoga-Kurse in Coburg",
-      "lead": "Finde das passende Training für dich und deine Bedürfnisse."
+      "lead": "Finde die passende Praxis für dich und deine Bedürfnisse."
     },
     {
       "type": "text",
       "id": "einstieg",
       "paragraphs": [
-        "Übungen und Wissen werden im Yoga traditionell von Lehrer:in zu Schüler:in weitergegeben, mit deinen persönlichen Erfahrungen im Mittelpunkt. Um den Weg des Yoga zu gehen, werden Raum und Zeit gebraucht. Diese wertvolle Zeit nehme ich mir gerne für dich. Gönne dir diese Yoga-Momente.\n\nAlle Stunden sind auch virtuell buchbar."
-      ]
+        "Übungen und Wissen werden im Yoga traditionell von Lehrer:in zu Schüler:in weitergegeben, mit deinen persönlichen Erfahrungen im Mittelpunkt. Gönne dir Raum und Zeit, um den Weg des Yoga zu gehen. Diese wertvolle Zeit nehme ich mir gerne für dich.\n\nFreu dich auf deine Yoga Momente."
+      ],
+      "wideBody": true
     },
     {
       "type": "grid",
@@ -43,16 +44,23 @@
         },
         {
           "title": "Hormon Yoga",
-          "text": "Nach dem bewährten System von Dinah Rodrigues werden dynamische Körperübungen mit speziellen Atemtechniken und Visualisierungen kombiniert, die das Drüsensystem regulieren. Antistress- und Entspannungsübungen harmonisieren Körper und Geist. Zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Problemen, auch für jüngere Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch.",
+          "text": "Nach der bewährten Praxis von Dinah Rodrigues werden dynamische Körperübungen mit speziellen Atemtechniken und Visualisierungen kombiniert, die das Drüsensystem regulieren. Antistress- und Entspannungsübungen harmonisieren Körper und Geist. Zur Regulierung von Ungleichgewichten des Hormonsystems wie Beschwerden der Wechseljahre, Schilddrüsen- oder Prostata-Problemen, auch für jüngere Frauen ab 35 bei Zyklusstörungen, PMS oder unerfülltem Kinderwunsch.",
           "href": "page:hormon-yoga",
           "cta": "Mehr erfahren"
         },
         {
           "title": "Personal Yoga",
-          "text": "In deiner individuellen Stunde praktizierst du mit Susanne Hatha Yoga ganz nach deinen körperlichen Bedürfnissen. Es werden gezielt Übungsreihen für dich erarbeitet, die du auch zu Hause üben kannst. Im Studio in Coburg oder bei dir zu Hause (im Radius von 20 km, inkl. Rödental und Neustadt bei Coburg).",
+          "text": "In deiner individuellen Stunde praktizierst du Yoga mit Susanne. Die Yoga-Praxis wird auf deine körperlichen Bedürfnisse abgestimmt und kann gezielt auch auf Beschwerden angepasst werden. Dabei werden auch Elemente von Liebscher & Bracht mit einbezogen. Es werden gezielt Übungsreihen für dich erarbeitet, die du auch zu Hause üben kannst. Im Studio in Coburg oder bei dir zu Hause (im Radius von 20 km, inkl. Rödental, Neustadt bei Coburg, Sonnefeld, Ebersdorf und dem Itzgrund).",
           "href": "page:personal-yoga",
           "cta": "Mehr erfahren"
         }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "online-hinweis",
+      "after": [
+        "Alle Stunden sind auch virtuell buchbar."
       ]
     },
     {

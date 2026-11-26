@@ -1,0 +1,99 @@
+{
+  "id": "advent",
+  "slug": "events/yoga-im-advent",
+  "title": "Yoga im Advent: Duftende Auszeit, 5.12.2026 | Yoga Momente",
+  "description": "Yoga im Advent am 5. Dezember 2026 in Bamberg: zwei Stunden Selfcare mit sanftem Yoga, Gesichtsyoga, Atmung und ätherischen Ölen, 49 €.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/advent-steine.jpg",
+      "title": "Yoga im Advent",
+      "lead": "Duftende Auszeit: Selfcare in der Vorweihnachtszeit. Samstag, 5. Dezember 2026, 14:00–16:00 Uhr in der Rostscheune in Bamberg.",
+      "buttons": [
+        {
+          "label": "Jetzt anmelden",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        },
+        {
+          "label": "Alle Infos",
+          "href": "#infos",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "auszeit",
+      "eyebrow": "Duftende Auszeit",
+      "title": "Zwei Stunden nur für dich.",
+      "paragraphs": [
+        "Gönn dir zwei Stunden voller Entspannung, Achtsamkeit und Wohlbefinden. Mit sanftem Yoga, entspannendem Gesichtsyoga, bewusster Atmung und den wohltuenden Düften ätherischer Öle findest du Ruhe, tankst neue Energie und kommst ganz bei dir selbst an.",
+        "Für alle Level geeignet."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "momente",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "image": "assets/img/advent-steine.jpg",
+          "alt": "Gestapelte Steine im Abendlicht",
+          "title": "Zeit zum Loslassen."
+        },
+        {
+          "image": "assets/img/advent-yoga.jpg",
+          "alt": "Yoga-Gruppe beim seitlichen Dehnen",
+          "title": "Zeit zum Durchatmen."
+        },
+        {
+          "image": "assets/img/advent-schale.jpg",
+          "alt": "Klangschale mit Lavendel",
+          "title": "Zeit nur für dich."
+        }
+      ]
+    },
+    {
+      "type": "pricing",
+      "id": "infos",
+      "title": "Dein Platz im Advent",
+      "items": [
+        {
+          "name": "Yoga im Advent: Duftende Auszeit",
+          "subtitle": "Samstag, 5. Dezember 2026",
+          "price": "49 €",
+          "period": "pro Person",
+          "featured": true,
+          "badge": "Anmeldung bis 30.11.",
+          "features": [
+            "14:00–16:00 Uhr, Ankommen ab 13:45 Uhr",
+            "Yoga, ätherische Öle und mehr",
+            "Rostscheune, Färbergasse 28, Bamberg",
+            "Für alle Level geeignet"
+          ],
+          "cta": {
+            "label": "Jetzt anmelden",
+            "href": "mailto:flow@momente.yoga",
+            "style": "primary"
+          }
+        }
+      ],
+      "footnote": "Anmeldung bis 30.11.2026 per E-Mail an flow[at]momente.yoga."
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Mehr Auszeiten",
+      "title": "Weitere Events und Retreats.",
+      "text": "Workshops, Auszeiten und besondere Anlässe findest du in unserer Übersicht.",
+      "buttons": [
+        {
+          "label": "Alle Events & Retreats",
+          "href": "page:events",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

@@ -1186,3 +1186,39 @@ body.no-scroll { overflow: hidden; }
 .section--about .team li { max-width: 440px; margin-inline: auto; width: 100%; }
 @media (min-width: 861px) { .section--about .about-panel { grid-template-columns: minmax(0, 1fr) 440px; } }
 @media (max-width: 860px) { .section--about .team li { max-width: 340px; } }
+.text-cta { margin-top: 28px; }
+/* Event-Seite: Bildkarten mit großem Foto */
+#momente .card { padding: 12px 12px 22px; }
+#momente .card-img { display: block; width: 100%; height: auto; max-width: none; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; margin: 0 0 16px; }
+#momente .card .h3 { text-align: center; }
+
+/* Kachel mit Logo am Bildrand (Ölgeflüster) */
+.wt-link .wt-logo { position: absolute; z-index: 1; left: 50%; bottom: 7%; width: 66%; height: auto; max-width: 240px; inset: auto auto 7% 50%; transform: translateX(-50%); object-fit: contain; filter: drop-shadow(0 2px 6px rgba(255, 255, 255, .6)); pointer-events: none; transition: transform .6s var(--ease); }
+.wt-link:hover .wt-logo { transform: translateX(-50%) scale(1.04); }
+
+/* Werbebox: Eckdaten (Datum, Ort, Preis) als Pillen */
+.cta-facts { list-style: none; margin: 18px 0 4px; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.cta-fact { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 999px; background: rgba(255, 255, 255, .13); border: 1px solid rgba(232, 199, 90, .65); color: #fff; font-weight: 600; font-size: 1rem; line-height: 1.2; }
+.cta-fact .i { width: 18px; height: 18px; flex: none; fill: none; stroke: #e8c75a; stroke-width: 1.8; }
+.cta-fact--price { background: linear-gradient(135deg, #e8c75a, #d4af37); border-color: transparent; color: var(--petrol-dk); font-size: 1.15rem; }
+.cta-fact--price .i { stroke: var(--petrol-dk); }
+
+.cta-panel--wide .lead { max-width: 62ch; margin-inline: auto; }
+.cta-panel--wide .cta-facts { margin-bottom: 10px; }
+.cta-panel--wide { padding-block: clamp(32px, 5vw, 56px); }
+.cta-panel--wide .h2 { max-width: none; }
+
+/* Footer: Claim einzeilig links, Menüspalten rechts enger */
+@media (min-width: 900px) {
+  .sf-in { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+  .sf-claim { max-width: none; white-space: nowrap; }
+  .sf-cols { grid-template-columns: repeat(3, auto); justify-content: end; column-gap: clamp(24px, 3vw, 44px); }
+}
+/* Hinweisbox direkt unter den Kursarten */
+.section:has(+ #online-hinweis) { padding-bottom: 28px; }
+#online-hinweis { padding-top: 0; padding-bottom: clamp(40px, 6vw, 72px); }
+#online-hinweis .callout { margin-top: 0; max-width: none; text-align: center; }
+
+/* Überschriften: H1 (ohne Foto-Hero) und Kachel-/Kartentitel in Petrol statt Schwarz */
+.hero:not(.hero--photo) .hero-title, .card .h3, .grid-item .h3, .plan-name, .proc-title { color: var(--petrol); }
+.theme-dark .card .h3, .theme-dark .plan-name { color: #fff; }

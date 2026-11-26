@@ -1,6 +1,6 @@
 {
   "locale": "en_US",
-  "tagline": "Yoga for body, breath and heart.",
+  "tagline": "Yoga for body, mind and soul.",
   "nav": [
     {
       "label": "Yoga",
@@ -73,7 +73,7 @@
           }
         ],
         "cta": {
-          "text": "New to yoga? Start with a trial class.",
+          "text": "New to yoga? Start with your personal trial class.",
           "label": "Request a Trial Class",
           "href": "page:contact"
         }

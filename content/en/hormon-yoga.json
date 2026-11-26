@@ -27,7 +27,7 @@
       "eyebrow": "What it is about",
       "title": "Hormone Yoga: what to expect.",
       "paragraphs": [
-        "Based on the proven system of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child."
+        "Based on the proven practice of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child."
       ]
     },
     {
@@ -38,16 +38,20 @@
       "title": "At a glance.",
       "items": [
         {
-          "title": "Scope",
-          "text": "5 classes of 90 minutes."
+          "title": "As a single class",
+          "text": "On demand within **Personal Yoga**: one-to-one with Susanne, on request in the studio in Coburg or at your home.",
+          "href": "page:personal-yoga",
+          "cta": "To Personal Yoga"
         },
         {
-          "title": "When and where",
-          "text": "Currently not offered at a fixed time but on demand: as its own course or as a single class. Write to us and we will find a time."
+          "title": "In group classes",
+          "text": "Individual exercises can be included in the group classes, for example **Early Morning Yoga**. A separate course is possible if there is enough interest.",
+          "href": "page:early-morning",
+          "cta": "To Early Morning Yoga"
         },
         {
-          "title": "Price",
-          "text": "3 participants: €200, 4 participants: €150 per person, hormone booklet included."
+          "title": "Who it is for",
+          "text": "For women and men. Write to us and we will find out together whether and how Hormone Yoga suits you."
         }
       ]
     },

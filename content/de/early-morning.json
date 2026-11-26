@@ -38,16 +38,18 @@
       "title": "Auf einen Blick.",
       "items": [
         {
-          "title": "Umfang",
-          "text": "10 Stunden à 60 Minuten."
+          "title": "Wann",
+          "text": "Freitags 06:30–07:30 Uhr.",
+          "href": "page:schedule",
+          "cta": "Zum Stundenplan"
         },
         {
-          "title": "Wann und wo",
-          "text": "Freitags 06:30–07:30 Uhr als Online-Kurs."
+          "title": "Wo",
+          "text": "Online, bequem von zu Hause."
         },
         {
-          "title": "Preis",
-          "text": "150 € pro Person bei 3–4 Teilnehmenden."
+          "title": "Drop-in",
+          "text": "Kein fester Kurs: Du entscheidest von Woche zu Woche, ob du dabei bist."
         }
       ]
     },

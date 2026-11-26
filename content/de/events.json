@@ -2,7 +2,7 @@
   "id": "events",
   "slug": "events",
   "title": "Events & Retreats | Yoga Momente Coburg",
-  "description": "Yoga-Retreat im Rottal, Fastenzeit-Workshop und besondere Anlässe wie Freundinnen-Tag oder Junggesellinnenabschied mit Yoga Momente.",
+  "description": "Yoga im Advent, Yoga-Retreat im Rottal, Fastenzeit-Workshop und besondere Anlässe wie Freundinnen-Tag oder Junggesellinnenabschied mit Yoga Momente.",
   "sections": [
     {
       "type": "hero",
@@ -14,8 +14,14 @@
       "id": "angebote",
       "variant": "cards",
       "cols": 2,
-      "title": "Unsere Events.",
+      "title": "Hier findest du deinen Moment.",
       "items": [
+        {
+          "title": "Yoga im Advent: Duftende Auszeit",
+          "text": "Samstag, 5. Dezember 2026, 14:00–16:00 Uhr in der Rostscheune in Bamberg. Sanftes Yoga, Gesichtsyoga, Atmung und ätherische Öle für alle Level, 49 € pro Person.",
+          "href": "page:advent",
+          "cta": "Zum Event"
+        },
         {
           "title": "Yoga-Retreat im Rottal",
           "text": "13.–15. November 2026 im Neue Welt Haus. Yoga, Meditation und Achtsamkeit, maximal 10 Teilnehmende, 295 € pro Person.",
@@ -34,7 +40,7 @@
       "type": "cta",
       "eyebrow": "Besondere Anlässe",
       "title": "Freundinnen-Tag oder Junggesellinnenabschied?",
-      "text": "Schreib uns, wir gestalten deinen Yoga-Moment gemeinsam.",
+      "text": "Schreib uns, wir gestalten deinen Yoga Moment gemeinsam.",
       "buttons": [
         {
           "label": "Anfrage senden",

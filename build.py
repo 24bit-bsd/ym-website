@@ -415,8 +415,9 @@ def r_tiles(ctx, sec):
     lis = ""
     for i, it in enumerate(sec["items"]):
         img = f'<img src="{esc(ctx.asset(it["image"], False))}" alt="" loading="lazy" width="800" height="1000">' if it.get("image") else ""
+        logo = f'<img class="wt-logo" src="{esc(ctx.asset(it["logo"], False))}" alt="{esc(it.get("logoAlt", ""))}" loading="lazy" width="700" height="490">' if it.get("logo") else ""
         lis += (
-            f'<li class="wt" data-reveal style="--i:{i}"><a class="wt-link" {ctx.link_attrs(it["href"])}>{img}'
+            f'<li class="wt" data-reveal style="--i:{i}"><a class="wt-link" {ctx.link_attrs(it["href"])}>{img}{logo}'
             f'<span class="wt-body"><h3 class="h3">{rich(it["title"])}</h3><span class="wt-text">{rich(it.get("text", ""))}</span>'
             f'<span class="wt-go" aria-hidden="true">{icon("arrow")}</span></span></a></li>'
         )
@@ -569,7 +570,8 @@ def r_text(ctx, sec):
             + "</div>"
         )
         after += mark(callout, p)
-    return wrap(sec, head(sec) + (f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else "") + qcards + after)
+    btns = f'<div class="text-cta" data-reveal>{buttons(ctx, sec.get("buttons"))}</div>' if sec.get("buttons") else ""
+    return wrap(sec, head(sec) + (f'<div class="prose{" prose--wide" if sec.get("wideBody") else ""}" data-reveal>{body}</div>' if body else "") + btns + qcards + after)
 
 
 def mock_board(ctx, it):
@@ -871,6 +873,10 @@ def r_cta(ctx, sec):
     out += f'<h2 class="h2">{rich(sec["title"])}</h2>'
     if sec.get("subtitle"):
         out += f'<p class="cta-sub">{rich(sec["subtitle"])}</p>'
+    if sec.get("facts"):
+        out += '<ul class="cta-facts">' + "".join(
+            f'<li class="cta-fact{" cta-fact--price" if f.get("price") else ""}">{icon(f["icon"], "i") if f.get("icon") else ""}<span>{T(f["label"])}</span></li>' for f in sec["facts"]
+        ) + "</ul>"
     if sec.get("text"):
         out += f'<p class="lead">{rich(sec["text"])}</p>'
     if sec.get("person"):
@@ -878,7 +884,8 @@ def r_cta(ctx, sec):
     if sec.get("teaser"):
         out += f'<p class="cta-teaser">{rich(sec["teaser"])}</p>'
     out += buttons(ctx, sec.get("buttons"), "btn-row btn-row--center")
-    return f'<section class="section theme-light section--cta"><div class="wrap"><div class="cta-panel" data-reveal>{out}</div></div></section>\n'
+    wide = " cta-panel--wide" if sec.get("wide") else ""
+    return f'<section class="section theme-light section--cta"><div class="wrap"><div class="cta-panel{wide}" data-reveal>{out}</div></div></section>\n'
 
 
 def tile(label, value, href=None, extra="", ext=False):
@@ -1205,16 +1212,16 @@ def footer(ctx):
     m = cfg["mail"]
     tel = re.sub(r"[^\d+]", "", cfg["phone"].replace("(0)", ""))
     mailto = f'<a href="#" data-mu="{esc(m["user"])}" data-md="{esc(m["domain"])}">{esc(m["user"])}[at]{esc(m["domain"])}</a>'
-    legal = (f'<li><a href="{esc(ctx.href("page:imprint"))}">{T(ft["imprint"])}</a></li>'
-             f'<li><a href="{esc(ctx.href("page:privacy"))}">{T(ft["privacy"])}</a></li>'
-             + (f'<li><a href="{esc(ctx.href("page:terms"))}">{T(ft["terms"])}</a></li>' if ft.get("terms") else ""))
+    legal = ((f'<li><a href="{esc(ctx.href("page:terms"))}">{T(ft["terms"])}</a></li>' if ft.get("terms") else "")
+             + f'<li><a href="{esc(ctx.href("page:privacy"))}">{T(ft["privacy"])}</a></li>'
+             + f'<li><a href="{esc(ctx.href("page:imprint"))}">{T(ft["imprint"])}</a></li>')
     wave = '<svg class="sf-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C200 0 420 90 720 46 S1230 4 1440 52 V0 H0 Z"/></svg>'
     return f"""<footer class="site-footer site-footer--yoga">
   {wave}
   <div class="sf-in">
     <div class="sf-lead">
       {brand(ctx, "brand brand--foot")}
-      <p class="sf-claim">{T(t['tagline'])}</p>
+      <p class="sf-claim">{rich(ft.get('claim') or t['tagline'])}</p>
       <a class="btn btn-primary" href="{esc(ctx.href(t['cta']['href']))}">{T(ft.get('ctaLabel', t['cta']['label']))}</a>
     </div>
     <div class="sf-cols">

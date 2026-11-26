@@ -38,16 +38,20 @@
       "title": "At a glance.",
       "items": [
         {
-          "title": "Scope",
-          "text": "10 classes of 60 or 90 minutes."
+          "title": "As a single class",
+          "text": "On demand within **Personal Yoga**: one-to-one with Susanne, on request in the studio in Coburg or at your home.",
+          "href": "page:personal-yoga",
+          "cta": "To Personal Yoga"
         },
         {
-          "title": "When and where",
-          "text": "You can find current dates in the timetable. All classes can also be booked online."
+          "title": "In group classes",
+          "text": "The fundamental asanas of hatha yoga are part of the group classes, for example the regular weekly class and **Early Morning Yoga**.",
+          "href": "page:early-morning",
+          "cta": "To Early Morning Yoga"
         },
         {
-          "title": "Price",
-          "text": "From €135 per person (10 × 60 min, from 5 participants). €150 with 3–4 participants. 10 × 90 min: €225 or €200 from 5 participants."
+          "title": "Who it is for",
+          "text": "For beginners and advanced practitioners. Props such as bolsters, blocks and straps are used."
         }
       ]
     },

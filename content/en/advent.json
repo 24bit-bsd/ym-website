@@ -1,0 +1,99 @@
+{
+  "id": "advent",
+  "slug": "events/yoga-in-advent",
+  "title": "Yoga in Advent: Fragrant Time Out, 5 Dec 2026 | Yoga Momente",
+  "description": "Yoga in Advent on 5 December 2026 in Bamberg: two hours of self-care with gentle yoga, face yoga, breathwork and essential oils, €49.",
+  "sections": [
+    {
+      "type": "hero",
+      "image": "assets/img/advent-steine.jpg",
+      "title": "Yoga in Advent",
+      "lead": "Fragrant time out: self-care before Christmas. Saturday, 5 December 2026, 14:00–16:00 at the Rostscheune in Bamberg.",
+      "buttons": [
+        {
+          "label": "Sign up now",
+          "href": "mailto:flow@momente.yoga",
+          "style": "primary"
+        },
+        {
+          "label": "All details",
+          "href": "#infos",
+          "style": "secondary"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "auszeit",
+      "eyebrow": "Fragrant time out",
+      "title": "Two hours just for you.",
+      "paragraphs": [
+        "Treat yourself to two hours of relaxation, mindfulness and well-being. With gentle yoga, relaxing face yoga, conscious breathing and the soothing scents of essential oils, you find calm, recharge and arrive fully with yourself.",
+        "Suitable for all levels."
+      ]
+    },
+    {
+      "type": "grid",
+      "id": "momente",
+      "variant": "cards",
+      "cols": 3,
+      "items": [
+        {
+          "image": "assets/img/advent-steine.jpg",
+          "alt": "Stacked stones in evening light",
+          "title": "Time to let go."
+        },
+        {
+          "image": "assets/img/advent-yoga.jpg",
+          "alt": "Yoga group stretching sideways",
+          "title": "Time to breathe."
+        },
+        {
+          "image": "assets/img/advent-schale.jpg",
+          "alt": "Singing bowl with lavender",
+          "title": "Time just for you."
+        }
+      ]
+    },
+    {
+      "type": "pricing",
+      "id": "infos",
+      "title": "Your place in Advent",
+      "items": [
+        {
+          "name": "Yoga in Advent: Fragrant Time Out",
+          "subtitle": "Saturday, 5 December 2026",
+          "price": "€49",
+          "period": "per person",
+          "featured": true,
+          "badge": "Sign up by 30 Nov",
+          "features": [
+            "14:00–16:00, arrive from 13:45",
+            "Yoga, essential oils and more",
+            "Rostscheune, Färbergasse 28, Bamberg",
+            "Suitable for all levels"
+          ],
+          "cta": {
+            "label": "Sign up now",
+            "href": "mailto:flow@momente.yoga",
+            "style": "primary"
+          }
+        }
+      ],
+      "footnote": "Sign up by 30 November 2026 by email to flow[at]momente.yoga."
+    },
+    {
+      "type": "cta",
+      "eyebrow": "More time out",
+      "title": "More events and retreats.",
+      "text": "You will find workshops, getaways and special occasions in our overview.",
+      "buttons": [
+        {
+          "label": "All Events & Retreats",
+          "href": "page:events",
+          "style": "primary"
+        }
+      ]
+    }
+  ]
+}

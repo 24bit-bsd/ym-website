@@ -2,19 +2,19 @@
   "id": "home",
   "slug": "",
   "title": "Yoga Momente – Kurse, Online-Yoga und Retreats mit Susanne",
-  "description": "Yoga mit Susanne Müller in Coburg: Kurse, Online-Yoga und Retreats – für Körper, Atem und einen klaren Kopf.",
+  "description": "Yoga mit Susanne Müller in Coburg: Kurse, Online-Yoga und Retreats – für Körper, Geist und Seele.",
   "sections": [
     {
       "type": "hero",
       "variant": "home",
-      "image": "assets/img/hero-yogaraum.jpg",
+      "image": "assets/img/studio.jpg",
       "title": "Yoga für Momente, in denen du",
       "subtitle": "{{wirklich ankommst.}}",
-      "tagline": "Kurse, Online-Yoga und Retreats mit Susanne – für Körper, Atem und einen klaren Kopf.",
+      "tagline": "Kurse, Online-Yoga und Retreats mit Susanne – für Körper, Geist und Seele.",
       "buttons": [
         {
-          "label": "Zum Rottal-Retreat",
-          "href": "page:retreat-rottal",
+          "label": "Retreats & Events für dich",
+          "href": "page:events",
           "style": "primary"
         },
         {
@@ -34,7 +34,7 @@
         {
           "title": "Kurse",
           "text": "Yoga im Kurs, mit Stundenplan und Preisen.",
-          "image": "assets/img/hero-yogaraum.jpg",
+          "image": "assets/img/susanne.jpg",
           "href": "page:courses"
         },
         {
@@ -45,30 +45,48 @@
         },
         {
           "title": "Events & Retreats",
-          "text": "Workshops und Auszeiten, aktuell im Rottal.",
-          "image": "assets/img/rottal-haus.jpg",
+          "text": "Workshops, Auszeiten und Retreats.",
+          "image": "assets/img/advent-steine.jpg",
           "href": "page:events"
         },
         {
           "title": "Ölgeflüster",
           "text": "Pflege und Düfte aus der Natur.",
           "href": "page:oils",
-          "image": "assets/img/oele-hero.jpg"
+          "image": "assets/img/oele-hero.jpg",
+          "logo": "assets/img/oelgefluester-logo.png",
+          "logoAlt": "Ölgeflüster"
         }
       ]
     },
     {
       "type": "cta",
-      "eyebrow": "13.–15. November 2026",
-      "title": "Yoga-Retreat im Rottal",
-      "text": "Ein Wochenende zum Durchatmen im Neue Welt Haus: Yoga, Stille und Zeit in der Natur. Maximal 10 Teilnehmende, 295 €.",
+      "eyebrow": "Neu im Advent",
+      "title": "Yoga im Advent: Duftende Auszeit",
+      "facts": [
+        {
+          "icon": "cal",
+          "label": "Samstag, 5. Dezember 2026"
+        },
+        {
+          "icon": "pin",
+          "label": "Rostscheune, Bamberg"
+        },
+        {
+          "icon": "coins",
+          "label": "49 €",
+          "price": true
+        }
+      ],
+      "text": "Zwei Stunden Selfcare in der Vorweihnachtszeit: sanftes Yoga, Gesichtsyoga, bewusste Atmung und ätherische Öle. Für alle Level.",
       "buttons": [
         {
-          "label": "Zum Retreat",
-          "href": "page:retreat-rottal",
+          "label": "Zum Event & Anmeldung",
+          "href": "page:advent",
           "style": "primary"
         }
-      ]
+      ],
+      "wide": true
     }
   ]
 }

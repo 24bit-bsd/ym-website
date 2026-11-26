@@ -38,16 +38,18 @@
       "title": "At a glance.",
       "items": [
         {
-          "title": "Scope",
-          "text": "10 classes of 60 minutes."
+          "title": "When",
+          "text": "Fridays 06:30–07:30.",
+          "href": "page:schedule",
+          "cta": "To the timetable"
         },
         {
-          "title": "When and where",
-          "text": "Fridays 06:30–07:30 as an online class."
+          "title": "Where",
+          "text": "Online, comfortably from home."
         },
         {
-          "title": "Price",
-          "text": "€150 per person with 3–4 participants."
+          "title": "Drop-in",
+          "text": "Not a fixed course: you decide from week to week whether you join."
         }
       ]
     },

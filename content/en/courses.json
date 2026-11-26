@@ -7,14 +7,15 @@
     {
       "type": "hero",
       "title": "Yoga classes in Coburg",
-      "lead": "Find the training that suits you and your needs."
+      "lead": "Find the right practice for you and your needs."
     },
     {
       "type": "text",
       "id": "einstieg",
       "paragraphs": [
-        "In yoga, exercises and knowledge are traditionally passed on from teacher to student, with your personal experience at the center. Walking the path of yoga takes space and time. I am happy to take this valuable time for you. Treat yourself to these yoga moments.\n\nAll classes can also be booked virtually."
-      ]
+        "In yoga, exercises and knowledge are traditionally passed on from teacher to student, with your personal experience at the center. Give yourself space and time to walk the path of yoga. I am happy to take this valuable time for you.\n\nLook forward to your Yoga Momente."
+      ],
+      "wideBody": true
     },
     {
       "type": "grid",
@@ -43,16 +44,23 @@
         },
         {
           "title": "Hormone Yoga",
-          "text": "Based on the proven system of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child.",
+          "text": "Based on the proven practice of Dinah Rodrigues, dynamic body exercises are combined with special breathing techniques and visualizations that regulate the glandular system. Anti-stress and relaxation exercises harmonize body and mind. For balancing the hormonal system, for example menopause symptoms, thyroid or prostate problems, and for younger women from 35 with cycle disorders, PMS or an unfulfilled wish for a child.",
           "href": "page:hormon-yoga",
           "cta": "Learn more"
         },
         {
           "title": "Personal Yoga",
-          "text": "In your individual class you practice hatha yoga with Susanne, entirely according to your physical needs. Series of exercises are developed specifically for you, which you can also practice at home. In the studio in Coburg or at your home (within a 20 km radius, including Rödental and Neustadt bei Coburg).",
+          "text": "In your individual class you practice yoga with Susanne. The practice is tailored to your physical needs and can also be adapted specifically to ailments. Elements of Liebscher & Bracht are included as well. Series of exercises are developed specifically for you, which you can also practice at home. In the studio in Coburg or at your home (within a 20 km radius, including Rödental, Neustadt bei Coburg, Sonnefeld, Ebersdorf and the Itzgrund).",
           "href": "page:personal-yoga",
           "cta": "Learn more"
         }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "online-hinweis",
+      "after": [
+        "All classes can also be booked virtually."
       ]
     },
     {
