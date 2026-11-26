@@ -16,7 +16,7 @@
 // Mindestdauer (Sekunden) zwischen Seitenaufruf und Absenden (Bot-Schutz)
 const CONTACT_MIN_SECONDS = 4;
 // Falls der Mailversand bei IONOS fehlschlägt: auf false setzen (dann wird der Absender nicht zusätzlich als Envelope-From gesetzt)
-const CONTACT_USE_ENVELOPE_FROM = true;
+const CONTACT_USE_ENVELOPE_FROM = false;
 
 // Rate-Limits: je IP und insgesamt (Anfragen pro Stunde) – verhindert Postfach-Flutung
 const CONTACT_LIMIT_PER_IP_HOUR = 5;
